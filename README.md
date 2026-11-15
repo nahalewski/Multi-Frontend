@@ -4,6 +4,14 @@ A controller-friendly game and media frontend for Windows and Android. The appli
 
 [Download Windows and Android builds](https://github.com/nahalewski/Multi-Frontend/releases/latest)
 
+## Latest desktop screenshots and feature video
+
+[![Watch the Multi-Frontend feature commercial](docs/media/trailer-poster.jpg)](docs/media/README.md)
+
+[Watch the commercial](docs/media/README.md) · [Browse 51 screenshots by console theme and app](docs/previews/README.md)
+
+These previews show the Windows **0.16.0 development build** with demonstration content, including PS4, PS4 Anniversary and PS5 themes. The published builds and source snapshot below remain **0.12.0** for Windows; Android has a separate feature set.
+
 ## Current builds
 
 | Platform | Version | Status |

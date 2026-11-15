@@ -1,0 +1,316 @@
+{
+  "version": "0.16.0",
+  "size": [
+    1920,
+    1080
+  ],
+  "content": "Synthetic demonstration data rendered by the packaged app; no personal accounts or games.",
+  "screenshots": [
+    {
+      "id": "blades-home",
+      "label": "Xbox 360 \u00c2\u00b7 Blades home",
+      "group": "themes/blades",
+      "path": "themes/blades/blades-home.jpg"
+    },
+    {
+      "id": "blades-library",
+      "label": "Xbox 360 \u00c2\u00b7 Blades game library",
+      "group": "themes/blades",
+      "path": "themes/blades/blades-library.jpg"
+    },
+    {
+      "id": "blades-guide",
+      "label": "Xbox 360 \u00c2\u00b7 Blades menu overlay",
+      "group": "themes/blades",
+      "path": "themes/blades/blades-guide.jpg"
+    },
+    {
+      "id": "nxe-home",
+      "label": "Xbox 360 \u00c2\u00b7 NXE home",
+      "group": "themes/nxe",
+      "path": "themes/nxe/nxe-home.jpg"
+    },
+    {
+      "id": "nxe-library",
+      "label": "Xbox 360 \u00c2\u00b7 NXE game library",
+      "group": "themes/nxe",
+      "path": "themes/nxe/nxe-library.jpg"
+    },
+    {
+      "id": "nxe-guide",
+      "label": "Xbox 360 \u00c2\u00b7 NXE menu overlay",
+      "group": "themes/nxe",
+      "path": "themes/nxe/nxe-guide.jpg"
+    },
+    {
+      "id": "metro-home",
+      "label": "Xbox 360 \u00c2\u00b7 Metro home",
+      "group": "themes/metro",
+      "path": "themes/metro/metro-home.jpg"
+    },
+    {
+      "id": "metro-library",
+      "label": "Xbox 360 \u00c2\u00b7 Metro game library",
+      "group": "themes/metro",
+      "path": "themes/metro/metro-library.jpg"
+    },
+    {
+      "id": "metro-guide",
+      "label": "Xbox 360 \u00c2\u00b7 Metro menu overlay",
+      "group": "themes/metro",
+      "path": "themes/metro/metro-guide.jpg"
+    },
+    {
+      "id": "metro-revised-home",
+      "label": "Xbox 360 \u00c2\u00b7 Metro Revised home",
+      "group": "themes/metro-revised",
+      "path": "themes/metro-revised/metro-revised-home.jpg"
+    },
+    {
+      "id": "metro-revised-library",
+      "label": "Xbox 360 \u00c2\u00b7 Metro Revised game library",
+      "group": "themes/metro-revised",
+      "path": "themes/metro-revised/metro-revised-library.jpg"
+    },
+    {
+      "id": "metro-revised-guide",
+      "label": "Xbox 360 \u00c2\u00b7 Metro Revised menu overlay",
+      "group": "themes/metro-revised",
+      "path": "themes/metro-revised/metro-revised-guide.jpg"
+    },
+    {
+      "id": "series-home",
+      "label": "Xbox Series X|S home",
+      "group": "themes/series",
+      "path": "themes/series/series-home.jpg"
+    },
+    {
+      "id": "series-library",
+      "label": "Xbox Series X|S game library",
+      "group": "themes/series",
+      "path": "themes/series/series-library.jpg"
+    },
+    {
+      "id": "series-guide",
+      "label": "Xbox Series X|S menu overlay",
+      "group": "themes/series",
+      "path": "themes/series/series-guide.jpg"
+    },
+    {
+      "id": "series-anniversary25-home",
+      "label": "Xbox Series \u00c2\u00b7 25th Anniversary home",
+      "group": "themes/series-anniversary25",
+      "path": "themes/series-anniversary25/series-anniversary25-home.jpg"
+    },
+    {
+      "id": "series-anniversary25-library",
+      "label": "Xbox Series \u00c2\u00b7 25th Anniversary game library",
+      "group": "themes/series-anniversary25",
+      "path": "themes/series-anniversary25/series-anniversary25-library.jpg"
+    },
+    {
+      "id": "series-anniversary25-guide",
+      "label": "Xbox Series \u00c2\u00b7 25th Anniversary menu overlay",
+      "group": "themes/series-anniversary25",
+      "path": "themes/series-anniversary25/series-anniversary25-guide.jpg"
+    },
+    {
+      "id": "ps3-xmb-home",
+      "label": "PlayStation 3 \u00c2\u00b7 XMB home",
+      "group": "themes/ps3-xmb",
+      "path": "themes/ps3-xmb/ps3-xmb-home.jpg"
+    },
+    {
+      "id": "ps3-xmb-library",
+      "label": "PlayStation 3 \u00c2\u00b7 XMB game library",
+      "group": "themes/ps3-xmb",
+      "path": "themes/ps3-xmb/ps3-xmb-library.jpg"
+    },
+    {
+      "id": "ps3-xmb-guide",
+      "label": "PlayStation 3 \u00c2\u00b7 XMB menu overlay",
+      "group": "themes/ps3-xmb",
+      "path": "themes/ps3-xmb/ps3-xmb-guide.jpg"
+    },
+    {
+      "id": "ps4-home",
+      "label": "PlayStation 4 home",
+      "group": "themes/ps4",
+      "path": "themes/ps4/ps4-home.jpg"
+    },
+    {
+      "id": "ps4-library",
+      "label": "PlayStation 4 game library",
+      "group": "themes/ps4",
+      "path": "themes/ps4/ps4-library.jpg"
+    },
+    {
+      "id": "ps4-guide",
+      "label": "PlayStation 4 menu overlay",
+      "group": "themes/ps4",
+      "path": "themes/ps4/ps4-guide.jpg"
+    },
+    {
+      "id": "ps4-anniversary-home",
+      "label": "PlayStation 4 \u00c2\u00b7 Anniversary home",
+      "group": "themes/ps4-anniversary",
+      "path": "themes/ps4-anniversary/ps4-anniversary-home.jpg"
+    },
+    {
+      "id": "ps4-anniversary-library",
+      "label": "PlayStation 4 \u00c2\u00b7 Anniversary game library",
+      "group": "themes/ps4-anniversary",
+      "path": "themes/ps4-anniversary/ps4-anniversary-library.jpg"
+    },
+    {
+      "id": "ps4-anniversary-guide",
+      "label": "PlayStation 4 \u00c2\u00b7 Anniversary menu overlay",
+      "group": "themes/ps4-anniversary",
+      "path": "themes/ps4-anniversary/ps4-anniversary-guide.jpg"
+    },
+    {
+      "id": "ps5-home",
+      "label": "PlayStation 5 home",
+      "group": "themes/ps5",
+      "path": "themes/ps5/ps5-home.jpg"
+    },
+    {
+      "id": "ps5-library",
+      "label": "PlayStation 5 game library",
+      "group": "themes/ps5",
+      "path": "themes/ps5/ps5-library.jpg"
+    },
+    {
+      "id": "ps5-guide",
+      "label": "PlayStation 5 menu overlay",
+      "group": "themes/ps5",
+      "path": "themes/ps5/ps5-guide.jpg"
+    },
+    {
+      "id": "media-center",
+      "label": "Media app hub",
+      "group": "apps",
+      "path": "apps/media-center.jpg"
+    },
+    {
+      "id": "jellyfin",
+      "label": "Jellyfin library",
+      "group": "apps",
+      "path": "apps/jellyfin.jpg"
+    },
+    {
+      "id": "plex",
+      "label": "Plex library",
+      "group": "apps",
+      "path": "apps/plex.jpg"
+    },
+    {
+      "id": "romm",
+      "label": "RomM Marketplace",
+      "group": "apps",
+      "path": "apps/romm.jpg"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube browsing",
+      "group": "apps",
+      "path": "apps/youtube.jpg"
+    },
+    {
+      "id": "iptv-oneguide",
+      "label": "TV programme guide",
+      "group": "apps",
+      "path": "apps/iptv-oneguide.jpg"
+    },
+    {
+      "id": "iptv-blades",
+      "label": "Blades TV guide",
+      "group": "apps",
+      "path": "apps/iptv-blades.jpg"
+    },
+    {
+      "id": "music",
+      "label": "Local music",
+      "group": "apps",
+      "path": "apps/music.jpg"
+    },
+    {
+      "id": "karaoke",
+      "label": "Karaoke and duet tools",
+      "group": "apps",
+      "path": "apps/karaoke.jpg"
+    },
+    {
+      "id": "achievements",
+      "label": "RetroAchievements profile",
+      "group": "features",
+      "path": "features/achievements.jpg"
+    },
+    {
+      "id": "downloads",
+      "label": "Active downloads",
+      "group": "features",
+      "path": "features/downloads.jpg"
+    },
+    {
+      "id": "storage",
+      "label": "Storage devices",
+      "group": "features",
+      "path": "features/storage.jpg"
+    },
+    {
+      "id": "game-saves",
+      "label": "Game saves and BIOS",
+      "group": "features",
+      "path": "features/game-saves.jpg"
+    },
+    {
+      "id": "controllers",
+      "label": "Controllers and accessories",
+      "group": "features",
+      "path": "features/controllers.jpg"
+    },
+    {
+      "id": "controller-test",
+      "label": "Live controller tester",
+      "group": "features",
+      "path": "features/controller-test.jpg"
+    },
+    {
+      "id": "avatars",
+      "label": "Console-themed avatars",
+      "group": "setup",
+      "path": "setup/avatars.jpg"
+    },
+    {
+      "id": "emulators",
+      "label": "Emulator choices",
+      "group": "setup",
+      "path": "setup/emulators.jpg"
+    },
+    {
+      "id": "setup-themes",
+      "label": "Live theme selection",
+      "group": "setup",
+      "path": "setup/setup-themes.jpg"
+    },
+    {
+      "id": "setup-accounts",
+      "label": "Optional account setup",
+      "group": "setup",
+      "path": "setup/setup-accounts.jpg"
+    },
+    {
+      "id": "settings",
+      "label": "PS5-style settings",
+      "group": "features",
+      "path": "features/settings.jpg"
+    },
+    {
+      "id": "backup",
+      "label": "Encrypted settings backup",
+      "group": "features",
+      "path": "features/backup.jpg"
+    }
+  ]
+}
