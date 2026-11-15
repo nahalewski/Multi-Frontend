@@ -1,0 +1,216 @@
+{
+  "note": "Console hardware photos from Wikimedia Commons, bundled and served by Spela. Most are public-domain or CC0 (many by Evan Amos); CC-BY / CC-BY-SA files are reproduced with attribution. Some photos have been resized and had their solid background made transparent.",
+  "photos": [
+    {
+      "console": "32x",
+      "file": "32x.png",
+      "title": "Sega-Genesis-32X-01.jpg",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sega-Genesis-32X-01.jpg",
+      "bytes": 281577
+    },
+    {
+      "console": "3ds",
+      "file": "3ds.png",
+      "title": "Nintendo-3DS-AquaOpen.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-3DS-AquaOpen.png",
+      "bytes": 737480
+    },
+    {
+      "console": "fds",
+      "file": "fds.png",
+      "title": "Nintendo-Famicom-Disk-System.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-Famicom-Disk-System.png",
+      "bytes": 581632
+    },
+    {
+      "console": "gb",
+      "file": "gb.png",
+      "title": "Game-Boy-FL.png",
+      "author": "Transfrom JPEG version and remove white background. Original by Evan-Amos.",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Game-Boy-FL.png",
+      "bytes": 649426
+    },
+    {
+      "console": "gba",
+      "file": "gba.png",
+      "title": "Nintendo-Game-Boy-Advance-Purple-FL.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-Game-Boy-Advance-Purple-FL.png",
+      "bytes": 501223
+    },
+    {
+      "console": "gc",
+      "file": "gc.png",
+      "title": "GameCube-Console-Set.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:GameCube-Console-Set.png",
+      "bytes": 360283
+    },
+    {
+      "console": "gen",
+      "file": "gen.png",
+      "title": "Sega-Genesis-Mk2-6button.png",
+      "author": "Original by Evan-AmosDerivative version by ReneeWrites",
+      "license": "CC BY 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Sega-Genesis-Mk2-6button.png",
+      "bytes": 284159
+    },
+    {
+      "console": "n64",
+      "file": "n64.png",
+      "title": "N64-Console-Set.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:N64-Console-Set.png",
+      "bytes": 344867
+    },
+    {
+      "console": "nds",
+      "file": "nds.png",
+      "title": "Nintendo-DS-Lite-Black-Open.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo-DS-Lite-Black-Open.png",
+      "bytes": 319525
+    },
+    {
+      "console": "nes",
+      "file": "nes.png",
+      "title": "NES-Console-Set.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:NES-Console-Set.png",
+      "bytes": 259488
+    },
+    {
+      "console": "nsw",
+      "file": "nsw.png",
+      "title": "Nintendo_Switch_Console.png",
+      "author": "Owen1962",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Nintendo_Switch_Console.png",
+      "bytes": 368606
+    },
+    {
+      "console": "ps2",
+      "file": "ps2.png",
+      "title": "PS2-Fat-Console-Set.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:PS2-Fat-Console-Set.png",
+      "bytes": 530481
+    },
+    {
+      "console": "ps3",
+      "file": "ps3.png",
+      "title": "Sony-PlayStation-3-CECHA01-wController-L.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sony-PlayStation-3-CECHA01-wController-L.png",
+      "bytes": 208397
+    },
+    {
+      "console": "ps5",
+      "file": "ps5.png",
+      "title": "PlayStation 5 and DualSense with transparent background.png",
+      "author": "Soberian (this retouched file)Osh33m (original photograph)",
+      "license": "CC BY-SA 4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:PlayStation_5_and_DualSense_with_transparent_background.png",
+      "bytes": 409653
+    },
+    {
+      "console": "psp",
+      "file": "psp.png",
+      "title": "PSP-1000.png",
+      "author": "Psp-1000.jpg: Evan-Amos derivative work: Alphathon\u2122 (talk)",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:PSP-1000.png",
+      "bytes": 320568
+    },
+    {
+      "console": "psx",
+      "file": "psx.png",
+      "title": "PSX-Console-wController.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:PSX-Console-wController.png",
+      "bytes": 236429
+    },
+    {
+      "console": "sms",
+      "file": "sms.png",
+      "title": "Sega-Master-System-Set.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Sega-Master-System-Set.png",
+      "bytes": 387679
+    },
+    {
+      "console": "snes",
+      "file": "snes.png",
+      "title": "SNES-Mod1-Console-Set.png",
+      "author": "Evan-Amos",
+      "license": "CC BY-SA 3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:SNES-Mod1-Console-Set.png",
+      "bytes": 253311
+    },
+    {
+      "console": "vb",
+      "file": "vb.png",
+      "title": "Virtual-Boy-Set.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Virtual-Boy-Set.png",
+      "bytes": 691407
+    },
+    {
+      "console": "vita",
+      "file": "vita.png",
+      "title": "PlayStation-Vita-1101-FL.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:PlayStation-Vita-1101-FL.png",
+      "bytes": 360551
+    },
+    {
+      "console": "wii",
+      "file": "wii.png",
+      "title": "Wii-Console.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Wii-Console.png",
+      "bytes": 363264
+    },
+    {
+      "console": "xbox",
+      "file": "xbox.png",
+      "title": "Xbox-Console-Set.png",
+      "author": "Evan-Amos",
+      "license": "Public domain",
+      "source": "https://commons.wikimedia.org/wiki/File:Xbox-Console-Set.png",
+      "bytes": 337488
+    }
+  ],
+  "additional": [
+    {
+      "console": "android",
+      "source": "https://blog.google/products-and-platforms/platforms/android/modern-look/",
+      "author": "Google",
+      "note": "Official Android brand announcement image, lossless PNG format conversion."
+    },
+    {
+      "console": "win",
+      "source": "https://github.com/Kosnix/Platforms-Logos",
+      "note": "Windows platform wordmark"
+    }
+  ]
+}

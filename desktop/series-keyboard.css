@@ -1,0 +1,19 @@
+/* Series console keyboard: bottom-docked neutral shell and flat keys. */
+body.theme-series .blades-keyboard-backdrop{align-items:flex-end;padding:0;background:#0006;backdrop-filter:none}
+body.theme-series .blades-keyboard{width:100%;max-height:92vh;padding:18px max(5vw,calc((100vw - 900px)/2));border:0;border-top:1px solid #505050;border-radius:0;background:#202020;box-shadow:0 -12px 50px #0007;color:#fff;font-family:'Segoe UI',sans-serif;scrollbar-width:none}
+body.theme-series .blades-keyboard-title{font:400 22px 'Segoe UI',sans-serif;border:0;padding:0;margin:0 0 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.theme-series .blades-keyboard-fields{max-height:none;overflow:visible}
+body.theme-series .blades-keyboard-field{display:none;padding:0;border:0;border-radius:0;background:none;font-size:15px;gap:8px;grid-template-columns:1fr}
+body.theme-series .blades-keyboard-field.active{display:grid;background:none;border:0;border-radius:0}
+body.theme-series .blades-keyboard-field>span{color:#bbb;font-size:14px}
+body.theme-series .blades-keyboard-input{padding:9px 12px;background:#131313;color:white;border:2px solid #76c83b;border-radius:0;caret-color:white;font:19px 'Segoe UI',sans-serif;box-shadow:none}
+body.theme-series .blades-keyboard-input:focus{box-shadow:none}
+body.theme-series .blades-keyboard-field-count{color:#aaa;font:13px 'Segoe UI',sans-serif;margin:8px 0}
+body.theme-series .blades-keyboard-grid{gap:4px;grid-template-columns:repeat(10,minmax(0,1fr))}
+body.theme-series .blades-keyboard-key{border:0;border-radius:0;background:#383838;color:#f5f5f5;box-shadow:none;min-height:36px;padding:5px 0;font:22px 'Segoe UI',sans-serif;transform:none}
+body.theme-series .blades-keyboard-key:nth-child(n+41){font-size:15px;background:#303030}
+body.theme-series .blades-keyboard-key.selected,body.theme-series .blades-keyboard-key:hover{background:#f3f3f3;color:#111;outline:2px solid white;outline-offset:-2px;box-shadow:none;transform:none}
+body.theme-series .blades-keyboard-key[aria-pressed=true]{box-shadow:inset 0 -3px #76c83b}
+body.theme-series .blades-keyboard-help{margin:12px 0 0;padding:0;border:0;color:#c4c4c4;font:14px 'Segoe UI',sans-serif}
+body.theme-series .blades-keyboard-error{color:#ffadad;font-size:15px;margin:5px 0;min-height:0}
+@media(max-height:600px){body.theme-series .blades-keyboard{padding:10px 8vw;max-height:96vh}.theme-series .blades-keyboard-title{font-size:19px;margin-bottom:6px}body.theme-series .blades-keyboard-key{min-height:30px;font-size:19px;padding:3px 0}body.theme-series .blades-keyboard-help{font-size:12px;margin-top:8px}}

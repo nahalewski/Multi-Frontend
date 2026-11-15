@@ -1,0 +1,1 @@
+Blades360 modification: the EmulatorJS constructor version check reads its packaged data/version.json instead of the external stable CDN. Runtime is pinned to 4.2.3 and network access outside the local session is denied. All other source is unchanged. Original source and GPL license included.

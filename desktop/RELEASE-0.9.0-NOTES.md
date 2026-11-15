@@ -1,0 +1,13 @@
+# Windows 0.9.0
+
+PS3 XMB is a live dashboard theme with horizontal categories, vertical content lists, a moving wave background, PlayStation navigation hints, a right-side game options panel, themed keyboard, notifications and in-game controls. Existing games, PC games, emulator settings, media services, IPTV, achievements, download management, storage and Windows settings remain accessible. This is a recreated interface; it does not sign in to PlayStation Network. Navigation and boot audio are synthesized recreations.
+
+First-run setup now starts with console family, console and theme. Theme selection applies immediately and shows a live preview. Existing configured profiles retain their theme. Use Settings → Dashboard theme → Console families & planned themes to revisit the chooser. Xbox 360, Xbox Series and PS3 have available themes. Original Xbox, PS4, PS5, PSP, PS Vita, Wii, Wii U, Switch, SteamOS/Steam Deck, Dreamcast and Atari are clearly marked future placeholders.
+
+RomM automatic save backups are enabled when a RomM connection is configured. After an embedded game exits, current battery saves, automatic resume state and manual state slots are staged locally and uploaded to the matching game's saves/states endpoints. Downloads already carrying a RomM ID use that ID. Unlinked single ROM files up to 512 MB can be matched by exact SHA-1; unmatched games stay queued for manual linking in Game Options → RomM save backups. No fuzzy title matching is used.
+
+External emulator backups require a known or manually selected save folder. After exit, that folder is archived as a ZIP (60 MB maximum) and attached to the game's RomM saves. Shared memory cards can contain other games; these are archive backups, not automatic cross-emulator resume files. Save-state compatibility depends on the same core and compatible version.
+
+Unchanged uploads are deduplicated. Failed uploads remain under the user's RomM save queue and retry on startup and every five minutes. Changing RomM credentials leaves the original account's queued backups isolated. The queue is bounded to 128 files / 512 MB; local save history remains separate. Existing remote saves are not deleted. This release adds backup uploads, not automatic downloading/restoring from RomM.
+
+Validation: existing UI regression suite, console-first setup and XMB navigation/keyboard/Guide checks, real NES core resume/save/timeline/exit under XMB, multipart upload fixtures, restart/offline recovery, deduplication and exact-checksum tests. Live server save access and endpoint compatibility verified; no fabricated save was uploaded to a real game for testing.

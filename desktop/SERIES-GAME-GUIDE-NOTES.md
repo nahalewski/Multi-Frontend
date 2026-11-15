@@ -1,0 +1,9 @@
+# Series in-game Guide
+
+Research: [Xbox Wire November 2024 update](https://news.xbox.com/en-us/2024/11/14/xbox-update-november-friend-requests/) confirms the People Guide tab; [Xbox Wire October 2022 release notes](https://news.xbox.com/en-us/2022/10/27/xbox-insider-release-notes-delta-2211-221023-2200/) describes Capture & share, Captures and Parties & chats. [Retail guide visual reference](https://images.wondershare.com/repairit/article-trans-image/1577/xbox-series-x-no-sound-14.jpg) informed the dark full-height left sidebar, compact icon rail and focus treatment.
+
+The game iframe now has a separate Series guide, not the NXE Game/Saves/Settings panel. Its six sections are Home, People, Parties & chats, Game activity, Capture & share, and Profile & system. Functionality maps to this frontend: local player/controller options, save/load slots, timeline, screenshot capture, start/stop app recording, volume/mute, display/core options, restart and confirmed navigation back to dashboard/library/captures. Parties honestly states that Xbox network messaging is not connected. There is no fake party chat, cloud upload, past-gameplay video buffer or Xbox Live integration.
+
+Battery saves are preserved on exit. Returning Home or opening dashboard galleries requires confirmation; save-state-and-return is available without pretending all cores support save states. Recording labels say Start recording, not Record what happened.
+
+Parent integration: serve and include `series-game-guide.js` before `emulation-player.js`, and `series-game-guide.css` after existing theme CSS. POST `api/screenshot` accepts bounded PNG data. Recording uses authenticated iframe-parent request/reply messages with matching request IDs. Exit includes a validated destination. The existing Series gamepad/keyboard/touch controls remain active.

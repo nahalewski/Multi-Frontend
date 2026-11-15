@@ -1,0 +1,157 @@
+{
+  "source_repository": "https://github.com/fabricecaruso/es-theme-carbon",
+  "commit": "4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd",
+  "changes": "SVG rasterized to transparent PNG at 1200 px wide using resvg-py 0.5.0. White variants selected where available. No logo geometry redrawn.",
+  "assets": [
+    {
+      "name": "gba",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/gba.svg",
+      "svg_sha256": "abc90e426d8200b36aad1b12718a5afb6a3b5f2f8b473c7fb5b81acb4cba285c",
+      "png_bytes": 19443
+    },
+    {
+      "name": "gb",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/gb.svg",
+      "svg_sha256": "94ee4b2575da1c40b74ff992dff507e0485f0efa39c391dd61646bf38b5b1de3",
+      "png_bytes": 25414
+    },
+    {
+      "name": "gbc",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/gbc.svg",
+      "svg_sha256": "c9f30d4397eec6366f32d3633b47f4efbf86eae2498d953192fd5355e3dd24fe",
+      "png_bytes": 25970
+    },
+    {
+      "name": "n64",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/n64.svg",
+      "svg_sha256": "94dc2369f3cd4b33c9f64e4092d5d0163962bee394b5a5cd59d1869daa7dc98d",
+      "png_bytes": 18079
+    },
+    {
+      "name": "nes",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/nes-w.svg",
+      "svg_sha256": "1bc9ba5da665580216edeec6a18dba137dd016ac095c23c1008b3dd896e65fe7",
+      "png_bytes": 20258
+    },
+    {
+      "name": "snes",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/snes.svg",
+      "svg_sha256": "072a5fb569b14571e0b592435aa1264a64800758f81c33f44fa5e539c33ae5a1",
+      "png_bytes": 36137
+    },
+    {
+      "name": "nds",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/nds.svg",
+      "svg_sha256": "64d8de6445af32dd1d21e6921743698a7cf4ff0aee3783165694cb9c525d571d",
+      "png_bytes": 11276
+    },
+    {
+      "name": "3ds",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/3ds-w.svg",
+      "svg_sha256": "9d9a3e35a667e8185f6228d774b5a2be8e7e23ef96be7d9bb19207d22ea90c90",
+      "png_bytes": 11441
+    },
+    {
+      "name": "switch",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/switch.svg",
+      "svg_sha256": "45d6d09ee0d47e048bc9b4ced14934789552dfaf2c83a85e224e570d753db60b",
+      "png_bytes": 14942
+    },
+    {
+      "name": "gc",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/gc-w.svg",
+      "svg_sha256": "73899c68b4a0f0c7709a65d095ef6d86bb0d2a9f3579b07b1e2892b23e1089d7",
+      "png_bytes": 36069
+    },
+    {
+      "name": "wii",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/wii-w.svg",
+      "svg_sha256": "3035fb19bb5c1c0d8c8bb35dc57ead46b770922c8ab0d3ec80741680d135155d",
+      "png_bytes": 20933
+    },
+    {
+      "name": "wiiu",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/wiiu-w.svg",
+      "svg_sha256": "05b87b13a380cd6ffb1113eb2d9d07dea0852a52862914c54f3e8d1be9b776cd",
+      "png_bytes": 17317
+    },
+    {
+      "name": "psx",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/psx-w.svg",
+      "svg_sha256": "f70c3253e3834152d96189440cd6d7d56e8b351a00076fc349094455d7b4fbf6",
+      "png_bytes": 18832
+    },
+    {
+      "name": "ps2",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/ps2-w.svg",
+      "svg_sha256": "06f30843b86fd805849212d6796730d0dcf665251b429b8ff8726298a0c9275a",
+      "png_bytes": 9871
+    },
+    {
+      "name": "ps3",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/ps3-w.svg",
+      "svg_sha256": "349c113e6801f7e33b696b0d83234a48014dbb56d8e0f889f7c6e5631a42a87b",
+      "png_bytes": 20380
+    },
+    {
+      "name": "ps4",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/ps4-w.svg",
+      "svg_sha256": "ad54209f9ddced2d5d51a3597cbfd7c681970acd21fe9fd15b96f7e2e14dffc7",
+      "png_bytes": 10398
+    },
+    {
+      "name": "psp",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/psp.svg",
+      "svg_sha256": "0d61cfe8391d2f3f554ea2bb3caf737cce137eb024f222903df269cc791aef2b",
+      "png_bytes": 15214
+    },
+    {
+      "name": "psvita",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/psvita-w.svg",
+      "svg_sha256": "4bfa18bfad9fa17cca58d0174c896258b2f31541c5ec9f303e340444e5b52a57",
+      "png_bytes": 15766
+    },
+    {
+      "name": "megadrive",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/megadrive.svg",
+      "svg_sha256": "aa3521fffbe956c557edd34b80f55c2486261c5d75a4d554eb3e584e85a5ecf6",
+      "png_bytes": 25221
+    },
+    {
+      "name": "mastersystem",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/mastersystem.svg",
+      "svg_sha256": "b2495f7050154286ceb75fc6cefccb5f5d88f687ff038e692547c6d21f1b2beb",
+      "png_bytes": 34575
+    },
+    {
+      "name": "gamegear",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/gamegear-w.svg",
+      "svg_sha256": "1ec64b0e0fa1f2bc88d636706f1af5d7338f290f098052742ea62e19a503859d",
+      "png_bytes": 19766
+    },
+    {
+      "name": "dreamcast",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/dreamcast-w.svg",
+      "svg_sha256": "207be792ee52c3104ce2004614e75c93d10713e586192514580ea7e0da476509",
+      "png_bytes": 24874
+    },
+    {
+      "name": "xbox",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/xbox.svg",
+      "svg_sha256": "784f8017fac352432d4ce793fd5a878b32970d1fcd43dc73d69c8d6d63f4f5db",
+      "png_bytes": 38713
+    },
+    {
+      "name": "xbox360",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/xbox360.svg",
+      "svg_sha256": "9d0d0a3c2e7a97d8667fcc16285403c9436503b2e06d12c3a8d4bb268191185e",
+      "png_bytes": 57796
+    },
+    {
+      "name": "windows",
+      "url": "https://raw.githubusercontent.com/fabricecaruso/es-theme-carbon/4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd/art/logos/windows.svg",
+      "svg_sha256": "aaaa84b442a3a82f95ad876b513402d9802db964267b1d3adc6aa6fba4a5fc4a",
+      "png_bytes": 18339
+    }
+  ]
+}

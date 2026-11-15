@@ -1,0 +1,44 @@
+# Dependencies and build output
+**/node_modules/
+**/dist/
+**/build/
+.gradle/
+local.properties
+.idea/
+*.iml
+__pycache__/
+*.pyc
+
+# Private application/server data and credentials
+.env
+.env.*
+!.env.example
+**/settings.bin*
+**/database.json*
+**/data/models/
+**/data/tracks/
+**/data/recordings/
+**/data/takes/
+**/logs/
+*.log
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+tunnel.yml
+*.b360
+
+# Generated binaries and local test captures
+*.apk
+*.aab
+*.exe
+*.dmg
+*.zip
+desktop/*-preview.png
+desktop/*-audit.png
+desktop/smoke.png
+desktop/ui-audit-results.json
+multiplayer/test-tone.wav
+multiplayer/test-stems/
+multiplayer/test-transcribed/

@@ -1,0 +1,49 @@
+#seriesMedia{position:fixed;inset:0;z-index:35;background:radial-gradient(ellipse at 85% 0,#17374d,#10151d 55%,#0e1118);color:#fff;font-family:'Segoe UI',sans-serif;display:grid;grid-template-columns:220px 1fr;grid-template-rows:1fr 45px;overflow:hidden}
+#seriesMedia[hidden]{display:none}
+#seriesMedia button{font:inherit;color:inherit;cursor:pointer;border:0;border-radius:5px;background:#ffffff08;outline-offset:3px}
+#seriesMedia button:focus{outline:3px solid #86d945;background-color:#ffffff18}
+#seriesMedia .series-media-nav{grid-row:1/3;padding:38px 19px;background:#10151be8;display:flex;flex-direction:column;gap:8px;border-right:1px solid #ffffff0c;overflow:auto;scrollbar-width:none}
+#seriesMedia .series-store-mark{font-size:35px;color:#81ca52;margin:0 10px 5px}
+#seriesMedia .series-media-nav>strong{font-size:19px;font-weight:500;margin:0 10px 30px}
+#seriesMedia .series-media-nav button{text-align:left;font-size:15px;min-height:43px;padding:10px 12px;background:transparent}
+#seriesMedia .series-media-main{padding:38px 40px 24px;min-width:0;overflow:auto;scrollbar-width:none}
+#seriesMedia ::-webkit-scrollbar{display:none}
+#seriesMedia header h1,#seriesMedia .series-product-info h1{font-size:36px;font-weight:500;line-height:1.15;margin:0 0 9px}
+#seriesMedia header p{font-size:17px;min-height:0;color:#b7c4ce;margin:0 0 25px}
+#seriesMedia h2{font-size:23px;font-weight:500;margin:28px 0 20px}
+#seriesMedia footer{grid-column:2;color:#b6c7d3;font-size:13px;margin:0;padding:12px 40px;background:#10151b}
+.series-store-count{font-size:14px;color:#b8c8d3;margin:0 0 18px}
+.series-store-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px 19px;padding:5px}
+#seriesMedia .series-store-card{padding:0 0 10px;display:flex;flex-direction:column;text-align:left;background:transparent;min-width:0}
+.series-store-cover{position:relative;aspect-ratio:3/4;width:100%;display:grid;place-items:center;overflow:hidden;background:linear-gradient(135deg,#27374a,#17212e);border-radius:4px;margin-bottom:12px}
+.series-store-cover img,.series-product-cover img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0;background:#0a111a}
+.series-store-cover img[hidden],.series-product-cover img[hidden],.series-store-placeholder[hidden]{display:none}
+.series-store-placeholder{font-size:28px;color:#c5d5df;text-align:center;padding:10px}
+.series-store-card strong{font-size:16px;font-weight:500;margin:0 3px 7px;line-height:1.3;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.series-store-card small{color:#9fb1bf;font-size:12px;margin:0 3px}
+.series-platform-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.series-platform-symbol{display:grid;place-items:center;width:100%;height:140px;border-radius:5px;background:linear-gradient(120deg,#176645,#1c374c);font-size:42px;font-weight:300;margin-bottom:15px}
+.series-store-pagination{display:flex;gap:15px;margin-top:25px;padding:5px}
+#seriesMedia .series-store-pagination button,#seriesMedia .series-product-actions button{padding:13px 20px;font-size:16px;background:#ffffff13}
+#seriesMedia .series-store-primary{background:#73cc28!important;color:#102003!important;font-weight:600!important;padding:15px 22px}
+.series-store-product{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(200px,.8fr);gap:50px;margin-top:25px}
+.series-product-info>small{display:block;color:#bdcbd5;font-size:13px;letter-spacing:1px;margin-bottom:18px}
+#seriesMedia .series-product-info h1{font-size:43px}
+.series-product-facts{font-size:16px;min-height:0;line-height:1.6;color:#b8c5d0}
+.series-product-actions{display:flex;flex-direction:column;align-items:flex-start;gap:13px;margin:28px 0 35px}
+.series-product-cover{position:relative;aspect-ratio:3/4;width:100%;max-height:55vh;background:#172532;border-radius:6px;overflow:hidden;display:grid;place-items:center;box-shadow:0 15px 40px #0006}
+#seriesMedia .series-product-description{font-size:16px;line-height:1.65;min-height:0;color:#c7d2db;white-space:pre-line}
+.series-app-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:26px 5px 35px}
+#seriesMedia .series-media-app{padding:0 0 16px;overflow:hidden;text-align:left;background:#192635}
+.series-app-logo{aspect-ratio:1;display:grid;place-items:center;background:#080c11;padding:28px;margin-bottom:14px}
+.series-app-logo img{width:100%;height:100%;object-fit:contain}
+.series-media-app strong{font-size:18px;font-weight:500;margin:0 14px}
+.series-media-app.youtube .series-app-logo{background:#fff}.series-media-app.jellyfin .series-app-logo{background:linear-gradient(135deg,#222e5a,#1c1933)}
+.series-media-quick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding:5px}
+#seriesMedia .series-media-quick button{display:flex;flex-direction:column;align-items:flex-start;padding:23px;background:linear-gradient(135deg,#163b31,#1c2834);gap:20px;min-height:150px}
+.series-media-quick span{font-size:32px;color:#b1e58e}.series-media-quick strong{font-size:17px;font-weight:500}
+@media(max-width:900px){#seriesMedia{grid-template-columns:170px 1fr}#seriesMedia .series-media-nav{padding:25px 12px}#seriesMedia .series-media-main{padding:26px 24px}.series-store-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.series-platform-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.series-store-product{gap:25px}.series-app-grid{gap:15px}.series-app-logo{padding:17px}#seriesMedia header h1{font-size:30px}}
+
+.series-store-mark img{width:48px;height:48px;object-fit:contain}.series-platform-symbol{height:150px!important;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#303b45,#171c23);padding:12px}.series-platform-symbol img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 8px 7px #0008)}
+
+.series-entertainment-hero{border-radius:5px;padding:28px 32px;margin:4px 4px 26px;background:radial-gradient(ellipse at 85% 30%,#316951aa,transparent 55%),linear-gradient(120deg,#253846,#12291f);border:1px solid #ffffff12}.series-entertainment-hero small{letter-spacing:3px;font-size:11px;color:#c4d4cb}.series-entertainment-hero h2{font-size:32px;margin:12px 0}.series-entertainment-hero p{color:#c3ced3;max-width:680px;margin:12px 0 20px}#seriesMedia .series-entertainment-hero button{padding:12px 24px}.series-entertainment-home .series-app-logo{aspect-ratio:16/10}.series-service-status{display:block;color:#a8b8c4;margin:8px 14px 14px;font-size:12px}

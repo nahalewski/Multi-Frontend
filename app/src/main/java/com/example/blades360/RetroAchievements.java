@@ -1,0 +1,47 @@
+package com.example.blades360;
+
+import android.content.*;
+import android.graphics.*;
+import android.security.keystore.*;
+import android.util.Base64;
+import org.json.*;
+import javax.crypto.*;
+import javax.crypto.spec.GCMParameterSpec;
+import java.io.*;
+import java.net.*;
+import java.security.KeyStore;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.Consumer;
+
+/** Read-only RA Web API client. Account totals are committed only after all progress pages arrive. */
+final class RetroAchievements {
+  final MainActivity a;final SharedPreferences prefs;final ExecutorService worker=Executors.newSingleThreadExecutor();
+  JSONObject profile=new JSONObject();JSONArray games=new JSONArray();boolean busy;volatile boolean closed;volatile int generation;String status="Connect your RetroAchievements account";
+  Runnable changed=()->{};long updated;final Map<String,Bitmap> images=new HashMap<>();final Set<String> pending=new HashSet<>();
+  RetroAchievements(MainActivity a){this.a=a;prefs=a.getSharedPreferences("retroachievements",0);try{profile=new JSONObject(prefs.getString("profile","{}"));games=new JSONArray(prefs.getString("games","[]"));updated=prefs.getLong("updated",0);if(updated>0)status="Saved data • Refresh to update";}catch(Exception ignored){}}
+  String username(){return prefs.getString("username","");}
+  boolean connected(){return !username().isEmpty()&&prefs.contains("key");}
+  boolean hasData(){return updated>0&&profile.has("User");}
+  static long count(JSONArray list,boolean hardcore){long total=0;Set<Integer> seen=new HashSet<>();for(int i=0;i<list.length();i++){JSONObject g=list.optJSONObject(i);if(g!=null&&seen.add(g.optInt("GameID")))total+=Math.max(0,g.optLong(hardcore?"NumAwardedHardcore":"NumAwarded"));}return total;}
+  String score(){if(!hasData())return "—";int mode=prefs.getInt("score_mode",0);return String.valueOf(mode==1?profile.optLong("TotalPoints"):mode==2?profile.optLong("TotalSoftcorePoints"):profile.optLong("TotalPoints")+profile.optLong("TotalSoftcorePoints"));}
+  String achievements(){return hasData()?String.valueOf(count(games,false)):"—";}
+  String scoreMode(){return new String[]{"Combined","Hardcore","Softcore"}[Math.max(0,Math.min(2,prefs.getInt("score_mode",0)))];}
+  void notifyChanged(){if(!closed){changed.run();a.dashboard.invalidate();}}
+  void setUsername(String name){name=name.trim();if(!name.equals(username())){resetData();prefs.edit().putString("username",name).apply();}notifyChanged();}
+  private SecretKey secret()throws Exception{KeyStore ks=KeyStore.getInstance("AndroidKeyStore");ks.load(null);if(ks.containsAlias("blades-ra-web-key"))return (SecretKey)ks.getKey("blades-ra-web-key",null);KeyGenerator g=KeyGenerator.getInstance("AES","AndroidKeyStore");g.init(new KeyGenParameterSpec.Builder("blades-ra-web-key",KeyProperties.PURPOSE_ENCRYPT|KeyProperties.PURPOSE_DECRYPT).setBlockModes(KeyProperties.BLOCK_MODE_GCM).setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_NONE).build());return g.generateKey();}
+  boolean setKey(String key){if(!key.trim().matches("[A-Za-z0-9]{16,128}")){status="Enter your Web API key, not your password.";notifyChanged();return false;}try{Cipher c=Cipher.getInstance("AES/GCM/NoPadding");c.init(Cipher.ENCRYPT_MODE,secret());String encrypted=Base64.encodeToString(c.getIV(),Base64.NO_WRAP)+":"+Base64.encodeToString(c.doFinal(key.trim().getBytes("UTF-8")),Base64.NO_WRAP);generation++;busy=false;prefs.edit().putString("key",encrypted).apply();status="Key saved securely on this device";notifyChanged();return true;}catch(Exception e){status="Could not save key securely. Try again.";notifyChanged();return false;}}
+  private String key()throws Exception{String[] parts=prefs.getString("key","").split(":");Cipher c=Cipher.getInstance("AES/GCM/NoPadding");c.init(Cipher.DECRYPT_MODE,secret(),new GCMParameterSpec(128,Base64.decode(parts[0],Base64.NO_WRAP)));return new String(c.doFinal(Base64.decode(parts[1],Base64.NO_WRAP)),"UTF-8");}
+  void resetData(){generation++;busy=false;profile=new JSONObject();games=new JSONArray();updated=0;images.clear();pending.clear();prefs.edit().remove("profile").remove("games").remove("updated").apply();status="Account changed • Refresh to load data";}
+  void disconnect(){resetData();prefs.edit().remove("key").remove("username").apply();status="Account disconnected";notifyChanged();}
+  static class StatusException extends IOException {StatusException(String message){super(message);}}
+  static String encode(String s)throws Exception{return URLEncoder.encode(s,"UTF-8");}
+  static byte[] download(String url,int limit)throws Exception{HttpURLConnection c=(HttpURLConnection)new URL(url).openConnection();c.setConnectTimeout(12000);c.setReadTimeout(20000);c.setInstanceFollowRedirects(false);c.setRequestProperty("User-Agent","Blades360/1.0 (RetroAchievements profile viewer)");try{int code=c.getResponseCode();if(code!=200)throw new StatusException(code==401||code==403?"Check your username and Web API key.":code==429?"Rate limit reached. Try again later.":"RetroAchievements returned HTTP "+code+".");try(InputStream in=c.getInputStream();ByteArrayOutputStream out=new ByteArrayOutputStream()){byte[] b=new byte[8192];int n;while((n=in.read(b))!=-1){if(out.size()+n>limit)throw new StatusException("Response exceeded size limit.");out.write(b,0,n);}return out.toByteArray();}}finally{c.disconnect();}}
+  static JSONObject request(String endpoint,String user,String key,String extra)throws Exception{JSONObject result=new JSONObject(new String(download("https://retroachievements.org/API/"+endpoint+".php?u="+encode(user)+"&y="+encode(key)+extra,12*1024*1024),"UTF-8"));if(result.has("Error")||result.has("error")||result.has("Success")&&!result.optBoolean("Success"))throw new StatusException("Account request failed. Check connection settings.");return result;}
+  void refresh(){if(busy||closed)return;if(!connected()){status="Enter username and Web API key in Account connection";notifyChanged();return;}final String user=username(),token;try{token=key();}catch(Exception e){status="Re-enter your Web API key on this device";notifyChanged();return;}final int ticket=++generation;busy=true;status="Connecting to RetroAchievements…";notifyChanged();worker.execute(()->{try{JSONObject p=request("API_GetUserProfile",user,token,"");if(!p.has("User"))throw new StatusException("Player profile was not found.");JSONArray all=new JSONArray();Set<Integer> ids=new HashSet<>();int offset=0;while(true){JSONObject page=request("API_GetUserCompletionProgress",user,token,"&c=500&o="+offset);JSONArray rows=page.getJSONArray("Results");int before=ids.size();for(int i=0;i<rows.length();i++){JSONObject g=rows.getJSONObject(i);if(ids.add(g.getInt("GameID")))all.put(g);}offset+=rows.length();if(offset>=page.getInt("Total"))break;if(rows.length()==0||ids.size()==before||offset>50000)throw new StatusException("Incomplete progress response. Try refreshing again.");if(ticket!=generation)return;Thread.sleep(250);}
+      a.runOnUiThread(()->{if(closed||ticket!=generation)return;profile=p;games=all;updated=System.currentTimeMillis();busy=false;status="Updated just now";prefs.edit().putString("profile",p.toString()).putString("games",all.toString()).putLong("updated",updated).apply();notifyChanged();});
+    }catch(Exception e){a.runOnUiThread(()->{if(closed||ticket!=generation)return;busy=false;status=(hasData()?"Saved data retained. ":"")+(e instanceof StatusException?e.getMessage():"Unable to sync. Check connection and account settings.");notifyChanged();});}});}
+  void game(int id,Consumer<JSONObject> done){if(!connected())return;final String user=username(),token;try{token=key();}catch(Exception e){status="Re-enter your Web API key";notifyChanged();return;}int ticket=generation;status="Loading achievements…";notifyChanged();worker.execute(()->{try{JSONObject detail=request("API_GetGameInfoAndUserProgress",user,token,"&g="+id);a.runOnUiThread(()->{if(!closed&&ticket==generation){status="Achievements loaded";done.accept(detail);notifyChanged();}});}catch(Exception e){a.runOnUiThread(()->{if(!closed&&ticket==generation){status="Could not load achievements. Check connection, then retry.";notifyChanged();}});}});}
+  Bitmap image(String path){if(path==null||path.isEmpty())return null;Bitmap b=images.get(path);if(b!=null||pending.contains(path))return b;String url=path.startsWith("/")?"https://media.retroachievements.org"+path:path;try{URL u=new URL(url);if(!u.getProtocol().equals("https")||!Arrays.asList("media.retroachievements.org","retroachievements.org").contains(u.getHost()))return null;}catch(Exception e){return null;}pending.add(path);int ticket=generation;worker.execute(()->{Bitmap loaded=null;try{byte[] bytes=download(url,4*1024*1024);BitmapFactory.Options options=new BitmapFactory.Options();options.inJustDecodeBounds=true;BitmapFactory.decodeByteArray(bytes,0,bytes.length,options);options.inSampleSize=1;while(Math.max(options.outWidth,options.outHeight)/options.inSampleSize>512)options.inSampleSize*=2;options.inJustDecodeBounds=false;loaded=BitmapFactory.decodeByteArray(bytes,0,bytes.length,options);}catch(Exception ignored){}final Bitmap bitmap=loaded;a.runOnUiThread(()->{if(!closed&&ticket==generation&&bitmap!=null){if(images.size()>100)images.clear();images.put(path,bitmap);notifyChanged();}});});return null;}
+  void close(){closed=true;generation++;worker.shutdownNow();}
+}

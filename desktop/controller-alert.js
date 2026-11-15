@@ -1,0 +1,1 @@
+const values=new URLSearchParams(location.search);document.body.dataset.notificationTheme=values.get('theme')||'blades';document.querySelector('#title').textContent=values.get('title');document.querySelector('#message').textContent=values.get('message');

@@ -1,0 +1,7 @@
+Embedded runtime: LibretroDroid 0.14.0 by Filippo Scognamiglio, GPL-3.0-or-later.
+Source: https://github.com/Swordfish90/LibretroDroid/tree/0.14.0
+Runtime AAR SHA-256: cd987ed8d0e2af1410b1ad81f53df2163339e3ae4105b8906a7fdc314998b414
+Cores are separately downloaded from https://buildbot.libretro.com/nightly/android/latest/arm64-v8a/
+Upstream core authors, license names, project links and firmware requirements are recorded in the accompanying .info files from https://github.com/libretro/libretro-core-info
+Core source repositories: https://github.com/libretro and the upstream project links in those info files.
+No ROMs, BIOS files, firmware or console keys are distributed.

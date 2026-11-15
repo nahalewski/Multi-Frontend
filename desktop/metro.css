@@ -1,0 +1,25 @@
+body.theme-metro {font-family:'Segoe UI',Convection,sans-serif;background:#b5b9b9}
+body.theme-metro #panel[data-nxe-view],body.theme-metro #panel {border-radius:0;background:linear-gradient(110deg,#eeeeee,#c9cecd);box-shadow:0 12px 60px #0007;border:0}
+body.theme-metro #panel h1 {color:#278614;font-weight:300}
+body.theme-metro #panel #rows button {border-radius:0;box-shadow:none}
+body.theme-metro #panel #rows button.selected,body.theme-metro #panel #rows button:focus {background:#228c0a;color:white;outline:2px solid white}
+body.theme-metro .nxe-detail {border-radius:0;background:#b8beba66}
+body.theme-metro .nxe-detail-emblem {border-radius:0;background:#248809;box-shadow:none}
+body.theme-metro #nxeGuide,body.theme-metro #guide {border-radius:0;background:linear-gradient(110deg,#f0f0f0,#c9cdcd)}
+body.theme-metro .nxe-guide-tabs button,body.theme-metro .nxe-guide-actions button {border-radius:0}
+body.theme-metro .iptv-guide {background:linear-gradient(115deg,#b7bdb8,#e0e5e0);color:#263b28}
+/* Retail Metro uses a charcoal horizon, light type and a bright green focus. */
+body.theme-metro #panel[data-nxe-view],body.theme-metro #panel {background:radial-gradient(ellipse at 50% 100%,#b6b6b9aa,transparent 72%),linear-gradient(#47464b,#929398);color:#fff;font-family:'Segoe UI',sans-serif}
+body.theme-metro #panel #heading {color:#f3f3f3;border-bottom:0;font-family:'Segoe UI Light','Segoe UI',sans-serif;font-weight:300}
+body.theme-metro #panel[data-nxe-view] #description,body.theme-metro .nxe-detail small {color:#e1e1e3}
+body.theme-metro #panel #rows button {font-family:'Segoe UI',sans-serif;background:#ffffff12;color:#fff;border:0;border-bottom:1px solid #fff2;padding:12px 16px}
+body.theme-metro #panel #rows button.selected,body.theme-metro #panel #rows button:focus {background:#128d04;outline:3px solid #91c600;box-shadow:none}
+body.theme-metro .nxe-detail {background:transparent;border-left:1px solid #fff3;color:#f2f2f2}
+body.theme-metro .nxe-detail-emblem {background:#128d04;border:0;box-shadow:none}
+body.theme-metro #panel footer {color:#fff}
+body.theme-metro #nxeGuide,body.theme-metro #guide {font-family:'Segoe UI',sans-serif;border:2px solid #ddd}
+body.theme-metro .nxe-guide-tabs {border-radius:0;background:linear-gradient(#646369,#424147)}
+body.theme-metro .nxe-guide-tabs button {font-family:'Segoe UI',sans-serif;font-weight:300}
+body.theme-metro .nxe-guide-tabs button.active,body.theme-metro .nxe-guide-tabs button:focus-visible {background:#128d04}
+body.theme-metro .blades-keyboard {font-family:'Segoe UI',sans-serif;border-radius:0}
+body.theme-metro .blades-keyboard-key {font-family:'Segoe UI',sans-serif;border-radius:0}

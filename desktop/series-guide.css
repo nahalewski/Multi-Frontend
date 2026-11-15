@@ -1,0 +1,21 @@
+#seriesGuide{position:fixed;inset:0;z-index:65;background:#0005;color:#fff;font-family:'Segoe UI',sans-serif}
+#seriesGuide[hidden]{display:none}
+#seriesGuide article{width:min(460px,94vw);height:100%;padding:24px 22px 18px;background:linear-gradient(115deg,#191c1ff5,#202327f5);box-shadow:15px 0 45px #0007;display:flex;flex-direction:column;backdrop-filter:blur(22px)}
+#seriesGuide .series-guide-tabs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:0 0 22px}
+#seriesGuide button{color:#fff;background:transparent;border:0;border-radius:4px;outline-offset:2px;font-family:inherit;cursor:pointer}
+#seriesGuide button:focus{outline:3px solid #79d631;background:#ffffff15}
+#seriesGuide .series-guide-tabs button{height:46px;padding:8px;display:grid;place-items:center;border-bottom:3px solid transparent;border-radius:3px}
+#seriesGuide .series-guide-tabs button.current{border-bottom-color:#79d631;background:#ffffff18}
+#seriesGuide svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#seriesGuide .series-guide-tabs img{width:28px;height:28px;object-fit:cover;border-radius:50%}
+#seriesGuide h1{font:500 25px 'Segoe UI',sans-serif;margin:0 5px 4px}
+#seriesGuide .series-guide-meta{font-size:13px;min-height:0;color:#b7bfc3;margin:0 5px 16px}
+#seriesGuide .series-guide-actions{overflow:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:5px;padding:5px;flex:1;min-height:0}
+#seriesGuide .series-guide-actions::-webkit-scrollbar{display:none}
+#seriesGuide .series-guide-actions button{min-height:65px;flex-shrink:0;display:flex;align-items:center;gap:13px;padding:11px 13px;text-align:left;background:#ffffff06}
+#seriesGuide .series-guide-actions button span{display:flex;flex-direction:column;gap:5px;min-width:0}
+#seriesGuide .series-guide-actions strong{font-size:18px;font-weight:500;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+#seriesGuide .series-guide-actions small{font-size:12px;color:#bac3c8;line-height:1.4}
+#seriesGuide .series-guide-actions img{width:45px;height:49px;object-fit:contain;background:#111;border-radius:3px;flex-shrink:0}
+#seriesGuide footer{color:#c5cbd0;font:13px 'Segoe UI',sans-serif;margin:15px 5px 0}
+@media(max-height:600px){#seriesGuide article{padding:12px 15px}#seriesGuide .series-guide-tabs{margin-bottom:10px}#seriesGuide .series-guide-actions button{min-height:54px;padding:7px 10px}#seriesGuide .series-guide-meta{margin-bottom:8px}}

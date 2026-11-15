@@ -1,0 +1,18 @@
+body.theme-series #panel.series-standard-page.youtube-tv{background:#0f0f0f;color:#fff;padding:5vh 4vw 8vh 25vw;overflow:hidden;animation:none}
+body.theme-series #panel.series-standard-page.youtube-tv #heading{font-size:30px;max-width:70vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.theme-series #panel.series-standard-page.youtube-tv #description{position:static;width:auto;max-width:none;font-size:16px;min-height:0;height:36px;max-height:36px;margin:14px 0;color:#aaa}
+body.theme-series #panel.series-standard-page.youtube-tv .series-page-detail{display:none}
+body.theme-series #panel.series-standard-page.youtube-tv #rows{position:absolute;left:25vw;right:4vw;top:20vh;bottom:10vh;margin:0;width:auto;max-height:none;padding:5px;gap:12px;overflow:auto}
+body.theme-series #panel.series-standard-page.youtube-tv #rows button{background:#222;border:0;border-radius:10px;font-size:18px;box-shadow:none}
+body.theme-series #panel.series-standard-page.youtube-tv #rows button.selected,body.theme-series #panel.series-standard-page.youtube-tv button:focus-visible{outline:3px solid #fff;background:#353535}
+.youtube-tv-nav{position:absolute;left:0;top:0;bottom:0;width:21vw;max-width:290px;padding:5vh 1.6vw;overflow:auto;background:#0f0f0f;scrollbar-width:none}
+.youtube-tv-brand{display:flex;align-items:center;gap:7px;font:bold 27px 'Segoe UI',sans-serif;margin-bottom:30px;white-space:nowrap}.youtube-tv-brand img{width:49px;height:34px;object-fit:cover;border-radius:8px}
+.youtube-tv-nav button{display:block;width:100%;background:transparent;color:white;border:0;border-radius:25px;text-align:left;padding:12px 17px;margin:3px 0;font:18px 'Segoe UI',sans-serif}.youtube-tv-nav button:focus{background:#f1f1f1!important;color:#111;outline:0!important}
+body.theme-series #panel.series-standard-page.youtube-tv-grid #rows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:min-content;align-content:start;gap:24px 18px}
+body.theme-series #panel.series-standard-page.youtube-tv-grid #rows button{padding:0 0 12px;background:transparent;display:block;overflow:hidden;min-width:0}
+.youtube-tv-thumbnail{width:100%;aspect-ratio:16/9;background:#252525;position:relative;overflow:hidden;border-radius:9px}.youtube-tv-thumbnail img{display:block;width:100%!important;height:100%!important;object-fit:cover}.youtube-tv-thumbnail small{position:absolute;bottom:7px;right:7px;background:#000c;border-radius:3px;padding:3px 5px;font-size:13px}
+.youtube-tv-grid #rows strong{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:10px 5px 4px;line-height:1.3;font-size:18px}.youtube-tv-grid #rows span{display:block;padding:0 5px!important;font-size:14px!important;color:#aaa}
+body.theme-series #panel.series-standard-page.youtube-tv-grid #rows button.youtube-extra-action{grid-column:1/-1;border-radius:24px;background:#252525;padding:13px 20px;max-height:55px;width:max-content;max-width:100%;font-size:16px}
+body.theme-series #panel.series-standard-page.youtube-tv-details #rows{left:61vw;top:24vh}.youtube-video-hero{position:absolute;left:25vw;top:24vh;width:32vw;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+body.theme-series #panel.series-standard-page.youtube-tv footer{left:25vw;font-size:15px;color:#aaa}
+@media(max-width:900px){.youtube-tv-brand{font-size:20px}.youtube-tv-brand img{width:34px;height:25px}.youtube-tv-nav button{font-size:14px;padding:10px}.youtube-tv-nav{width:22vw}body.theme-series #panel.series-standard-page.youtube-tv-grid #rows{grid-template-columns:repeat(2,minmax(0,1fr))}}

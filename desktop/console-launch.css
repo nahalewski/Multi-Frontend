@@ -1,0 +1,13 @@
+#consoleLaunch{position:fixed;inset:0;z-index:100000;background:radial-gradient(ellipse at 50% 40%,#34432a,#10150e 75%);color:#f6f8ed;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:5vh 8vw;text-align:center;font-family:Convection,'Segoe UI',sans-serif;box-sizing:border-box;outline:none}
+#consoleLaunch img{width:min(65vw,620px);height:clamp(90px,24vh,200px);object-fit:contain;filter:drop-shadow(0 3px 8px #0007)}
+#consoleLaunch h1{margin:0;font-size:clamp(24px,4vh,40px)}
+#consoleLaunch p{margin:0;color:#c6d5ba;font-size:clamp(16px,2.5vh,24px);max-width:90%;overflow-wrap:anywhere}
+#consoleLaunch .console-launch-title{max-height:15vh;overflow:hidden}
+#consoleLaunch button{margin-top:20px;background:#25351f;border:1px solid #9dce54;color:#fff;border-radius:6px;padding:10px 24px;font:inherit;cursor:pointer}
+#consoleLaunch [hidden]{display:none}
+.console-launch-progress{width:min(310px,65vw);height:4px;background:#425038;overflow:hidden;border-radius:4px}
+.console-launch-progress:after{content:'';display:block;height:100%;background:#9dce54;transform-origin:left;animation:console-launch-fill .9s linear forwards}
+#consoleLaunch.preparing .console-launch-progress:after{animation:console-launch-pulse 1.2s ease-in-out infinite alternate}
+@keyframes console-launch-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes console-launch-pulse{from{opacity:.35}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.console-launch-progress:after,#consoleLaunch.preparing .console-launch-progress:after{animation:none}}

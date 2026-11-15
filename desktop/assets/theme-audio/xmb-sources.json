@@ -1,0 +1,10 @@
+{
+  "source": "https://github.com/MaxiBono/MaXMB",
+  "files": {
+    "cursor": "xmb-move",
+    "enter": "xmb-select",
+    "back": "xmb-back",
+    "coldboot": "xmb-boot"
+  },
+  "note": "PS3 sound assets supplied by the reference project; Sony trademarks and original assets remain with their owners."
+}

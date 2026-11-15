@@ -1,0 +1,15 @@
+.nxe-guide-tabs{display:flex;gap:0;margin:-20px -24px 20px;background:linear-gradient(#47546d,#17223c);border-radius:8px 8px 0 0;padding:10px 12px 0}
+.nxe-guide-tabs button{flex:1;min-width:0;padding:13px 7px;font:20px Convection;color:#dce3ed;border:0;border-radius:5px 5px 0 0;background:transparent;cursor:pointer}
+.nxe-guide-tabs button.active,.nxe-guide-tabs button:focus-visible{background:linear-gradient(#a3ce48,#5a8b23);color:#fff;outline:none}
+.theme-nxe #guide,.theme-nxe #nxeGuide{position:fixed;inset:9vh auto auto 50%;transform:translateX(-50%);width:min(680px,92vw);max-height:83vh;overflow:auto;padding:20px 24px;background:linear-gradient(105deg,#f3f5f5,#c4cbd2);color:#25313d;border:2px solid #aeb9c5;border-radius:9px;box-shadow:0 0 0 100vmax #0008,0 20px 65px #000b;z-index:80}
+.theme-nxe #guide h1,.theme-nxe #nxeGuide h1{font-size:31px;font-weight:normal;margin:10px 0}.theme-nxe #guide p,.theme-nxe #nxeGuide p{font-size:19px}
+.theme-nxe #actions button,.theme-nxe #nxeGuide .nxe-guide-actions button{display:block;width:100%;font:22px Convection;padding:10px 16px;min-height:42px;text-align:left;border:0;border-bottom:1px solid #9caab666;border-radius:0;background:linear-gradient(#ffffff44,#92a4b033);color:#283342;cursor:pointer}
+.theme-nxe #actions button:focus,.theme-nxe #nxeGuide .nxe-guide-actions button:focus{outline:1px solid #e4f3c9;background:linear-gradient(#98c13b,#5e8b26);color:white}
+.theme-nxe #guideButton{background:linear-gradient(#535f6fcc,#202c3bcc);border:1px solid #b2c4b8;border-radius:5px}
+.theme-nxe #actions input,.theme-nxe #actions select{border-radius:3px;background:#e7ebed;color:#26323e;accent-color:#7aaf28}
+.theme-nxe #notice{left:50%;right:auto;transform:translateX(-50%);width:min(550px,88vw);border-radius:40px;background:linear-gradient(#fff,#d8dcda);border:2px solid #899689;color:#2e3d2e;box-shadow:0 6px 20px #0007}
+.theme-nxe #splash{background:radial-gradient(ellipse,#9dbb76,#3a4a39 70%)}
+#nxeGuide[hidden]{display:none!important}
+@media(max-height:650px){.theme-nxe #guide,.theme-nxe #nxeGuide{inset:3vh auto auto 50%;max-height:94vh}.nxe-guide-tabs button{font-size:16px;padding:9px 3px}.theme-nxe #actions button{font-size:19px;padding:8px}}
+
+.theme-nxe #actions button.nxe-selected{outline:1px solid #e4f3c9;background:linear-gradient(#98c13b,#5e8b26);color:white}

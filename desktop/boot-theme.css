@@ -1,0 +1,4 @@
+#themeBoot{position:fixed;inset:0;z-index:100000;background:#050505;touch-action:manipulation}
+#themeBoot canvas{display:block;width:100%;height:100%}
+#themeBoot button{position:absolute;right:3vw;bottom:3vh;border:1px solid #92929288;background:#222b;color:#eee;padding:9px 23px;font:17px 'Segoe UI',sans-serif;border-radius:3px;opacity:.6;cursor:pointer}
+#themeBoot button:hover,#themeBoot button:focus-visible{opacity:1;outline:2px solid #83b531}

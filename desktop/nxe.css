@@ -1,0 +1,29 @@
+body.theme-nxe{background:#7b9c49}
+.theme-nxe #panel{inset:6vh 10vw 7vh;padding:4vh 5vw;background:linear-gradient(115deg,#f3f5f0,#dce4d8 70%,#b7c6ac);border:1px solid #f5ffe8;border-radius:9px;box-shadow:0 20px 90px #15351c99}
+.theme-nxe #heading{color:#34492d;border-bottom:2px solid #83ac2c;padding-bottom:12px}
+.theme-nxe #rows button{border-radius:2px;background:linear-gradient(#ffffff55,#bccab52b);color:#34452d}
+.theme-nxe #rows button:focus,.theme-nxe #rows button.selected{background:linear-gradient(#9dcc37,#528b17);color:#fff;outline:2px solid #effdd7;box-shadow:0 3px 14px #446e3555}
+.theme-nxe #player button{background:linear-gradient(#a2ce50,#62952d);color:#fff;border:1px solid #deefcc;border-radius:5px}
+.theme-nxe #toast{background:linear-gradient(#f0f5e8,#cad7bb);border-radius:7px}
+.theme-nxe #panel[data-nxe-view]{inset:0;border:0;border-radius:0;padding:7vh 7vw;background:linear-gradient(115deg,#eff1ed 0%,#c5cebf 64%,#8b9b7c);box-shadow:none;animation:nxe-page-in .22s ease-out}
+.theme-nxe #panel[data-nxe-view] #heading{font-size:clamp(28px,3.8vw,52px);margin-bottom:10px;border:0}
+.theme-nxe #panel[data-nxe-view] #description{max-width:55%;font-size:20px;color:#4e6047;max-height:15vh;overflow:auto}
+.theme-nxe #panel[data-nxe-view] #rows{width:55%;max-height:56vh;overflow:auto;padding:3px;scrollbar-width:thin}
+.theme-nxe #panel[data-nxe-view] footer{position:absolute;left:7vw;bottom:3vh}
+.nxe-detail{position:absolute;left:64%;right:7%;top:21%;bottom:12%;overflow:auto;border-left:1px solid #6d805c55;padding-left:3vw}
+.nxe-detail small{letter-spacing:2px;font-size:15px;color:#4d6144}.nxe-detail h2{font-size:28px;font-weight:normal}.nxe-detail p{font-size:20px;min-height:0;line-height:1.4}.nxe-detail-emblem{margin:20px 0;background:linear-gradient(#9aba67,#46622f);height:140px;width:160px;display:grid;place-items:center;font:72px Convection;color:#f1f6e9;box-shadow:0 12px 22px #42503444;border:4px solid #e2e8d8;border-radius:5px}
+.theme-nxe #panel[data-nxe-view=achievements] #rows button{min-height:65px}.theme-nxe #panel[data-nxe-view=media] #rows button{min-height:58px}
+.theme-nxe .blades-keyboard{border:2px solid #c7ced5;border-radius:8px;background:linear-gradient(120deg,#eff2f3,#b6c2cc);color:#2b3543;box-shadow:0 20px 80px #000a}
+.theme-nxe .blades-keyboard-title{color:#304051;border-bottom:2px solid #85a63a}.theme-nxe .blades-keyboard-key{border-radius:2px;background:linear-gradient(#f5f7f8,#cad1d7);color:#314252;border:1px solid #a0abb5;box-shadow:0 2px 1px #72818b55}
+.theme-nxe .blades-keyboard-key.selected,.theme-nxe .blades-keyboard-key:hover{background:linear-gradient(#a0ca44,#5e8d25);color:#fff;outline:2px solid #f2f9e7;box-shadow:0 3px 10px #45662488}
+.theme-nxe .blades-keyboard-input{background:#fff;border-radius:2px;color:#253740}.theme-nxe .blades-keyboard-help{color:#3f4e5b}
+.theme-nxe .iptv-guide{background:linear-gradient(115deg,#eff1ec,#cbd4c3 65%,#a4b792);color:#263b2a}.theme-nxe .iptv-guide header{background:linear-gradient(#4d5d6b,#273746);border-radius:3px;color:#edf3e8}.theme-nxe .iptv-timeline,.theme-nxe .iptv-guide footer{background:#435345;color:#f1f6e9;border-radius:2px}.theme-nxe .iptv-grid{background:#9cae9644;border-radius:2px}.theme-nxe .iptv-guide .iptv-programme{background:#d7dfcd}.theme-nxe .iptv-guide .iptv-programme.focused{background:linear-gradient(#9fc94a,#60902d);color:#fff}.theme-nxe .iptv-guide .iptv-channel{background:#bdcbb6}.theme-nxe .iptv-dialog{border:2px solid #c0c8ce;border-radius:6px;background:linear-gradient(115deg,#eef2f0,#bcc8b4)}.theme-nxe .iptv-preview{border:3px solid #f0f3ed;border-radius:4px}
+.theme-nxe #toast.nxe-notification{position:fixed;left:50%;right:auto;bottom:7vh;transform:translateX(-50%);width:min(570px,92vw);display:flex;align-items:center;gap:18px;padding:12px 25px 12px 12px;border-radius:50px;background:linear-gradient(#f5f6f3,#cdd2cd);border:2px solid #919b91;box-shadow:0 6px 25px #0008;text-align:left;font-size:20px;z-index:1200;animation:nxe-toast-in .25s ease-out}
+.theme-nxe #toast.nxe-notification[hidden]{display:none}.nxe-notification strong,.nxe-notification span span{display:block}.nxe-notification strong{font-weight:normal;color:#244e22;margin-bottom:3px}.nxe-orb{flex-shrink:0;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 25%,#fff,#a8b2a4 65%,#576354);border:3px solid #74866d;font:bold 37px Convection;color:#79ae28}
+@keyframes nxe-page-in{from{opacity:.4;transform:translateX(24px)}to{opacity:1;transform:none}}@keyframes nxe-toast-in{from{opacity:0;bottom:3vh}to{opacity:1;bottom:7vh}}
+@media(max-width:850px){.theme-nxe #panel[data-nxe-view] #rows{width:65%}.theme-nxe #panel[data-nxe-view] #description{max-width:65%}.nxe-detail{left:76%;right:3%;padding-left:2vw}.nxe-detail p,.nxe-detail small{display:none}.nxe-detail h2{font-size:20px}.nxe-detail-emblem{width:100%;height:110px}}
+@media(prefers-reduced-motion:reduce){.theme-nxe #panel,.theme-nxe #toast{animation:none!important}}
+.theme-nxe.nxe-reduced-motion #panel,.theme-nxe.nxe-reduced-motion #toast{animation:none!important}
+
+.nxe-detail img{max-width:100%;height:200px;object-fit:contain;margin:20px 0}.nxe-detail progress{width:100%;height:20px;accent-color:#74a92d}
+.nxe-detail .nxe-background-preview{width:100%;height:auto;aspect-ratio:16/9;border:3px solid #eef4e6;border-radius:5px;margin-top:20px;box-shadow:0 8px 20px #23342244}

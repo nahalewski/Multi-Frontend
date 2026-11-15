@@ -1,0 +1,47 @@
+[
+  {
+    "archive": "emulatorjs-core-fceumm-4.2.3.tgz",
+    "sha256": "72d7ec8a1cace14448b9f2e177e64a37120543e117d274072b02b67576d54025",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-core-gambatte-4.2.3.tgz",
+    "sha256": "2edc2ed30fb18da28f67e95209a25f18307913a7eaba693d0d8481986c2fdd32",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-core-mgba-4.2.3.tgz",
+    "sha256": "9ea664b4f998f6304a49c31a427206e2c12a3c1aa3652765ec5aa6db42cad529",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-core-snes9x-4.2.3.tgz",
+    "sha256": "0b8481c27fb929693e3c8fa3aa8773c173fa9e220c5a5b84bec234cf451a765b",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-emulatorjs-4.2.3.tgz",
+    "sha256": "8033a18a3398cae5efd7a4c12a633b10672435977290959633d671365b589639",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-core-genesis_plus_gx-4.2.3.tgz",
+    "sha256": "3f4ac27829f3a86734cb1b27f62078a1f1413f08cb0bb7e421b95aec31a0dfa3",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-core-melonds-4.2.3.tgz",
+    "sha256": "6cbd17e0019bd0896265b2d03490a9f14627335ece3daeb6208ff89ee08d0045",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-core-mupen64plus_next-4.2.3.tgz",
+    "sha256": "2b8952aabbe32dc620cbde31b4456a16d7ff96116f471283699dc9ae09724417",
+    "version": "4.2.3"
+  },
+  {
+    "archive": "emulatorjs-core-pcsx_rearmed-4.2.3.tgz",
+    "sha256": "d641b90c4d4bea0a29e55803a5bc7bd02eb9980e7b4684be6e64618ff165d923",
+    "version": "4.2.3"
+  }
+]

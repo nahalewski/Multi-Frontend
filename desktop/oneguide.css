@@ -1,0 +1,28 @@
+/* Series-only recreation of Xbox One OneGuide's dark programme grid. */
+body.theme-nxe.theme-series .iptv-guide{background:#101010;color:#fff;padding:3vh 4vw 2vh;gap:0;font-family:'Segoe UI',sans-serif}
+body.theme-nxe.theme-series .iptv-guide header{background:transparent;padding:0 0 14px;border:0;border-radius:0;box-shadow:none;order:0}
+body.theme-nxe.theme-series .iptv-guide h1{font-size:34px;font-weight:300;color:#fff}
+body.theme-nxe.theme-series .iptv-guide nav{order:1;padding:0 0 15px;gap:21px;flex-wrap:nowrap}
+body.theme-nxe.theme-series .iptv-guide nav button{background:transparent;border:0;border-radius:0;font-size:18px;padding:7px 0;color:#bcbcbc;white-space:nowrap}
+body.theme-nxe.theme-series .iptv-guide nav button[aria-current=true]{color:white;border-bottom:3px solid #108a00}
+body.theme-nxe.theme-series .iptv-overview{order:2;grid-template-columns:1fr 28%;gap:30px;height:22vh;min-height:130px;max-height:22vh;margin-bottom:17px}
+body.theme-nxe.theme-series .iptv-preview{grid-column:2;grid-row:1;border:0;border-radius:0;background:#080808;box-shadow:none}
+body.theme-nxe.theme-series .iptv-details{grid-column:1;grid-row:1;background:transparent;padding:0;border:0;border-radius:0;color:#fff}
+body.theme-nxe.theme-series .iptv-details h2{font-size:23px;color:#aaa;margin:0 0 7px;font-weight:300}
+body.theme-nxe.theme-series .iptv-details h3{font-size:27px;font-weight:400;margin:0 0 9px}
+body.theme-nxe.theme-series .iptv-details p{font-size:17px;color:#ccc;max-height:7vh;line-height:1.4}
+body.theme-nxe.theme-series .iptv-status{color:#aaa;font-size:14px}
+body.theme-nxe.theme-series .iptv-timeline{order:3;background:transparent;border-radius:0;height:38px;color:#aaa;font-size:18px;border-bottom:1px solid #444}
+body.theme-nxe.theme-series .iptv-grid{order:4;background:#171717;border-radius:0;box-shadow:none;min-height:0}
+body.theme-nxe.theme-series .iptv-grid-row{max-height:none;min-height:35px;border-bottom:2px solid #101010}
+body.theme-nxe.theme-series .iptv-grid-row.selected{background:transparent}
+body.theme-nxe.theme-series .iptv-guide .iptv-channel{background:#171717;border:0;border-radius:0;color:#ddd;font-size:18px}
+body.theme-nxe.theme-series .iptv-channel-logo{background:#292929;border-radius:0}
+body.theme-nxe.theme-series .iptv-guide .iptv-programme{background:#282828;border:1px solid #101010;border-radius:0;color:#fff;font-size:18px;padding:10px 14px;top:0;height:100%}
+body.theme-nxe.theme-series .iptv-guide .iptv-programme.focused,body.theme-nxe.theme-series .iptv-guide button:focus-visible{background:#107c10;outline:2px solid #fff;outline-offset:-2px;color:#fff}
+body.theme-nxe.theme-series .iptv-now-line{background:#ddd;width:1px;opacity:.5}
+body.theme-nxe.theme-series .iptv-guide footer{order:5;background:transparent;color:#bbb;border-radius:0;padding:14px 0 0;font-size:16px}
+body.theme-nxe.theme-series .iptv-dialog{background:#202020;border:1px solid #555;border-radius:0;color:white}
+body.theme-nxe.theme-series .iptv-dialog button{background:#303030;border-radius:0;border:0;color:white}
+body.theme-nxe.theme-series .iptv-fullscreen .iptv-preview{position:fixed;inset:0;border:0;background:#000}
+@media(max-height:650px){body.theme-nxe.theme-series .iptv-overview{min-height:90px;height:19vh;max-height:19vh}body.theme-nxe.theme-series .iptv-details h3{font-size:21px}body.theme-nxe.theme-series .iptv-guide nav{padding-bottom:8px;gap:15px}body.theme-nxe.theme-series .iptv-guide nav button{font-size:15px}body.theme-nxe.theme-series .iptv-guide h1{font-size:27px}body.theme-nxe.theme-series .iptv-guide .iptv-programme{font-size:15px;padding:7px}}

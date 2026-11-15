@@ -1,0 +1,26 @@
+.download-progress{display:block;width:95%;height:10px;margin-top:8px;accent-color:#78b323}
+#panel #rows .romm-row{display:flex;align-items:center;gap:14px;min-height:80px}
+.romm-row img{width:44px;height:56px;object-fit:contain;background:#242827;flex:0 0 44px}.romm-row img[hidden]{display:none}
+.romm-row>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#rommPreview{position:fixed;z-index:3;left:57vw;right:6vw;top:14vh;bottom:12vh;color:#fff;overflow:auto;font-family:Convection,sans-serif;padding:18px;background:#1a291ddd;border:1px solid #b4c5a766;border-radius:8px}
+#rommPreview .romm-cover{display:block;width:100%;height:32vh;object-fit:contain;margin:0 0 16px}#rommPreview .romm-cover[hidden]{display:none}
+#rommPreview h2{font-size:27px;font-weight:normal;margin:5px 0}#rommPreview p{font-size:19px;min-height:0;line-height:1.4;margin:10px 0}.romm-facts{opacity:.8}
+.theme-nxe #rommPreview{left:64%;right:7%;top:19%;bottom:12%;background:transparent;border:0;border-left:1px solid #71826455;color:#34492d;border-radius:0}
+.theme-metro #rommPreview{color:#fff;font-family:'Segoe UI',sans-serif;border-left-color:#fff3}
+.theme-metro #rommPreview h2{font-family:'Segoe UI Light','Segoe UI',sans-serif}
+@media(max-width:850px){#rommPreview{left:60%;right:2%;padding:12px}.theme-nxe #rommPreview{left:76%;right:2%;padding:10px}#rommPreview h2{font-size:20px}#rommPreview p{font-size:15px}}
+
+/* Uniform shelf frames preserve portrait, square and landscape boxes without cropping. */
+.romm-box{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:3/4;overflow:hidden;background:linear-gradient(145deg,#262b2a,#101412);border:1px solid #ffffff30;box-shadow:0 5px 12px #0005;border-radius:2px}
+.romm-box .romm-cover,.romm-box img,#rommPreview .romm-box .romm-cover{display:block;width:100%;height:100%;object-fit:contain;object-position:center;position:absolute;inset:0;margin:0;background:transparent}
+.romm-box img[hidden],.romm-box-fallback[hidden],#rommPreview .romm-box .romm-cover[hidden]{display:none}
+.romm-box-fallback{color:#d4dbd4;text-align:center;white-space:normal;font-size:clamp(13px,1.4vw,19px);padding:12px;line-height:1.5}
+.romm-box-small{width:44px;height:59px;flex:0 0 44px;box-shadow:0 2px 5px #0004}
+.romm-box-small .romm-box-fallback{padding:0;font-size:22px}
+#rommPreview>.romm-box{height:32vh;max-width:100%;width:24vh;margin:0 auto 16px}
+#rommPreview{scrollbar-width:none}#rommPreview::-webkit-scrollbar{display:none}
+.theme-metro-revised #rommPreview,.theme-series #rommPreview{color:#fff;font-family:'Segoe UI',sans-serif;border-left-color:#fff3}
+.theme-metro-revised #rommPreview h2{font-family:'Segoe UI Light','Segoe UI',sans-serif}
+.theme-series #rommPreview{left:64%;right:5%;top:17%;bottom:12%;background:#15191de8;border:1px solid #ffffff20;border-radius:8px}
+
+.theme-series #rommPreview>.romm-box{width:32vh;aspect-ratio:1}.theme-series .romm-box-small{height:44px}.theme-series .romm-box img,.theme-series #rommPreview .romm-box .romm-cover{object-fit:cover}

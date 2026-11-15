@@ -1,0 +1,61 @@
+{
+  "credit": "Original Xbox 360 audio: Microsoft / Xbox. Repository: zivvoz / DashX360. Original assets retain their owners rights; no open asset license is implied. Series cues sourced from XBOXSERIESish; not claimed to be verified retail recordings.",
+  "files": [
+    {
+      "file": "metro-move.wav",
+      "url": "https://raw.githubusercontent.com/ZivvoZ/dashx360/main/Assets/Audio/Sounds/tile-hover.wav",
+      "bytes": 22606,
+      "sha256": "165088d75476f3b66e40970d16a5bf699e08ee5dcafe6f4b6e49ed8bca33c4d8"
+    },
+    {
+      "file": "metro-select.wav",
+      "url": "https://raw.githubusercontent.com/ZivvoZ/dashx360/main/Assets/Audio/Sounds/select-into-menu.wav",
+      "bytes": 86094,
+      "sha256": "5611a444824d0cd1e784d1bd628be5ea53c3cc190b8afc0a369579bed875687f"
+    },
+    {
+      "file": "metro-back.wav",
+      "url": "https://raw.githubusercontent.com/ZivvoZ/dashx360/main/Assets/Audio/Sounds/select-out-menu.wav",
+      "bytes": 86094,
+      "sha256": "941a7ff9e1a48eae79a96c5aed7db1d9e2beceed984188c5723f47a30136ba71"
+    },
+    {
+      "file": "metro-notify.wav",
+      "url": "https://raw.githubusercontent.com/ZivvoZ/dashx360/main/Assets/Audio/Sounds/notify-popup.wav",
+      "bytes": 47182,
+      "sha256": "eb75239fd8efff654d1902efc160f80b11b1a14f71259dd2d9deb96bf8d226e0"
+    },
+    {
+      "file": "metro-tab-left.mp3",
+      "url": "https://raw.githubusercontent.com/ZivvoZ/dashx360/main/Assets/Audio/Sounds/08.%20Page%20Left.mp3",
+      "bytes": 63776,
+      "sha256": "3abbffdc7e37c010586e95c811b0818383f1546d52a1bdf5a13a339f6b4f1c1c"
+    },
+    {
+      "file": "metro-tab-right.mp3",
+      "url": "https://raw.githubusercontent.com/ZivvoZ/dashx360/main/Assets/Audio/Sounds/09.%20Page%20Right.mp3",
+      "bytes": 63256,
+      "sha256": "247556098704b48ad6438c255043ebb96839e59ccfe34c315bd41ae4506a2b1a"
+    },
+    {
+      "file": "metro-boot.mp3",
+      "url": "https://raw.githubusercontent.com/ZivvoZ/dashx360/main/Assets/Audio/Sounds/02.%20Startup%20%282010%29.mp3",
+      "bytes": 234541,
+      "sha256": "fa9b5d0b0fecc950a6b655e94f9b4eb418ef4e5f76daa926f1a81cc5dcc8db81"
+    },
+    {
+      "file": "series-select.wav",
+      "url": "https://raw.githubusercontent.com/davidkgriggs/XBOXSERIESish/main/source/audio/activation.wav",
+      "bytes": 102380,
+      "sha256": "911faf6479d5de3cc4341f62456d7bdf268428a4c45521ae430d813ad1e6db01",
+      "credit": "davidkgriggs / XBOXSERIESish; project MIT license; audio recording provenance unspecified"
+    },
+    {
+      "file": "series-move.wav",
+      "url": "https://raw.githubusercontent.com/davidkgriggs/XBOXSERIESish/main/source/audio/navigation.wav",
+      "bytes": 8600,
+      "sha256": "abe3d33bfa91065ecab10fd97d46d11818ebffe2c90f4e13f29ef5417e0e2fcc",
+      "credit": "davidkgriggs / XBOXSERIESish; project MIT license; audio recording provenance unspecified"
+    }
+  ]
+}

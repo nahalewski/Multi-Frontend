@@ -1,0 +1,45 @@
+/* Channel branding is shared; all remaining rules are isolated to NXE/Metro. */
+.iptv-guide .iptv-channel{display:flex;align-items:center;gap:9px;padding:5px 9px}
+.iptv-channel-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.iptv-channel-logo{display:grid;place-items:center;flex:0 0 48px;width:48px;height:34px;overflow:hidden;border-radius:3px;background:#879096;color:#fff;font:14px Arial,sans-serif;position:relative}
+.iptv-channel-logo img{position:absolute;inset:2px;width:44px;height:30px;object-fit:contain}
+.iptv-channel-logo img[hidden],.iptv-channel-logo span[hidden]{display:none}
+body.theme-nxe:not(.theme-metro) .iptv-guide{background:radial-gradient(ellipse at 65% 0,#b9d77e,transparent 65%),linear-gradient(#536e3b 0%,#7a9459 48%,#d9e0d1 66%,#afbaa7 100%);color:#273a24;padding:3vh 4vw 2vh;gap:1.2vh}
+body.theme-nxe:not(.theme-metro) .iptv-guide header{background:linear-gradient(#f5f7ef,#c3cfb9);color:#344a2c;border:1px solid #eef4df;border-radius:8px;box-shadow:0 5px 14px #243a2555;padding:10px 22px}
+body.theme-nxe:not(.theme-metro) .iptv-guide h1{font-weight:normal;text-shadow:0 1px #fff8}
+body.theme-nxe:not(.theme-metro) .iptv-preview{border:5px solid #e9efdf;border-radius:8px;box-shadow:0 6px 18px #243a2566}
+body.theme-nxe:not(.theme-metro) .iptv-details{padding:5px 16px;background:linear-gradient(110deg,#f4f7e9cc,#d3dfbd77);border-radius:7px}
+body.theme-nxe:not(.theme-metro) .iptv-guide nav button{background:linear-gradient(#f5f8ef,#b5c5a4);border:1px solid #eff5e4;border-radius:5px;color:#304329;box-shadow:0 2px 4px #263a2633}
+body.theme-nxe:not(.theme-metro) .iptv-timeline{background:linear-gradient(#617d48,#3e5933);border-radius:7px 7px 0 0}
+body.theme-nxe:not(.theme-metro) .iptv-grid{background:#e1e8d799;border-radius:0 0 8px 8px;box-shadow:0 5px 14px #243a2544}
+body.theme-nxe:not(.theme-metro) .iptv-guide .iptv-channel{background:linear-gradient(#eef2e7,#c6d1ba);color:#30412b}
+body.theme-nxe:not(.theme-metro) .iptv-guide .iptv-programme{background:linear-gradient(#e7eddd,#c5d0b9);border:1px solid #87997c66;color:#30412b;border-radius:3px}
+body.theme-nxe:not(.theme-metro) .iptv-guide .iptv-programme.focused,body.theme-nxe:not(.theme-metro) .iptv-guide button:focus-visible{background:linear-gradient(#a8d53e,#5d951b);color:#fff;outline:2px solid #f2ffda}
+body.theme-nxe:not(.theme-metro) .iptv-guide footer{background:transparent;color:#2d4329;border-radius:0}
+body.theme-nxe:not(.theme-metro) .iptv-dialog{background:linear-gradient(110deg,#f1f4ec,#bbc9ae);border:2px solid #f0f5e8;border-radius:9px;box-shadow:0 15px 60px #13241499;color:#2b3d25}
+body.theme-metro .iptv-guide{font-family:'Segoe UI',sans-serif;background:radial-gradient(ellipse at 50% 95%,#c1c1c777,transparent 75%),linear-gradient(#454449,#8c8d92);color:#fff;gap:1vh;padding:2.5vh 4vw 1.5vh}
+body.theme-metro .iptv-guide header{padding:4px 0 10px;background:transparent;color:#fff;border:0;border-radius:0;box-shadow:none}
+body.theme-metro .iptv-guide h1{font-family:'Segoe UI Light','Segoe UI',sans-serif;font-weight:300;text-transform:lowercase;font-size:clamp(28px,3.2vw,42px)}
+body.theme-metro .iptv-clock{font-size:20px;color:#ddd}
+body.theme-metro .iptv-preview{border:3px solid #d5d5d8;border-radius:0;background:#17171a;box-shadow:none}
+body.theme-metro .iptv-details{padding:0 8px;color:#fff}
+body.theme-metro .iptv-details h2{font-family:'Segoe UI Light','Segoe UI',sans-serif;font-weight:300}
+body.theme-metro .iptv-details h3{font-weight:400}
+body.theme-metro .iptv-status{color:#dedee0}
+body.theme-metro .iptv-guide nav button{background:#ffffff16;color:#fff;border:1px solid #ffffff24;border-radius:0;box-shadow:none;padding:7px 14px}
+body.theme-metro .iptv-timeline{background:#35353a;color:#eee;border-radius:0;font-size:18px}
+body.theme-metro .iptv-grid{background:#39393f;border-radius:0;box-shadow:none}
+body.theme-metro .iptv-grid-row{border-bottom:2px solid #39393f}
+body.theme-metro .iptv-guide .iptv-channel{background:#55565c;color:#fff;border:0}
+body.theme-metro .iptv-guide .iptv-programme{background:#686970;color:#fff;border:1px solid #45454b;border-radius:0;font-size:clamp(15px,1.55vw,22px)}
+body.theme-metro .iptv-grid-row.selected .iptv-channel{background:#127f06}
+body.theme-metro .iptv-guide .iptv-programme.focused,body.theme-metro .iptv-guide button:focus-visible{background:#128d04;color:#fff;outline:3px solid #91c600;outline-offset:-3px}
+body.theme-metro .iptv-now-line{background:#9acf32}
+body.theme-metro .iptv-guide footer{background:transparent;color:#f3f3f3;border-radius:0;font-size:18px;padding:8px 0}
+body.theme-metro .iptv-dialog{border:2px solid #a8a8ae;border-radius:0;background:linear-gradient(#4b4a50,#898a90);color:#fff;box-shadow:0 15px 60px #0009}
+body.theme-metro .iptv-dialog button{background:#ffffff18;border-radius:0;color:#fff;border:1px solid #fff2}
+body.theme-metro .iptv-dialog input{border-radius:0;background:#eee;color:#222}
+body.theme-metro .iptv-dialog button:focus-visible{background:#128d04;outline:3px solid #91c600}
+/* Theme borders must not reappear over fullscreen video. */
+body.theme-nxe .iptv-fullscreen .iptv-preview,body.theme-metro .iptv-fullscreen .iptv-preview{border:0;border-radius:0;box-shadow:none}
+@media(max-height:650px){body.theme-nxe .iptv-guide,body.theme-metro .iptv-guide{padding:8px 2vw;gap:5px}.iptv-channel-logo{height:28px;flex-basis:40px;width:40px}.iptv-channel-logo img{width:36px;height:24px}body.theme-metro .iptv-guide header{padding:0 0 4px}}

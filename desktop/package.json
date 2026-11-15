@@ -1,0 +1,53 @@
+{
+  "name": "blades360-desktop",
+  "version": "0.12.0",
+  "description": "Blades360 desktop frontend",
+  "author": "Blades360",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "build:win": "electron-builder --win portable --x64",
+    "build:mac": "electron-packager . Blades360 --platform=darwin --arch=arm64,x64 --out=dist --asar --ignore=\"^/(dist|tests|tools|.*smoke.*|.*\\.py)\" --overwrite"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "45.3.2",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "com.blades360.desktop",
+    "productName": "Blades360",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "*.cjs",
+      "*.html",
+      "*.js",
+      "*.css",
+      "assets/**",
+      "*-NOTES.md",
+      "README.md",
+      "emulation-integration.md",
+      "!emulation-smoke.cjs",
+      "core-manifest.json"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.png",
+      "signAndEditExecutable": true,
+      "signExecutable": false
+    },
+    "mac": {
+      "target": "zip",
+      "category": "public.app-category.entertainment",
+      "identity": null
+    },
+    "artifactName": "Blades360-${version}-${os}-${arch}.${ext}"
+  },
+  "dependencies": {
+    "hls.js": "1.7.4"
+  }
+}

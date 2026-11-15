@@ -1,0 +1,12 @@
+/* Shared alert geometry follows the dashboard generation. */
+body[data-notification-theme="blades"] #notice,body[data-notification-theme="blades"] #toast,body[data-notification-theme="blades"] .achievement-popup{border-radius:46px;background:linear-gradient(#515a4b,#151e16 52%,#35412f);border:2px solid #9ca98f;color:#fff;font-family:Convection,sans-serif}
+body[data-notification-theme="nxe"] #notice,body[data-notification-theme="nxe"] #toast,body[data-notification-theme="nxe"] .achievement-popup{border-radius:42px;background:linear-gradient(#f8faf0,#c5cdbb);border:2px solid #88977e;color:#263321;text-shadow:none;font-family:Convection,sans-serif;box-shadow:0 5px 22px #0008}
+body[data-notification-theme="metro"] #notice,body[data-notification-theme="metro"] #toast,body[data-notification-theme="metro"] .achievement-popup{border-radius:0;background:#438b16;border:0;color:#fff;font-family:'Segoe UI',sans-serif;text-shadow:none;box-shadow:0 4px 14px #0006}
+body[data-notification-theme="metro-revised"] #notice,body[data-notification-theme="metro-revised"] #toast,body[data-notification-theme="metro-revised"] .achievement-popup{border-radius:0;background:#f1f1f1;border:0;border-left:8px solid #107c10;color:#222;font-family:'Segoe UI',sans-serif;text-shadow:none;box-shadow:0 4px 14px #0006}
+body[data-notification-theme="series"] #notice,body[data-notification-theme="series"] #toast,body[data-notification-theme="series"] .achievement-popup{border-radius:8px;background:#252525;border:1px solid #626262;color:#fff;font-family:'Segoe UI',sans-serif;text-shadow:none;box-shadow:0 6px 25px #0008}
+body[data-notification-theme="metro"] .achievement-orb,body[data-notification-theme="metro-revised"] .achievement-orb,body[data-notification-theme="series"] .achievement-orb{background:#107c10;border:0;box-shadow:none;text-shadow:none;color:white;font-family:'Segoe UI',sans-serif}
+body[data-notification-theme="series"] .achievement-orb{width:52px;height:52px;font-size:32px}
+#toast{z-index:110000!important}
+.achievement-popup{z-index:110001}
+
+body[data-notification-theme="metro"] .nxe-orb,body[data-notification-theme="metro-revised"] .nxe-orb,body[data-notification-theme="series"] .nxe-orb{background:#107c10;box-shadow:none;border:0;color:white}

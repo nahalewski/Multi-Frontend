@@ -1,0 +1,59 @@
+body.theme-series{background:#060b08;font-family:'Segoe UI',sans-serif}
+.theme-series #panel,.theme-series #panel[data-nxe-view]{inset:0;padding:6vh 6vw;background:linear-gradient(110deg,#17231c,#0d1511 70%);color:#f5f7f5;border:0;border-radius:0;box-shadow:none;font-family:'Segoe UI',sans-serif}
+.theme-series #heading{font:400 clamp(28px,3.5vw,46px) 'Segoe UI',sans-serif;color:#fff;border:0}
+.theme-series #panel #description{color:#c5d1c8;font-size:18px}
+.theme-series #panel #rows button{background:#25352bd9;color:#fff;border-radius:4px;font-family:'Segoe UI',sans-serif;padding:15px 20px;border:1px solid #ffffff09}
+.theme-series #panel #rows button.selected,.theme-series #panel #rows button:focus{background:#285d2b;outline:3px solid #8fe05c;outline-offset:2px;box-shadow:0 0 0 6px #040a06}
+.theme-series #panel .nxe-detail{color:#e9f0e9;border-left-color:#a1b5a322}.theme-series .nxe-detail small{color:#aabdac}.theme-series .nxe-detail-emblem{border:0;background:#1f3b28;box-shadow:none;border-radius:6px}
+.theme-series #rommPreview{color:#fff;background:transparent;border-left-color:#bdd1c122}
+.theme-series #panel footer{color:#e1e9e3;font-family:'Segoe UI',sans-serif}.theme-series #panel footer b{display:inline-grid;place-items:center;width:22px;height:22px;border:1px solid #aaa;border-radius:50%;background:#252525;color:#fff;text-shadow:none;box-shadow:none;font:14px 'Segoe UI',sans-serif;margin-right:6px}.theme-series #panel footer span{margin-right:18px}
+.theme-series #toast.nxe-notification{background:#1f2822;color:#fff;border-radius:7px;border:1px solid #788e7c;box-shadow:0 5px 30px #0008}
+.theme-series #toast.nxe-notification strong,.theme-series #toast.nxe-notification span{color:#f0f6f1}
+.theme-series .series-background-preview{display:block;width:100%;height:auto;aspect-ratio:16/9;border:1px solid #809a82;border-radius:5px}
+.theme-series #player button{background:#1a2d20;color:#fff;border:1px solid #819383;border-radius:4px}
+.theme-series #panel ::-webkit-scrollbar,.theme-series #rommPreview::-webkit-scrollbar{display:none}.theme-series #panel *,.theme-series #rommPreview{scrollbar-width:none}
+.theme-series #nxeGuide,.theme-series #guide{inset:0 auto 0 0;transform:none;width:min(440px,90vw);max-height:100vh;padding:24px;background:#19211df5;color:#f5f7f5;border:0;border-radius:0;box-shadow:0 0 0 100vmax #0007,12px 0 45px #0009;font-family:'Segoe UI',sans-serif}
+.theme-series .nxe-guide-tabs{margin:-24px -24px 22px;padding:18px 12px 8px;background:#0e1611;border-radius:0;gap:4px}
+.theme-series .nxe-guide-tabs button{font:15px 'Segoe UI',sans-serif;padding:12px 5px;border-radius:4px;color:#ccd8cf;background:transparent}
+.theme-series .nxe-guide-tabs button.active,.theme-series .nxe-guide-tabs button:focus-visible{background:#336b35;color:white;border-bottom:3px solid #99e879;outline:2px solid #a0e36f;outline-offset:1px}
+.theme-series #nxeGuide .nxe-guide-actions button,.theme-series #guide #actions button{font:20px 'Segoe UI',sans-serif;background:#253229;color:#f3f7f4;border:0;border-radius:4px;margin:6px 0;padding:14px 16px}
+.theme-series #nxeGuide .nxe-guide-actions button:focus,.theme-series #guide #actions button:focus,.theme-series #guide #actions button.nxe-selected{outline:3px solid #a0e36f;outline-offset:1px;background:#346639;color:#fff}
+.theme-series #notice{left:50%;right:auto;transform:translateX(-50%);width:min(550px,88vw);border-radius:6px;background:#1f2822;border:1px solid #788e7c;color:#f0f6f1;box-shadow:0 5px 30px #0008;font-family:'Segoe UI',sans-serif}
+.theme-series #guide #status{color:#cbd9ce;font-family:'Segoe UI',sans-serif}.theme-series #guide h1,.theme-series #guide h2{font-family:'Segoe UI',sans-serif;color:#fff}.theme-series #guideButton{background:#173120;color:#fff;border:1px solid #668771;border-radius:4px}
+.theme-series .blades-keyboard{border:1px solid #506957;border-radius:5px;background:#17221c;color:#fff;font-family:'Segoe UI',sans-serif}
+.theme-series .blades-keyboard-title,.theme-series .blades-keyboard-help{color:#e3eee7;border-color:#60766755}
+.theme-series .blades-keyboard-key,.theme-series .blades-keyboard-key:nth-child(45){background:#304038;color:#fff;border:1px solid #54695c;border-radius:3px;box-shadow:none}
+.theme-series .blades-keyboard-key.selected,.theme-series .blades-keyboard-key:hover{background:#346b36;outline:3px solid #96dd6e;box-shadow:none}
+.theme-series .blades-keyboard-input{background:#0b1510;color:#fff;border-color:#718a78;border-radius:3px}.theme-series .blades-keyboard-field-count{color:#afc5b5}
+body.theme-nxe.theme-series .iptv-guide{font-family:'Segoe UI',sans-serif;background:linear-gradient(120deg,#183022,#09150e);color:#fff;padding:3vh 4vw;gap:1.2vh}
+body.theme-nxe.theme-series .iptv-guide header{background:#203529;color:#fff;border:0;border-radius:4px;box-shadow:none}
+body.theme-nxe.theme-series .iptv-guide h1{font-family:'Segoe UI',sans-serif;text-shadow:none}
+body.theme-nxe.theme-series .iptv-preview{border:3px solid #59775f;border-radius:4px;box-shadow:none}
+body.theme-nxe.theme-series .iptv-details{background:#1c3024;color:#eaf3ed;border-radius:4px}
+body.theme-nxe.theme-series .iptv-guide nav button{background:#304f39;color:#fff;border:1px solid #58735f;border-radius:4px;box-shadow:none}
+body.theme-nxe.theme-series .iptv-timeline{background:#183e24;border-radius:4px 4px 0 0}
+body.theme-nxe.theme-series .iptv-grid{background:#16251c;border-radius:0 0 4px 4px;box-shadow:none}
+body.theme-nxe.theme-series .iptv-guide .iptv-channel{background:#1d3527;color:#fff}
+body.theme-nxe.theme-series .iptv-guide .iptv-programme{background:#283b30;border:1px solid #526958;color:#edf5ef;border-radius:3px}
+body.theme-nxe.theme-series .iptv-guide .iptv-programme.focused,body.theme-nxe.theme-series .iptv-guide button:focus-visible{background:#377842;outline:3px solid #9be867;color:#fff}
+body.theme-nxe.theme-series .iptv-guide footer{color:#d9e8de}
+body.theme-nxe.theme-series .iptv-dialog{background:#1a2b20;border:1px solid #66826f;border-radius:5px;color:#fff;box-shadow:0 15px 60px #000a}
+/* Series Settings: left category rail and two-column tiles measured from console references. */
+.theme-series #panel.series-settings-home{background:#202020;padding:5.5vh 5vw 5vh 27.5vw;font-family:'Segoe UI',sans-serif}
+.theme-series #panel.series-settings-home #heading{font-size:clamp(26px,3.1vw,44px);font-weight:400;margin:0 0 6vh;padding:0;color:#f5f5f5}
+.theme-series #panel.series-settings-home #description,.theme-series #panel.series-settings-home .nxe-detail{display:none}
+.theme-series #panel.series-settings-home #rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(100px,13.3vh);gap:10px;width:100%;max-width:760px;max-height:72vh;padding:5px;overflow:auto}
+.theme-series #panel.series-settings-home #rows button{display:flex;align-items:center;gap:20px;min-width:0;min-height:0;margin:0;padding:18px 23px;background:#2e2e2e;border:0;border-radius:1px;color:#eee;font-size:clamp(17px,1.6vw,24px);text-align:left;box-shadow:none}
+.theme-series #panel.series-settings-home #rows button span{white-space:normal;overflow-wrap:break-word}
+.theme-series #panel.series-settings-home #rows button svg,.series-settings-identity svg{width:34px;height:34px;flex:0 0 34px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.theme-series #panel.series-settings-home #rows button.selected,.theme-series #panel.series-settings-home #rows button:focus{background:#414141;outline:3px solid #66d12f;outline-offset:2px;border-radius:3px;box-shadow:0 0 12px #4bca2255}
+#seriesSettingsRail{position:absolute;inset:0 auto 0 0;width:25vw;border-right:1px solid #515151;background:#202020;padding:5.5vh 0;display:flex;flex-direction:column;gap:3px}
+#seriesSettingsRail .series-settings-identity{display:flex;align-items:center;gap:15px;padding:0 2.3vw 8vh 5.5vw;font-size:19px;color:#ddd;min-height:60px}
+#seriesSettingsRail .series-settings-identity span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.theme-series #panel #seriesSettingsRail button{border:0;border-radius:2px;background:transparent;color:#eee;font:clamp(17px,1.65vw,25px) 'Segoe UI',sans-serif;min-height:6.2vh;padding:12px 15px 12px 5.5vw;text-align:left;box-shadow:none;outline:none}
+.theme-series #panel #seriesSettingsRail button[aria-current=page]{background:#303030;border-left:4px solid #63d52b;padding-left:calc(5.5vw - 4px)}
+.theme-series #panel #seriesSettingsRail.rail-focused button:focus{outline:3px solid #68db25;outline-offset:-3px;background:#343434}
+.theme-series #panel.series-settings-home footer{position:absolute;left:auto;right:5vw;bottom:4vh;font:18px 'Segoe UI',sans-serif;color:#e7e7e7;background:#111;padding:10px 16px;border-radius:2px}
+@media(max-width:850px){.theme-series #panel.series-settings-home{padding-left:30vw}#seriesSettingsRail{width:28vw}.theme-series #panel.series-settings-home #rows{gap:8px;grid-auto-rows:minmax(100px,13vh)}.theme-series #panel.series-settings-home #rows button{padding:12px;gap:10px;font-size:17px}.theme-series #panel.series-settings-home #rows button svg{width:25px;height:25px;flex-basis:25px}#seriesSettingsRail .series-settings-identity{padding-left:3vw;font-size:16px}.theme-series #panel #seriesSettingsRail button{padding-left:3vw;font-size:17px}.theme-series #panel #seriesSettingsRail button[aria-current=page]{padding-left:calc(3vw - 4px)}}
+
+.theme-series footer b.series-controller-hint{display:inline-flex!important;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 3px;border:1.5px solid #e8edf0;border-radius:50%;background:transparent!important;color:#fff!important;box-shadow:none!important;font:600 12px "Segoe UI",sans-serif;margin:0 6px 0 14px}.theme-series footer b.series-controller-hint:first-child{margin-left:0}

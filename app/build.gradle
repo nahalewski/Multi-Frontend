@@ -1,0 +1,22 @@
+plugins { id 'com.android.application'; id 'org.jetbrains.kotlin.android' }
+
+android {
+    packagingOptions { jniLibs { useLegacyPackaging true } }
+    namespace 'com.example.blades360'
+    compileSdk 35
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    kotlinOptions { jvmTarget = '17' }
+    defaultConfig { applicationId 'com.example.blades360'; minSdk 26; targetSdk 28; versionCode 1; versionName '1.0'; testInstrumentationRunner project.findProperty('testRunner') ?: 'com.example.blades360.ControllerInstrumentation' }
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.wireguard.android:tunnel:1.0.20260102'
+    implementation 'io.github.junkfood02.youtubedl-android:library:0.18.1'
+    implementation 'androidx.media3:media3-exoplayer:1.5.1'
+    implementation 'androidx.media3:media3-exoplayer-hls:1.5.1'
+    implementation 'androidx.media3:media3-exoplayer-dash:1.5.1'
+    implementation 'androidx.media3:media3-ui:1.5.1'
+    implementation files('libs/libretrodroid-0.14.0.aar')
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+}

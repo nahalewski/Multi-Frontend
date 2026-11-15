@@ -1,0 +1,27 @@
+# Embedded desktop emulation
+
+Implemented with packaged EmulatorJS/libretro WebAssembly, not an external emulator process. Runtime and eight cores are pinned to version 4.2.3, with SHA256 package provenance at `assets/emulation/manifest.json`. Source JS, full runtime license, each core license, original core source URLs, and build metadata are included under `assets/emulation`. The version-check endpoint is patched to the local packaged version metadata; that sole upstream change is documented in `licenses/LOCAL-CHANGES.txt`.
+
+## Root integration
+
+1. Main: `const {createEmulation}=require('./emulation-main.cjs')`; after app ready create `embedded=createEmulation({userData:app.getPath('userData'),baseDir:__dirname,getGame:id=>state.games.find(g=>g.id===id)})`. Delegate `name.startsWith('emulation-')` to `embedded.command(name,args)`. Call `embedded.stop()` on application shutdown.
+2. Root HTML: load `emulation-renderer.js`; add `frame-src http://127.0.0.1:*` to its CSP. The iframe gets a random port plus 192-bit secret path; the server listens only on loopback and rejects mismatched Origin/Host. No arbitrary filesystem or process API is exposed to this renderer.
+3. Launch: for `BladesEmbedded.supports(game)`, use `await BladesEmbedded.launch(game)` rather than requiring an external assignment. Native external emulators remain the fallback for unsupported consoles.
+4. **Ignore dashboard gamepad input while `BladesEmbedded.active`**; embedded game/Guide owns controller navigation until it exits. Root keyboard events don't cross iframe boundaries.
+5. Packaging already includes the files via `*.cjs/*.js/*.html/*.css` and `assets/**`. No new npm dependencies. Keep test `emulation-smoke.cjs` out of distribution when convenient.
+
+## Supported functionality
+
+- NES/fceumm, SNES/snes9x, GB and GBC/gambatte, GBA/mGBA, Sega 8/16-bit/genesis_plus_gx, N64/mupen64plus_next, Nintendo DS/melonDS, PS1/pcsx_rearmed. Raw files maximum 512 MiB; disk reads and ROM hashing are streamed in the host. Normal and legacy WASM builds are bundled for each core. Ambiguous PS1 CHD/PBP/ISO/BIN files require explicit PS1/PlayStation console assignment. Multi-file CUE games and archives fall back to external emulators.
+- Real per-ROM SHA256-keyed save states, ten disk slots, battery save persistence, pause/resume/restart.
+- Timeline snapshots every three seconds; a rolling 64 MiB/120-entry budget; preview thumbnails, time selection, restore and branch truncation. These are snapshots, not every video frame. Core state support is checked.
+- Blades Guide: F1/Escape, Guide button, on-screen Guide; keyboard/gamepad navigable. Original/full/wide/4:3 display, audio, per-core reported options, gamepad button remapping, automatic standard Xbox mapping, transparent Xbox-style touch buttons and analog sticks with drag layouts/opacity. Up to ten named layouts can be saved, selected, renamed and deleted; the last layout cannot be deleted. Each control can be resized from 50% to 200% or hidden. Existing single-layout settings migrate to a Default preset. Controls release on pause/focus loss.
+- Console logo splash reuses existing attributed Android logo assets. Runtime UI, remote update checking and remote network fallback are hidden/blocked; games execute locally.
+
+State/config/battery files are under Electron userData `emulation/<rom-sha256>/`. `emulation-export-settings` returns hash-keyed validated settings; `emulation-import-settings({settings})` validates all keys before persistence. Parent backup uses those APIs for controller/core settings. States and battery files remain separate from settings backups. `emulation-import-bios({id})` opens a BIOS picker for the game's core, accepts a single BIOS or BIOS ZIP up to 16 MiB, and preserves its original filename. No BIOS is supplied; DS/PS1 show missing-BIOS status when none was imported. BIOS files are excluded from backups.
+
+## Validation and limits
+
+`node --test tests/emulation.test.cjs` passes five tests covering timeline memory/branching, mapping bounds, loopback authentication, state persistence, origin rejection, settings export/import, traversal rejection, preset migration/count bounds, control-size bounds and last-layout deletion protection. `electron emulation-smoke.cjs --frame` and `electron emulation-smoke.cjs --gba --frame` generate original minimal NES/GBA test ROMs and boot the real fceumm/mGBA WASM cores **inside a sandboxed iframe under a file:// parent**, verifying real state serialization/save/load/timeline capture and held-key release when opening the Guide. The GBA smoke test also verifies creating/deleting a named touch layout through the actual Guide UI. Screenshots: `emulation-smoke-nes-frame.png` and `emulation-smoke-gba-frame.png`. No copyrighted game ROM was downloaded or bundled. The runtime's unsupported wake-lock request may log a harmless policy warning; the game still runs.
+
+NES and GBA execution were verified on Windows using original test programs. Other bundled cores are packaged but not yet gameplay-tested. Mac runtime execution and Ally hardware controls remain untested. PSP requires top-level cross-origin isolation in the available runtime and remains external; Dreamcast has no pinned compatible package in this runtime and also remains external. No unusable PSP asset was included. Touch/controller controls have not been exercised on Ally hardware. Emulator state and battery files are not part of the settings backup.

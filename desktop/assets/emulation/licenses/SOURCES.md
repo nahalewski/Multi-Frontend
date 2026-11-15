@@ -1,0 +1,1 @@
+Pinned EmulatorJS 4.2.3 runtime and core packages from npm. Original source: https://github.com/EmulatorJS/EmulatorJS/tree/v4.2.3 ; core build recipes: https://github.com/EmulatorJS/build ; each core README links its corresponding source. Core binaries contain license and source metadata, available through their license info. No games or BIOS files are included.

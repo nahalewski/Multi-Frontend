@@ -1,0 +1,7 @@
+Console logo assets from Carbon theme by Rookervik, based on Simple by Nils Bonenberger, and contributors to fabricecaruso/es-theme-carbon.
+Source repository: https://github.com/fabricecaruso/es-theme-carbon
+Source commit: 4a3cb80dcde076eeb87e6fb1ed82ea53cf1151cd
+Individual source URLs and hashes: provenance.json
+Changes: rasterized original SVGs into transparent PNGs at 1200 px width, choosing upstream white variants for a dark background.
+The upstream readme permits sharing and modification under CC BY-NC-SA, and contains its full license text. It labels the license 2.0 but includes 4.0 legal text; both that text and the trademark notice are preserved verbatim in UPSTREAM-readme.txt.
+These asset conversions remain under the same upstream license terms. Logos and trademarks belong to their respective owners. No ownership or official endorsement is asserted.

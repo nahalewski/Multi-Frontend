@@ -1,0 +1,135 @@
+{
+  "version": "4.2.3",
+  "files": {
+    "fceumm-legacy-wasm.data": {
+      "sha256": "f1054b094e7149fd6278485bc1b2e51ff75c5259048ddb1134171e53d651f239",
+      "bytes": 1053006
+    },
+    "fceumm-wasm.data": {
+      "sha256": "8c449fd5c36646fb0769423ed6ffa9efbdfc21fbfdc9bac7952b559d34d5b493",
+      "bytes": 1054015
+    },
+    "gambatte-legacy-wasm.data": {
+      "sha256": "940a7381d51223c0be0c0f98d1a988d42cc98d03c27b392cbd29cb9f357b5f62",
+      "bytes": 967022
+    },
+    "gambatte-wasm.data": {
+      "sha256": "ad67c7bf57f8f8b62606048e6ea498afac5b5abc76ad8de5f9dfc2a6719374bb",
+      "bytes": 967156
+    },
+    "genesis_plus_gx-legacy-wasm.data": {
+      "sha256": "2a1edeb68d7ec882149ed3cd5d3aa95a6ac231ebabaf82cdb56175a8b62967cc",
+      "bytes": 1204803
+    },
+    "genesis_plus_gx-wasm.data": {
+      "sha256": "190297a6f86757405090f1a2266f67dfe1a570a528c583434ed3641a5664f768",
+      "bytes": 1203661
+    },
+    "melonds-legacy-wasm.data": {
+      "sha256": "9707c56d903daa699dbc725b065e63bc09834a94b143ee0f3b3c1520c6e3b54f",
+      "bytes": 1193773
+    },
+    "melonds-wasm.data": {
+      "sha256": "f3ad9e42bb3ccd5c9bece23445b56e2d10d2cae8cc33a2c0591529d0a83cdfeb",
+      "bytes": 1194723
+    },
+    "mgba-legacy-wasm.data": {
+      "sha256": "e300d2f368c82bf61d77c972c36e367cf16408ec3d50beede080337519a3d696",
+      "bytes": 1054993
+    },
+    "mgba-wasm.data": {
+      "sha256": "01fcaf6d4296ef1db6676e0c69400c4474e24572d0b2b99cc097e4ae885e02d7",
+      "bytes": 1055616
+    },
+    "mupen64plus_next-legacy-wasm.data": {
+      "sha256": "425072f4bf94eec02633cbe9b84f47d6803dc0ec1b3c3b8de3ebbd2eb5617c3f",
+      "bytes": 1451870
+    },
+    "mupen64plus_next-wasm.data": {
+      "sha256": "2da1cbce9fda395e3ae83ca5787353baa159142d45ef3ea90f108b92524f76cc",
+      "bytes": 1451795
+    },
+    "pcsx_rearmed-legacy-wasm.data": {
+      "sha256": "88faee73d06c597a68a8b78e5621d97feefca134c64b623e65f0a900037456da",
+      "bytes": 1038636
+    },
+    "pcsx_rearmed-wasm.data": {
+      "sha256": "fe5515f6c29f093f0e8c01824b213804f1f76eb9cb4c97c72fe2cc17606bfbc2",
+      "bytes": 1039627
+    },
+    "snes9x-legacy-wasm.data": {
+      "sha256": "7d427a575cefad98ff400493fa1d7e892da63fe7bab68979babd9cea0bfaaf3b",
+      "bytes": 1092437
+    },
+    "snes9x-wasm.data": {
+      "sha256": "eaa0bcfce67673809886e50387a80a616b719502175db64c090d04c9d75958ee",
+      "bytes": 1093765
+    },
+    "reports/fceumm.json": {
+      "sha256": "13dbbfba0ea1bea087c97c38f47dd49c3fb8f16c3f5ed5678dd75d352b737132",
+      "bytes": 120
+    },
+    "reports/gambatte.json": {
+      "sha256": "a240a47bd6b2a38a6c46ee63c80bdcd24befbd50474453df4898d49282bd5f57",
+      "bytes": 122
+    },
+    "reports/genesis_plus_gx.json": {
+      "sha256": "5936a8ce8d7f010d5bfdd8c3bba2b2414f103b3a703121e56f2724b24dbe7ff3",
+      "bytes": 129
+    },
+    "reports/melonds.json": {
+      "sha256": "568f4ca9e4fb6ca8220d48047ae5ee3a7a1452c820b6718ef8b3888efed05a6a",
+      "bytes": 167
+    },
+    "reports/mgba.json": {
+      "sha256": "08219f6c855a9d996f04ed21169bb0c5ac64d469a8a536468b9876205b5c268d",
+      "bytes": 118
+    },
+    "reports/mupen64plus_next.json": {
+      "sha256": "270105553cec57fd1058c50e0541b8b89dbd30b2323fd70682036f6919b805cc",
+      "bytes": 153
+    },
+    "reports/pcsx_rearmed.json": {
+      "sha256": "93b99266955ab16e9aa0faa0d6338f4a29b50c197764dd48be945573a5b449c1",
+      "bytes": 149
+    },
+    "reports/snes9x.json": {
+      "sha256": "dc7ac963eb7935a7ac78956235ac0b8912ec785c57026336825aa2ed8031b3ad",
+      "bytes": 120
+    }
+  },
+  "packages": {
+    "fceumm": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-fceumm/-/core-fceumm-4.2.3.tgz",
+      "integrity": "sha512-XX9Vv2N/hzp0TstNMCTSppEs+sg+1lpJpPdSDuRqIO/cwdt7dUcF+WjNX1yQJLRbP5+XwcNHZ6K4BKy8CJpndQ=="
+    },
+    "gambatte": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-gambatte/-/core-gambatte-4.2.3.tgz",
+      "integrity": "sha512-Oq3AJL9SKnMsNAmtAP2eN934TQts3NHeaAe0z1BO9Lx/L3xDZKLpxL+XwgcSXIrl4Sx1oXxYEUwD7JjPEQ0DGg=="
+    },
+    "genesis_plus_gx": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-genesis_plus_gx/-/core-genesis_plus_gx-4.2.3.tgz",
+      "integrity": "sha512-D1e2XA2CPRAjfr0JurpXJgR9dePxl/xHtaE8v1T9BqD9A3DLfobIFWsWU9jCFS4NfUxCvcLdTYdY/We3QzvcTw=="
+    },
+    "melonds": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-melonds/-/core-melonds-4.2.3.tgz",
+      "integrity": "sha512-IjsEBNLPPbqU2GSeWEoEkOgAonK3JEyzvoYR3ucgOXu6InzDNdfuA5kP/mMh3d6DwCUbOwfnqGZuZXMTyNE2wA=="
+    },
+    "mgba": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-mgba/-/core-mgba-4.2.3.tgz",
+      "integrity": "sha512-daiHzZQKEr+P9fra7j5YoEAXiyYUEtBhFQ8EAV/SeCtrkvqtayU7GQ9LYgoSgzkKSwsbNSskApqGuA9EGARYPA=="
+    },
+    "mupen64plus_next": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-mupen64plus_next/-/core-mupen64plus_next-4.2.3.tgz",
+      "integrity": "sha512-HnnEXbOEpYxD7f2wUJQLxWUpEB0bT2kC56u5s7PLyj/xNI5ckQKka5+ay1QhU2fOv2BuPRwjjhlzmVJmk5e3hw=="
+    },
+    "pcsx_rearmed": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-pcsx_rearmed/-/core-pcsx_rearmed-4.2.3.tgz",
+      "integrity": "sha512-mMbl/NszCryFI15X5QniOqLNL7YGZ6tLP24gr5y1q2ekFOIbtc39BcVTMDEwRndNGovh2nPoCcMjB+W3fgQCog=="
+    },
+    "snes9x": {
+      "url": "https://registry.npmjs.org/@emulatorjs/core-snes9x/-/core-snes9x-4.2.3.tgz",
+      "integrity": "sha512-JTe9Rv9eOuCkgkG4ILwuCZUqNcVI3m9ju1NHTTjridUlFgJSqL4DUqF/vLKN9olCpsqlJFfcCayAOoikJxefwA=="
+    }
+  }
+}

@@ -1,0 +1,75 @@
+/* NXE is rendered from live frontend data; no dashboard screenshot backgrounds. */
+window.DesktopTheme=(()=>{
+ const labels=['Game Marketplace','My Xbox','Media Library','System Settings'];
+ const images=new Map(),failedImages=new Map();let motion={key:'',from:0,to:0,start:0,category:false},frame=0;
+ const palettes={classic:['#c0dd59','#71a51c','#365f18','#9baea1','#e9ede8'],spectrum:['#e9b658','#b56345','#563a68','#b0a5a1','#ebe5e0'],day:['#c4e8f2','#639cbe','#36617f','#b1c9c5','#eef4ed'],night:['#607da4','#283e60','#0c162b','#435267','#a0acbb']};
+ function reduced(){return state.settings.nxeMotion===false||matchMedia('(prefers-reduced-motion: reduce)').matches;}
+ function position(index){const key=blade+':'+libraryMode,now=performance.now();if(motion.key!==key||motion.to!==index){const current=motion.from+(motion.to-motion.from)*Math.min(1,(now-motion.start)/260);motion={key,from:motion.key===key?current:index,to:index,start:now,category:motion.key!==key};}const t=reduced()?1:Math.min(1,(now-motion.start)/260),e=1-(1-t)**3;if(t<1&&!frame)frame=requestAnimationFrame(()=>{frame=0;if(active())draw();});return {index:motion.from+(index-motion.from)*e,fade:motion.category?.55+.45*e:1,shift:motion.category?40*(1-e):0};}
+ function background(){const p=palettes[state.settings.nxeBackground]||palettes.classic;const sky=c.createRadialGradient(750,250,50,750,250,850);sky.addColorStop(0,p[0]);sky.addColorStop(.55,p[1]);sky.addColorStop(1,p[2]);c.fillStyle=sky;const pad=(innerHeight/scale-720)/2;c.fillRect(-offset/scale,-pad,innerWidth/scale,490+pad);c.save();c.strokeStyle='#f4fff012';c.lineWidth=25;for(let i=0;i<5;i++){c.beginPath();c.ellipse(1040,120,170+i*72,170+i*72,0,0,Math.PI*2);c.stroke();}c.restore();gradient(-offset/scale,490,innerWidth/scale,230+pad,p[3],p[4]);c.fillStyle='#e3ecd433';c.beginPath();c.ellipse(700,490,1100,55,0,0,Math.PI*2);c.fill();}
+ function libraryGrid(){text('Game Library',65,145,42,'#fff');text(filter+' · '+games.length+' games',65,181,24,'#eef5e4');const start=Math.floor(gameIndex/10)*10;const tabs=['All games','Favorites','Recently played'];tabs.forEach((name,i)=>{gradient(65+i*260,203,246,39,filter===name?'#a4ce46':'#ffffff77',filter===name?'#5b8e24':'#cbd4c188',3);text(name,81+i*260,230,21,filter===name?'#fff':'#324831');hit.push({x:65+i*260,y:203,w:246,h:39,action:()=>library(name)});});games.slice(start,start+10).forEach((g,i)=>{const x=70+(i%5)*236,y=265+Math.floor(i/5)*175,w=218,h=158,chosen=start+i===gameIndex;ensureArtwork(g);card({title:g.name,detail:g.system,art:g.art,icon:'game',badge:g.packageBadge},x,y,w,h,chosen);hit.push({x,y,w,h,action:()=>{if(gameIndex===start+i)return launch(g);gameIndex=start+i;sound();draw();}});});if(!games.length)text('No games here. Press X to add a ROM folder.',70,340,28,'#fff');else ensureArtwork(games[gameIndex]);text('Ⓐ Play   Ⓑ Back   ⓧ Options   LB/RB Page',65,679,23,'#263d2b');text(games.length?(gameIndex+1)+' / '+games.length:'0 games',1080,679,21,'#263d2b');}
+ function active(){return ['nxe','metro','metro-revised','series','ps3-xmb'].includes(state?.settings.theme);}
+ function apply(){document.body.classList.toggle('theme-xmb',state?.settings.theme==='ps3-xmb');const was=document.body.classList.contains('theme-nxe');document.body.classList.toggle('theme-nxe',active()&&state?.settings.theme!=='ps3-xmb');document.body.classList.toggle('theme-metro',['metro','metro-revised'].includes(state?.settings.theme));document.body.classList.toggle('theme-metro-revised',state?.settings.theme==='metro-revised');document.body.classList.toggle('theme-series',state?.settings.theme==='series');document.body.classList.toggle('nxe-reduced-motion',active()&&reduced());if(was&&!active())window.NxeExperience?.clear();canvas.setAttribute('aria-label',DashboardThemes.name(state?.settings.theme)+' dashboard');if(state?.settings.theme==='ps3-xmb'){$('#panel footer').textContent='× Enter     ○ Back     △ Options';return;}$('#panel footer').innerHTML='<span><b class=button-a>A</b> Select</span><span><b class=button-b>B</b> Back</span>';}
+ function items(){
+  if(libraryMode)return games.map(g=>({title:g.name,detail:g.system,art:g.art,badge:g.packageBadge,icon:'game',action:()=>launch(g)}));
+  if(blade===1){const loaded=state.games.find(g=>g.id===state.loaded);return [
+   {title:loaded?'Play '+loaded.name:'Open Tray',detail:loaded?.system||'Browse your game collection',art:loaded?.art,icon:'disc',action:()=>loaded?launch(loaded):library()},
+   {title:state.profile.name,detail:`${state.ra?.TotalPoints??0} G · Gamer profile`,icon:'profile',action:profileSettings},
+   {title:'Game Library',detail:state.games.length+' games',icon:'game',action:()=>library()},
+   {title:'Achievements',detail:'RetroAchievements',icon:'star',action:achievements},
+   {title:'PC Games',detail:'Installed games on this PC',icon:'game',action:()=>FrontendServices.pc()},
+   {title:'Continue Playing',detail:'Resume your last session',icon:'game',action:()=>GameCare.continuePlaying()},
+   {title:'System Settings',detail:'Personalize your experience',icon:'settings',action:settings}];}
+  if(blade===0)return [{title:'Game Marketplace',detail:'Your personal RomM catalog',icon:'game',action:()=>service('romm')},{title:'Achievements',detail:'Your RetroAchievements profile',icon:'star',action:achievements},{title:'Favorites',detail:'Your favorite games',icon:'star',action:()=>library('Favorites')}];
+  return homeRows[blade].map((title,i)=>({title,detail:blade===2?'Your entertainment library':'Configure your frontend',icon:blade===2?['music','picture','video','media'][i]:'settings',action:()=>{selected=i;activate();}}));
+ }
+ function artwork(src,x,y,w,h){if(!src||Date.now()<(failedImages.get(src)||0))return false;let im=images.get(src);if(!im){im=new Image();im.onload=draw;im.onerror=()=>{images.delete(src);failedImages.set(src,Date.now()+300000);};im.src=src;if(images.size>=100)images.delete(images.keys().next().value);images.set(src,im);}if(!im.complete||!im.naturalWidth)return false;const s=Math.min(w/im.naturalWidth,h/im.naturalHeight);c.save();c.beginPath();c.rect(x,y,w,h);c.clip();c.drawImage(im,x+(w-im.naturalWidth*s)/2,y+(h-im.naturalHeight*s)/2,im.naturalWidth*s,im.naturalHeight*s);c.restore();return true;}
+ function icon(kind,x,y){c.save();c.translate(x,y);c.strokeStyle='#f2f8ed';c.fillStyle='#eaf3df';c.lineWidth=7;c.lineCap='round';c.lineJoin='round';c.beginPath();
+  if(kind==='disc'){c.arc(0,0,61,0,Math.PI*2);c.stroke();c.beginPath();c.arc(0,0,16,0,Math.PI*2);c.stroke();}
+  else if(kind==='profile'){c.arc(0,-32,27,0,Math.PI*2);c.fill();c.beginPath();c.roundRect(-49,4,98,78,25);c.fill();}
+  else if(kind==='music'){c.moveTo(-25,35);c.lineTo(-25,-45);c.lineTo(45,-57);c.lineTo(45,23);c.stroke();c.beginPath();c.ellipse(-43,38,20,13,-.3,0,7);c.ellipse(27,26,20,13,-.3,0,7);c.fill();}
+  else if(kind==='star'){for(let i=0;i<10;i++){const a=i*Math.PI/5-Math.PI/2,r=i%2?27:65;c.lineTo(Math.cos(a)*r,Math.sin(a)*r);}c.closePath();c.fill();}
+  else if(kind==='game'){c.roundRect(-68,-36,136,80,24);c.stroke();c.moveTo(-43,-10);c.lineTo(-43,20);c.moveTo(-58,5);c.lineTo(-28,5);c.stroke();c.beginPath();c.arc(35,-6,7,0,7);c.arc(52,15,7,0,7);c.fill();}
+  else if(kind==='settings'){c.arc(0,0,41,0,7);c.stroke();for(let i=0;i<8;i++){c.save();c.rotate(i*Math.PI/4);c.fillRect(-9,-66,18,27);c.restore();}c.beginPath();c.arc(0,0,13,0,7);c.stroke();}
+  else{c.roundRect(-65,-45,130,90,9);c.stroke();if(kind==='picture'){c.moveTo(-55,33);c.lineTo(-10,-12);c.lineTo(20,14);c.lineTo(40,-4);c.lineTo(58,33);c.stroke();}else{c.beginPath();c.moveTo(-17,-25);c.lineTo(29,0);c.lineTo(-17,25);c.closePath();c.fill();}}
+  c.restore();
+ }
+ function card(item,x,y,w,h,chosen,reflection=false){const footer=libraryMode?52:81;c.save();c.translate(x,y);if(!chosen&&!libraryMode)c.transform(1,-.065,0,1,0,0);if(reflection){c.scale(1,-.24);c.globalAlpha=.13;}c.shadowColor='#173d3555';c.shadowBlur=chosen?25:10;c.shadowOffsetY=12;gradient(0,0,w,h,chosen?'#fbfff8':'#d9e5de',chosen?'#d5ded6':'#8da69a',9);c.shadowBlur=0;c.shadowOffsetY=0;gradient(7,7,w-14,h-footer,chosen?'#91c323':'#729b63',chosen?'#346b12':'#395a49',5);if(!artwork(item.art,7,7,w-14,h-footer)){c.save();c.translate(w/2,(h-footer)/2);c.scale(w/310,w/310);icon(item.icon,0,0);c.restore();}if(item.badge){gradient(7,h-footer-23,w-14,30,'#eee2ad','#c0a75c');text(item.badge,16,h-footer-1,18);}
+  c.save();c.beginPath();c.rect(13,h-footer+9,w-26,footer-9);c.clip();text(item.title,17,h-(libraryMode?25:39),libraryMode?18:chosen?25:21,'#273c2a');text(item.detail,17,h-(libraryMode?8:15),libraryMode?13:16,'#526551');c.restore();if(chosen){c.strokeStyle='#f7ffec';c.lineWidth=3;c.strokeRect(2,2,w-4,h-4);}c.restore();}
+ function render(){if(window.XmbTheme?.active())return XmbTheme.render();if(window.SeriesTheme?.active())return SeriesTheme.render();if(window.MetroTheme?.active())return MetroTheme.render();apply();const ratio=devicePixelRatio||1;canvas.width=innerWidth*ratio;canvas.height=innerHeight*ratio;scale=Math.min(innerWidth/1280,innerHeight/720);H=720;offset=(innerWidth-1280*scale)/2;const top=(innerHeight-720*scale)/2;c.setTransform(ratio,0,0,ratio,0,0);gradient(0,0,innerWidth,innerHeight,'#78ac20','#d8e2d8');c.translate(offset,top);c.scale(scale,scale);hit=[];
+  background();
+  text('XBOX 360',65,60,23,'#f3f8e9');c.textAlign='right';text(state.profile.name,1215,55,25,'#fff');text(`${state.ra?.TotalPoints??0} G`,1215,83,19,'#e4edda');c.textAlign='left';
+  if(libraryMode){libraryGrid();return;}
+  const list=items(),index=selected;const title=libraryMode?'Game Library / '+filter:labels[blade];text(title,68,204,39,'#fff');
+  if(!libraryMode)labels.forEach((name,i)=>{if(i===blade)return;const y=i<blade?204-(blade-i)*44:566+(i-blade-1)*38;text(name,70,y,24,'#f4f9e4b0');hit.push({x:55,y:y-30,w:340,h:36,action:()=>changeBlade(i)});});
+  const pos=position(index);c.save();c.globalAlpha=pos.fade;c.translate(0,pos.shift);const rects=[];
+  for(let i=Math.max(0,Math.floor(pos.index)-1);i<Math.min(list.length,Math.ceil(pos.index)+5);i++){const step=i-pos.index,near=Math.max(0,Math.min(1,step)),x=step<=1?324+step*326:650+(step-1)*174,y=233+near*37+Math.max(0,step-1)*12,w=310-near*107-Math.max(0,step-1)*7,h=310-near*53-Math.max(0,step-1)*14;if(step<-.05)continue;rects.push({i,x,y,w,h});}
+  for(const r of [...rects].reverse()){const chosen=r.i===index;card(list[r.i],r.x,r.y+r.h+13+r.h*.24,r.w,r.h,chosen,true);card(list[r.i],r.x,r.y,r.w,r.h,chosen);}
+  c.restore();for(const r of rects)hit.push({...r,y:r.y+pos.shift,action:()=>{if(r.i===selected)return list[r.i].action();selected=r.i;sound();draw();}});
+  if(index>0){text('‹',277,410,58,'#fff');hit.push({x:255,y:340,w:60,h:100,action:()=>handle('left')});}if(index<list.length-1){text('›',1190,585,46,'#3c563a');hit.push({x:1150,y:550,w:110,h:60,action:()=>handle('right')});}
+  if(!list.length)text('No games yet. Press X to add a ROM folder.',325,350,27,'#fff');else{if(libraryMode)ensureArtwork(games[gameIndex]);text(`${index+1} of ${list.length}`,327,588,21,'#3a503b');}
+  text('Ⓐ Select    Ⓑ Back    ⓧ '+(libraryMode?'Game options':'Library tools'),65,679,23,'#314b31');text('↑↓ Categories    ←→ Cards',825,679,21,'#526652');
+ }
+ function handle(key){if(!active())return false;if(window.XmbTheme?.active())return XmbTheme.handle(key);if(window.SeriesTheme?.active())return SeriesTheme.handle(key);if(window.MetroTheme?.active())return MetroTheme.handle(key);const list=items();let index=libraryMode?gameIndex:selected;
+  if(libraryMode&&['up','down','lb','rb'].includes(key)){gameIndex=Math.max(0,Math.min(games.length-1,gameIndex+({up:-5,down:5,lb:-10,rb:10}[key])));sound();}
+  else if(key==='left'||key==='right'){index=Math.max(0,Math.min(list.length-1,index+(key==='left'?-1:1)));if(libraryMode)gameIndex=index;else selected=index;sound();}
+  else if(['up','down','lb','rb'].includes(key)){if(!libraryMode)changeBlade(blade+(['up','lb'].includes(key)?-1:1));}
+  else if(key==='select')run(list[index]?.action||(()=>{}));
+  else if(key==='back'){if(libraryMode){libraryMode=false;selected=2;}else{blade=1;selected=0;}}
+  else if(key==='guide')window.NxeExperience.open();
+  else if(key==='x')libraryMode?gameOptions():tools();
+  else if(key==='y')run(async()=>toast(await call('capture')));
+  draw();return true;
+ }
+ function menu(){show('Dashboard theme','Choose your dashboard. Your library and settings stay available.',[
+ ...DashboardThemes.choices.map(theme=>[theme.name+(state.settings.theme===theme.id?' · Current':''),()=>set(theme.id)]),
+ ['Console families & planned themes',()=>ConsoleSetup.open()],
+ ...(state.settings.theme==='series'?[['Series X|S personalization',()=>SeriesTheme.menu()]]:[]),
+ ['NXE background: '+(state.settings.nxeBackground||'classic'),backgroundMenu],
+ ['Motion: '+(reduced()?'Reduced':'Full'),async()=>{state=await call('theme:options',{motion:state.settings.nxeMotion===false});draw();menu();}],
+ ['Startup animation: '+(state.settings.bootAnimation===false?'Off':'On'),async()=>{state=await call('theme:options',{bootAnimation:state.settings.bootAnimation===false});menu();}],
+ ['Preview startup animation',()=>ThemeBoot.play({...state.settings,bootAnimation:true})],
+ ['Preview notification',()=>window.NxeExperience.notify('Your frontend is ready',state.settings.theme==='ps3-xmb'?'XMB Menu':'Xbox Guide')]],settings);}
+ function backgroundMenu(){const choices=['classic','spectrum','day','night'],current=choices.includes(state.settings.nxeBackground)?state.settings.nxeBackground:'classic',name=current[0].toUpperCase()+current.slice(1);show('NXE background','Current background: '+name+'\nChoose a background to apply it immediately.',choices.map(background=>[background[0].toUpperCase()+background.slice(1)+(background===current?' · Current':''),async()=>{state=await call('theme:options',{background});draw();backgroundMenu();}]),menu);panelIndex=choices.indexOf(current);focusRow();const detail=$('#panel .nxe-detail');if(detail){detail.querySelector('.nxe-detail-emblem')?.remove();const preview=document.createElement('canvas');preview.className='nxe-background-preview';preview.width=480;preview.height=270;preview.setAttribute('aria-label',name+' background preview');const ctx=preview.getContext('2d'),p=palettes[current],sky=ctx.createRadialGradient(290,90,10,290,90,360);sky.addColorStop(0,p[0]);sky.addColorStop(.55,p[1]);sky.addColorStop(1,p[2]);ctx.fillStyle=sky;ctx.fillRect(0,0,480,185);const floor=ctx.createLinearGradient(0,185,0,270);floor.addColorStop(0,p[3]);floor.addColorStop(1,p[4]);ctx.fillStyle=floor;ctx.fillRect(0,185,480,85);detail.append(preview);}}
+ async function set(theme){state=await call('theme:set',{theme});selected=0;apply();draw();menu();}
+ return {active,apply,render,handle,menu,set,artwork,icon};
+})();

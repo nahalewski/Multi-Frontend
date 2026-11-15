@@ -1,0 +1,4 @@
+const {systems,normalize,parseIndex}=require('./artwork.cjs');
+function createCoverFallback(request){const indexes=new Map();async function index(system){if(!systems[system])return[];if(!indexes.has(system)){const base='https://thumbnails.libretro.com/'+encodeURIComponent(systems[system])+'/Named_Boxarts/';indexes.set(system,request(base).then(html=>parseIndex(html).map(name=>({name,url:base+encodeURIComponent(name)}))).catch(()=>[]));}return indexes.get(system);}
+return async item=>{const wanted=normalize(item.name);if(wanted.length<3)return'';for(const system of item.system==='Game Boy'?['Game Boy','Game Boy Color']:[item.system]){const rows=await index(system),match=rows.find(row=>normalize(row.name)===wanted);if(match)return match.url;}return'';};}
+module.exports={createCoverFallback};

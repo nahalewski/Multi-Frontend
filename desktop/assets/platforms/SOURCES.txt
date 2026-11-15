@@ -1,0 +1,5 @@
+Hardware photos with individual credits and licenses: CREDITS.json
+Bundled from https://github.com/mattias800/spela/tree/master/server/internal/api/static/console-photos
+Android: Google official modern-look brand announcement.
+Windows: Kosnix/Platforms-Logos.
+RomM: https://github.com/rommapp/romm/blob/master/frontend/assets/isotipo.svg
