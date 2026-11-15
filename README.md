@@ -10,7 +10,7 @@ A controller-friendly game and media frontend for Windows and Android. The appli
 
 [Watch the commercial](docs/media/README.md) · [Browse 51 screenshots by console theme and app](docs/previews/README.md)
 
-These previews show the Windows **0.16.0 development build** with demonstration content, including PS4, PS4 Anniversary and PS5 themes. The published builds and source snapshot below remain **0.12.0** for Windows; Android has a separate feature set.
+The new video shows the **live Windows 0.18.0 development build**, real game artwork and connected media, with 12 theme/anniversary looks including Vita and Switch, plus a new 150 BPM soundtrack. The older screenshot gallery uses 0.16.0 demonstration content. Published builds and the source snapshot below remain **0.12.0** for Windows; Android has a separate feature set.
 
 ## Current builds
 

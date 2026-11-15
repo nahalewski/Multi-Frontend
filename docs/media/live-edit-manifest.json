@@ -1,0 +1,248 @@
+{
+  "duration": 92.80000000000001,
+  "bpm": 150,
+  "soundtrack": "High Voltage \u2014 original instrumental",
+  "source": "actual live frontend, no fixture content",
+  "scenes": [
+    [
+      "ps5-home",
+      6.4,
+      "intro",
+      "YOUR COLLECTION.",
+      "EVERY ERA.",
+      "Real library. Real app. Windows 0.18.0."
+    ],
+    [
+      "blades-home",
+      1.6,
+      "theme",
+      "BLADES",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "nxe-home",
+      1.6,
+      "theme",
+      "NXE",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "metro-home",
+      1.6,
+      "theme",
+      "METRO",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "metro-revised-home",
+      1.6,
+      "theme",
+      "METRO REVISED",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "series-home",
+      1.6,
+      "theme",
+      "XBOX SERIES",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "series-anniversary25-home",
+      1.6,
+      "theme",
+      "25TH ANNIVERSARY",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "ps3-xmb-home",
+      1.6,
+      "theme",
+      "PLAYSTATION 3 / XMB",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "ps4-home",
+      1.6,
+      "theme",
+      "PLAYSTATION 4",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "ps4-anniversary-home",
+      1.6,
+      "theme",
+      "PS4 ANNIVERSARY",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "ps5-home",
+      1.6,
+      "theme",
+      "PLAYSTATION 5",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "ps-vita-home",
+      1.6,
+      "theme",
+      "PLAYSTATION VITA",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "switch-home",
+      1.6,
+      "theme",
+      "NINTENDO SWITCH",
+      "One frontend. Your choice of console-inspired UI.",
+      "12 THEME / ANNIVERSARY LOOKS"
+    ],
+    [
+      "series-library",
+      6.4,
+      "games",
+      "YOUR GAMES. ALL TOGETHER.",
+      "Your real ROM and PC library, with artwork.",
+      "LIVE GAME LIBRARY"
+    ],
+    [
+      "switch-library",
+      3.2,
+      "games",
+      "A DIFFERENT WAY TO PLAY.",
+      "All Software, in the Switch-inspired theme.",
+      "NINTENDO SWITCH"
+    ],
+    [
+      "vita-livearea",
+      3.2,
+      "games",
+      "BUBBLES. LIVEAREA. START.",
+      "The newest PlayStation-inspired experience.",
+      "PLAYSTATION VITA"
+    ],
+    [
+      "ps5-guide",
+      3.2,
+      "control",
+      "STAY IN CONTROL.",
+      "A console-inspired menu, right where you need it.",
+      "CONTROL CENTER"
+    ],
+    [
+      "ps4-guide",
+      3.2,
+      "control",
+      "KEEP THE FAMILIAR FEEL.",
+      "Quick access to your frontend features.",
+      "QUICK MENU"
+    ],
+    [
+      "emulators",
+      3.2,
+      "setup",
+      "CHOOSE YOUR ENGINE.",
+      "Emulators, cores and automatic installation choices.",
+      "EMULATORS"
+    ],
+    [
+      "jellyfin",
+      6.4,
+      "media",
+      "YOUR MEDIA. YOUR SERVER.",
+      "Browsing the connected Jellyfin library.",
+      "JELLYFIN"
+    ],
+    [
+      "iptv-oneguide",
+      6.4,
+      "tv",
+      "FIND YOUR NEXT CHANNEL.",
+      "Live-provider channels and programme guide.",
+      "IPTV"
+    ],
+    [
+      "achievements",
+      3.2,
+      "play",
+      "KEEP TRACK OF YOUR PROGRESS.",
+      "Your connected RetroAchievements profile.",
+      "RETROACHIEVEMENTS"
+    ],
+    [
+      "media-center",
+      3.2,
+      "media",
+      "MORE THAN A GAME LIBRARY.",
+      "Your entertainment apps, together.",
+      "MEDIA CENTER"
+    ],
+    [
+      "karaoke",
+      3.2,
+      "music",
+      "TAKE THE MIC.",
+      "Explore karaoke and duet tools.",
+      "KARAOKE"
+    ],
+    [
+      "controllers",
+      3.2,
+      "control",
+      "BUILT FOR THE COUCH.",
+      "Controller setup, detection and remapping tools.",
+      "CONTROLLERS"
+    ],
+    [
+      "game-saves",
+      3.2,
+      "play",
+      "KEEP YOUR PROGRESS CLOSE.",
+      "Save tools, BIOS management and supported backup options.",
+      "SAVES & BIOS"
+    ],
+    [
+      "avatars",
+      3.2,
+      "profile",
+      "MAKE IT YOURS.",
+      "Choose your profile portrait and console style.",
+      "PROFILES"
+    ],
+    [
+      "settings",
+      3.2,
+      "system",
+      "YOUR SYSTEM. YOUR STYLE.",
+      "Settings that follow your selected theme.",
+      "SYSTEM SETTINGS"
+    ],
+    [
+      "backup",
+      3.2,
+      "system",
+      "TAKE YOUR SETTINGS WITH YOU.",
+      "Encrypted backup and restore.",
+      "BACKUP"
+    ],
+    [
+      "ps5-home",
+      6.4,
+      "outro",
+      "MULTI-FRONTEND",
+      "YOUR GAMES. YOUR MEDIA. YOUR STYLE.",
+      "github.com/nahalewski/Multi-Frontend"
+    ]
+  ]
+}
