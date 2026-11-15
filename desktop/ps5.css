@@ -1,0 +1,48 @@
+body.theme-ps5{background:#080b11;color:#f5f5f6;font-family:'Segoe UI',Arial,sans-serif}
+body.theme-ps5 #menuDim{background:#0009;backdrop-filter:blur(9px)}
+body.theme-ps5 #panel{inset:0;width:auto;min-width:0;max-width:none;padding:0;border:0;border-radius:0;background:linear-gradient(130deg,#181b20f8,#080a0efc);color:#f7f7f8;box-shadow:none;filter:none;font-family:'Segoe UI',Arial,sans-serif;overflow:hidden}
+body.theme-ps5 #panel #heading{left:7%;right:7%;top:6%;font:300 clamp(30px,3.5vw,48px) 'Segoe UI',sans-serif;color:#fff;text-shadow:none}
+body.theme-ps5 #panel #description{left:7%;right:7%;top:18%;padding:0;border:0;border-radius:0;background:none;color:#b8bdc6;font:300 clamp(16px,1.7vw,23px) 'Segoe UI',sans-serif;min-height:0;max-height:13%;white-space:pre-line}
+body.theme-ps5 #panel #rows{left:7%;right:7%;top:31%;bottom:12%;padding:5px;display:flex;flex-direction:column;gap:4px;overflow:auto}
+body.theme-ps5 #panel #rows button{flex-shrink:0;min-height:54px;background:#ffffff05;border:2px solid transparent;border-radius:8px;color:#ededf0;padding:12px 22px;text-align:left;font:300 clamp(19px,2vw,27px) 'Segoe UI',sans-serif;box-shadow:none}
+body.theme-ps5 #panel #rows button.selected,body.theme-ps5 #panel #rows button:hover,body.theme-ps5 #panel #rows button:focus{background:#ffffff14;border-color:#fff;outline:none;color:#fff;box-shadow:0 0 0 1px #ffffff25}
+body.theme-ps5 #panel footer{left:7%;right:7%;bottom:4%;font:18px 'Segoe UI',sans-serif;color:#d8dbe1}
+body.theme-ps5 #panel.ps5-settings #description{display:none}
+body.theme-ps5 #panel.ps5-settings #rows{top:18%;left:15%;right:15%}
+body.theme-ps5 #panel.ps5-settings #rows button{min-height:60px;border-bottom:1px solid #ffffff10}
+body.theme-ps5 #panel.ps5-options{inset:auto 4vw 9vh auto;width:440px;max-width:92vw;height:75vh;border:1px solid #ffffff30;border-radius:14px;background:linear-gradient(#292c32f8,#15181efa);box-shadow:0 8px 60px #0009}
+body.theme-ps5 #panel.ps5-options #heading{font-size:30px}
+body.theme-ps5 #panel.ps5-options #rows button{font-size:20px;min-height:46px}
+body.theme-ps5 #bladePanelLabel,body.theme-ps5 .scroll-hint,body.theme-ps5 .nxe-detail{display:none!important}
+body.theme-ps5 #setupThemePreview{width:min(100%,640px);height:auto;flex-shrink:0;border:1px solid #fff5;border-radius:9px;margin-top:12px}
+body.theme-ps5 #toast,body.theme-ps5 .achievement-popup,body.theme-ps5 #notice{background:linear-gradient(#f8f9fcf7,#e2e5ebf7);color:#1a1e26;border:0;border-radius:10px;box-shadow:0 8px 25px #0006;font-family:'Segoe UI',sans-serif}
+body.theme-ps5 .achievement-orb,body.theme-ps5 .nxe-orb{background:#202b42;color:#fff;border:0;box-shadow:none;border-radius:50%}
+body.theme-ps5 #toast{position:fixed;top:5vh;right:3vw;bottom:auto;left:auto;width:min(410px,88vw);padding:18px 22px;transform:none;text-align:left;font:18px/1.35 'Segoe UI',sans-serif;text-shadow:none}
+body.theme-ps5 #toast.nxe-notification{display:flex;align-items:center;gap:16px}
+body.theme-ps5 #toast[hidden]{display:none}
+body.theme-ps5 #toast .nxe-orb{width:46px;height:46px;font:20px 'Segoe UI',sans-serif}
+body.theme-ps5 #toast strong{color:#141821;font-size:18px;font-weight:500;margin:0 0 3px}
+body.theme-ps5 #toast span span{color:#4b5360;font-size:16px}
+body.theme-ps5 .blades-keyboard-backdrop{background:#000b;backdrop-filter:blur(7px)}
+body.theme-ps5 .blades-keyboard{background:linear-gradient(#30343af7,#11151cfb);border:1px solid #fff4;border-radius:14px;color:#fff;font-family:'Segoe UI',sans-serif;box-shadow:0 20px 70px #0009}
+body.theme-ps5 .blades-keyboard-key{background:#ffffff12;border:1px solid #ffffff20;border-radius:7px;color:white}
+body.theme-ps5 .blades-keyboard-key.selected{background:#f4f6fb;color:#121720;outline:2px solid white;outline-offset:2px;box-shadow:none}
+body.theme-ps5 .blades-keyboard-help,body.theme-ps5 .blades-keyboard-field-count{color:#c7cdd6}
+body.theme-ps5 #player>button{background:#181b22ed;color:#fff;border:1px solid #fff3;border-radius:30px;font:18px 'Segoe UI',sans-serif;box-shadow:none}
+body.theme-ps5 #player>button:focus{background:#eee;color:#111;outline:2px solid #fff;outline-offset:4px}
+body.theme-ps5 #player #playing{color:white;font:300 30px 'Segoe UI',sans-serif;text-shadow:0 2px 8px #000}
+body.theme-ps5 #karaokeFrame{background:#10151d}
+body.theme-ps5 #rommPreview{left:62vw;right:7vw;top:25vh;bottom:14vh;background:#ffffff05;border:1px solid #ffffff15;border-radius:12px;color:#fff;font-family:'Segoe UI',sans-serif}
+body.theme-ps5:has(#rommPreview) #panel #rows{right:46%}
+body.theme-ps5 .romm-box{background:#ffffff06;border-color:#ffffff20;border-radius:9px}
+body.theme-ps5 .download-progress{accent-color:#e5eaf4}
+body.theme-ps5 .touch-button{background:#11182785;color:#fff;border-color:#ffffff80;font-family:'Segoe UI',sans-serif}
+body.theme-ps5 .iptv-guide{background:linear-gradient(130deg,#1d2633,#080c13);color:white;font-family:'Segoe UI',sans-serif}
+body.theme-ps5 .iptv-guide header,body.theme-ps5 .iptv-guide footer,body.theme-ps5 .iptv-timeline{background:#ffffff0b;border-radius:9px;color:#e7eaf0}
+body.theme-ps5 .iptv-guide button,body.theme-ps5 .iptv-guide .iptv-channel,body.theme-ps5 .iptv-guide .iptv-programme{background:#ffffff0b;color:#e7eaf0;border-radius:6px;border-color:#ffffff15}
+body.theme-ps5 .iptv-guide button:focus,body.theme-ps5 .iptv-guide .iptv-programme.focused{background:#f1f4f9;color:#101621;outline:2px solid white;outline-offset:-2px}
+body.theme-ps5 .iptv-status,body.theme-ps5 .iptv-guide .no-guide{color:#c4cfdd}
+body.theme-ps5 .iptv-preview,body.theme-ps5 .iptv-grid{border:1px solid #ffffff30;border-radius:9px}
+body.theme-ps5 .iptv-dialog{background:linear-gradient(#292f39,#141922);color:white;border:1px solid #ffffff40;border-radius:14px}
+body.theme-ps5 .iptv-dialog input{background:#ffffff15;color:white;border:1px solid #ffffff50;border-radius:6px}
+@media(max-width:700px){body.theme-ps5 #panel #rows{left:4%;right:4%}body.theme-ps5 #panel.ps5-settings #rows{left:6%;right:6%}body.theme-ps5 #panel.ps5-options{right:3vw;width:94vw;height:85vh;bottom:4vh}}

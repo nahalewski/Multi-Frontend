@@ -1,0 +1,7 @@
+/* Shared Control Center geometry; this window contains an emulated game. */
+#ps5EmbeddedCenter .ps5-cc-help{font-size:15px}
+#ps5EmbeddedCenter .ps5-cc-card:first-child .ps5-cc-card-art{background:linear-gradient(125deg,#33405b,#101622)}
+#ps5EmbeddedCenter .ps5-cc-dock{left:10vw;right:10vw}
+body.theme-ps5 #guideButton{top:24px;right:3vw;padding:10px 22px;border:1px solid #ffffff45;border-radius:24px;background:#171b24d9;color:#f5f6fa;font:400 18px/1.35 'Segoe UI',Arial,sans-serif;box-shadow:0 4px 18px #0005;backdrop-filter:blur(14px);text-shadow:none}
+body.theme-ps5 #guideButton:hover,body.theme-ps5 #guideButton:focus-visible{background:#f3f5fa;color:#151a23;outline:2px solid #fff;outline-offset:3px}
+body.theme-ps5 #notice{position:fixed;top:88px;right:3vw;bottom:auto;left:auto;width:min(410px,88vw);max-height:24vh;overflow:auto;padding:18px 22px;border:1px solid #ffffff26;border-radius:12px;background:linear-gradient(125deg,#242932f5,#151a22f5);color:#f3f5fa;box-shadow:0 8px 28px #0008;font:400 18px/1.4 'Segoe UI',Arial,sans-serif;text-align:left;text-shadow:none;backdrop-filter:blur(18px);pointer-events:none}

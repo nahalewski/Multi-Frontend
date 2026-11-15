@@ -1,0 +1,2 @@
+function update(settings,args){const next={...settings};if(args.switchColor!==undefined){if(!['white','black'].includes(args.switchColor))throw Error('Unknown Switch color');next.switchColor=args.switchColor;}if(args.switchBrightness!==undefined){if(!Number.isFinite(args.switchBrightness)||args.switchBrightness<.4||args.switchBrightness>1)throw Error('Invalid Switch brightness');next.switchBrightness=args.switchBrightness;}return next;}
+module.exports={update};

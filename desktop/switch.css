@@ -1,0 +1,34 @@
+body.theme-switch{--sw-bg:#2d2d2d;--sw-fg:#eee;--sw-row:#3b3b3b;--sw-line:#606060;--sw-accent:#28d7e8;font-family:'Segoe UI',sans-serif;color:var(--sw-fg)}
+body.theme-switch.switch-white{--sw-bg:#ebebeb;--sw-fg:#292929;--sw-row:#fff;--sw-line:#c4c4c4}
+body.theme-switch #dashboard{filter:brightness(var(--switch-brightness,1))}
+body.theme-switch #menuDim{background:#0006;backdrop-filter:blur(4px)}
+body.theme-switch #panel{position:fixed;inset:0;width:100%;height:100%;max-width:none;padding:0;background:var(--sw-bg);color:var(--sw-fg);border:0;border-radius:0;box-shadow:none;font-family:'Segoe UI',sans-serif;overflow:hidden}
+body.theme-switch #panel:before,body.theme-switch #panel:after,body.theme-switch #bladePanelLabel{display:none}
+body.theme-switch #panel #heading{position:absolute;inset:5% 5% auto;margin:0;padding:0 0 2%;height:auto;color:var(--sw-fg);font:400 clamp(24px,3vw,40px)/1.3 'Segoe UI',sans-serif;border-bottom:1px solid var(--sw-line)}
+body.theme-switch #panel #description{position:absolute;inset:17% 6% auto;max-height:12%;margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none;text-shadow:none;font:400 clamp(15px,1.6vw,23px)/1.4 'Segoe UI',sans-serif;color:var(--sw-fg);white-space:pre-line;overflow:auto}
+body.theme-switch #panel #rows{position:absolute;inset:31% 6% 12%;width:auto;max-height:none;margin:0;overflow:auto;scrollbar-width:none}
+body.theme-switch #panel #rows>button{display:block;width:100%;min-height:58px;margin:0;padding:14px 20px;text-align:left;border:0;border-bottom:1px solid var(--sw-line);border-radius:0;background:transparent;color:var(--sw-fg);font:400 clamp(17px,1.8vw,26px)/1.3 'Segoe UI',sans-serif;box-shadow:none;white-space:normal}
+body.theme-switch #panel #rows>button:focus,body.theme-switch #panel #rows>button.selected{outline:3px solid var(--sw-accent);outline-offset:-3px;background:var(--sw-row);color:var(--sw-accent);border-radius:0!important;text-shadow:none}
+body.theme-switch #panel #heading,body.theme-switch #panel #rows>button{color:var(--sw-fg);text-shadow:none}
+body.theme-switch #panel footer{position:absolute;inset:auto 4% 0;height:9%;display:flex;justify-content:flex-end;align-items:center;border-top:1px solid var(--sw-line);background:none;color:var(--sw-fg);font:400 clamp(14px,1.5vw,22px) 'Segoe UI',sans-serif}
+body.theme-switch #panel.switch-settings #description{left:40%;top:19%;font-size:24px}
+body.theme-switch #panel.switch-settings #rows{left:40%;top:28%}
+#switchSettingsNav{position:absolute;inset:18% auto 12% 5%;width:30%;overflow:auto;border-right:1px solid var(--sw-line);padding-right:2%;scrollbar-width:none}
+#switchSettingsNav button{width:100%;display:block;padding:15px 12px;text-align:left;background:none;border:0;color:var(--sw-fg);font:400 clamp(16px,1.7vw,24px) 'Segoe UI',sans-serif;white-space:normal}
+#switchSettingsNav button.chosen{color:var(--sw-accent);border-left:4px solid var(--sw-accent)}
+#switchSettingsNav button.focused{outline:3px solid var(--sw-accent);outline-offset:-3px;background:var(--sw-row)}
+#switchQuick{position:fixed;z-index:970;inset:0 0 0 auto;width:min(520px,92vw);padding:4vh 36px;box-sizing:border-box;background:var(--sw-bg);color:var(--sw-fg);box-shadow:-20px 0 0 100vmax #0006;overflow:auto;font:400 21px 'Segoe UI',sans-serif;scrollbar-width:none}
+#switchQuick h1{font-size:30px;font-weight:400;margin:0 0 25px}#switchQuick p{font-size:16px;opacity:.7}
+#switchQuick button{display:block;width:100%;text-align:left;padding:16px 10px;margin:8px 0;background:transparent;color:var(--sw-fg);border:0;border-bottom:1px solid var(--sw-line);font:inherit}
+#switchQuick label{display:block;padding:20px 0;border-bottom:1px solid var(--sw-line)}#switchQuick input{display:block;width:100%;margin-top:18px;accent-color:var(--sw-accent)}#switchQuick button:focus,#switchQuick input:focus{outline:3px solid var(--sw-accent);outline-offset:3px}
+body.theme-switch .blades-keyboard{border-radius:0;background:var(--sw-bg);color:var(--sw-fg);border:1px solid var(--sw-line);font-family:'Segoe UI',sans-serif}
+body.theme-switch .blades-keyboard button{border-radius:0;background:var(--sw-row);color:var(--sw-fg);border:1px solid var(--sw-line);box-shadow:none}
+body.theme-switch .blades-keyboard button.selected,body.theme-switch .blades-keyboard button:focus{outline:3px solid var(--sw-accent);color:var(--sw-accent)}
+body.theme-switch #player{background:#111;font-family:'Segoe UI',sans-serif}body.theme-switch #player button{background:#333e;border:1px solid #777;border-radius:0;color:#fff}
+body.theme-switch #toast,body[data-notification-theme="switch"] .achievement-popup,body[data-notification-theme="switch"] #notice{background:#fafafa;color:#222;border:0;border-left:6px solid #27c9df;border-radius:0;font-family:'Segoe UI',sans-serif;box-shadow:0 3px 20px #0005}
+body.theme-switch .achievement-orb{background:#28c7dc;color:#fff;border-radius:50%}
+body.theme-switch #guide{position:fixed;inset:0 0 0 auto;transform:none;width:min(560px,94vw);max-height:none;height:100%;background:var(--sw-bg);color:var(--sw-fg);border:0;border-radius:0;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;padding:25px;box-sizing:border-box;box-shadow:-20px 0 0 100vmax #0006}
+body.theme-switch #guide[hidden]{display:none!important}body.theme-switch #guide h1,body.theme-switch #status,body.theme-switch #actions,body.theme-switch #guide .hint{position:static;inset:auto;margin:10px 0;color:var(--sw-fg);font-family:'Segoe UI',sans-serif;width:auto;max-height:none}
+body.theme-switch #actions{overflow:auto}body.theme-switch #actions button{display:block;width:100%;background:none;color:var(--sw-fg);border:0;border-bottom:1px solid var(--sw-line);border-radius:0;min-height:52px;padding:12px;text-align:left;font:20px 'Segoe UI',sans-serif}body.theme-switch #actions button:focus{outline:3px solid var(--sw-accent);outline-offset:-3px}
+body.theme-switch #guideButton{border-radius:50%;background:#333c;color:#fff;font-family:'Segoe UI',sans-serif}
+@media(max-width:700px){body.theme-switch #panel.switch-settings #rows{left:42%}#switchSettingsNav{width:33%}#switchSettingsNav button{font-size:16px}body.theme-switch #panel.switch-settings #description{left:43%;font-size:19px}}

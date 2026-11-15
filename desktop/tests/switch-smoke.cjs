@@ -1,0 +1,25 @@
+const{app,BrowserWindow,ipcMain}=require('electron'),fs=require('node:fs/promises'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.join(__dirname,'..'),base=process.argv.includes('--packaged')?path.join(root,'dist-0.18.0/win-unpacked/resources/app.asar'):root;app.disableHardwareAcceleration();
+app.whenReady().then(async()=>{let win;const errors=[];try{
+ const art='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><rect width="512" height="512" fill="#1685bd"/><circle cx="300" cy="170" r="100" fill="#4ce0df"/><path d="M0 512L150 210 380 512" fill="#10336c"/></svg>');
+ const fixture={profile:{name:'Player One'},settings:{theme:'switch',setupComplete:true,vitaSetupComplete:true,bootAnimation:false,sound:false,nxeMotion:false},games:Array.from({length:17},(_,i)=>({id:String(i),name:'Adventure '+(i+1),system:'GBA',path:'demo'+i+'.gba',art,played:100-i})),emulators:{},services:{},profiles:[{id:'one',name:'Player One'}],activeProfile:'one'};
+ ipcMain.handle('blades',async(e,name,args)=>{if(name==='theme:set')fixture.settings.theme=args.theme;if(name==='setting')fixture.settings[args.key]=args.value;if(name==='theme:options')Object.assign(fixture.settings,args);return{ok:true,value:name==='layout'?JSON.parse(await fs.readFile(path.join(base,'assets/layout.json'),'utf8')):name==='media:catalog'?[]:name==='emulators:catalog'?{entries:[],jobs:[],autoInstall:true}:name==='firmware:status'?{folder:'C:\\BIOS',files:[],installed:[],issues:[]}:name==='romm-saves:status'?{enabled:true,jobs:[],configured:false}:fixture};});
+ win=new BrowserWindow({show:false,width:1280,height:720,webPreferences:{offscreen:true,preload:path.join(base,'preload.cjs'),sandbox:true,contextIsolation:true}});
+ win.webContents.on('console-message',(_e,level,message)=>{if(level>=3&&!/ERR_|Failed to load resource/.test(message))errors.push(message);});
+ await win.loadFile(path.join(base,'index.html'));const js=s=>win.webContents.executeJavaScript(s),wait=ms=>new Promise(r=>setTimeout(r,ms)),shot=async name=>{await wait(200);await fs.writeFile(path.join(root,name),(await win.webContents.capturePage()).toPNG());};await wait(500);
+ assert(await js('SwitchTheme.active()'));assert(await js("document.body.classList.contains('theme-switch')"));
+ await js('NxeExperience.clear();SwitchTheme.home();DesktopWindowControls.controllerActivity();draw()');await shot('switch-home-preview.png');
+ await js("control('right');control('right')");assert.equal(await js('SwitchTheme.inspect().index'),2);
+ await js("control('down')");assert.equal(await js('SwitchTheme.inspect().zone'),'utility');
+ await js('library();control("right");control("down")');assert.equal(await js('gameIndex'),7);await shot('switch-library-preview.png');
+ await js("control('x')");assert(!await js("document.querySelector('#panel').hidden"));await js("control('back');SwitchTheme.home();settings()");
+ assert.equal(await js("document.querySelectorAll('#switchSettingsNav button').length"),11);await js("control('down');control('down');control('right')");assert.equal(await js('SwitchTheme.inspect().category'),2);assert.equal(await js('SwitchTheme.inspect().nav'),false);await shot('switch-settings-preview.png');
+ await js("SwitchTheme.settings(8);control('right');control('select')");await wait(60);assert.equal(fixture.settings.switchColor,'white');await js('SwitchTheme.home();draw()');await shot('switch-white-preview.png');
+ await js('SwitchTheme.openGuide()');assert(await js('SwitchTheme.inspect().quick'));await shot('switch-quick-preview.png');await js("document.querySelector('#switchQuick input').value=25;document.querySelector('#switchQuick input').dispatchEvent(new Event('change'))");await wait(40);assert.equal(fixture.settings.volume,.25);await js("control('back')");assert(!await js('SwitchTheme.inspect().quick'));
+ await js("mediaCenter()");assert.match(await js("document.querySelector('#rows').textContent"),/Jellyfin/);await shot('switch-media-preview.png');
+ await js("closePanel();BladesKeyboardUI.open('Search',[['Search','']],()=>{},closePanel)");await shot('switch-keyboard-preview.png');await js('BladesKeyboardUI.cancel();closePanel()');
+ await js("SwitchAudio.play('select',0);SwitchAudio.stop();ThemeBoot.renderAt(canvas,'switch',1500,false)");await shot('switch-boot-preview.png');
+ win.setSize(900,1200);await js('SwitchTheme.home();draw()');await shot('switch-portrait-preview.png');
+ await js("state.settings.theme='ps-vita';draw()");assert(!await js("document.body.classList.contains('theme-switch')"));assert(await js('VitaTheme.active()'));
+ assert.deepEqual(errors,[]);console.log('PASS: Switch home, navigation, All Software/options, settings sidebar, white/black, quick menu, media, keyboard, boot and theme switching');
+ }catch(e){console.error('FAIL:',e);process.exitCode=1;}finally{win?.destroy();app.quit();}});

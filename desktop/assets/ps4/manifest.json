@@ -1,0 +1,330 @@
+{
+  "repository": "https://github.com/d4v1-sudo/Ps4-UI",
+  "commit": "bc62c9b7d1e1831fcc2c99b683983984c52ea975",
+  "files": [
+    {
+      "file": "navigate.mp3",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/js/navigate.mp3",
+      "bytes": 29805,
+      "sha256": "a5e9e239244b7def09d8aca51818dd5b366462a844fd3ef4f05f58b4f1ca2aa3"
+    },
+    {
+      "file": "reward.mp3",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/js/reward.mp3",
+      "bytes": 48045,
+      "sha256": "b69483a44e625b1fb3d60be82677d07bca0b8df03a91efca9e83d0d0d1429e4f"
+    },
+    {
+      "file": "shutdown.mp3",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/js/shutdown.mp3",
+      "bytes": 32109,
+      "sha256": "86cffca3a4edfaa022a90e0bbbc772b673d89c845e9059a04475dde306a776cc"
+    },
+    {
+      "file": "startup.mp3",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/js/startup.mp3",
+      "bytes": 129261,
+      "sha256": "eb5b466c8b56282dc40289bfaea0f18e916738feb661266cb3e1b4b0ae5ae360"
+    },
+    {
+      "file": "friends.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/friends.png",
+      "bytes": 18416,
+      "sha256": "34397e21b77c6e2304797b65775a2787c0603d7f056829a6d988855d5955a776"
+    },
+    {
+      "file": "info.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/info.png",
+      "bytes": 11034,
+      "sha256": "63746d6f0d5af5ef1b901ac664dd07af7302ca21534b2c76e85f93a1486b4638"
+    },
+    {
+      "file": "off.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/off.png",
+      "bytes": 3660,
+      "sha256": "99a2a29c664b3ac44c778984c27cf4739efedef11bf13b9a2f1563cb6dc754f6"
+    },
+    {
+      "file": "settings.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/settings.png",
+      "bytes": 11146,
+      "sha256": "c0130a27c256e1702a377c82fc3ece253855722b87b80ee8eec0f02aeec133dc"
+    },
+    {
+      "file": "trophy.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/trophy.png",
+      "bytes": 5253,
+      "sha256": "8ae0c6272de1492e843e3c8415792389fde37dc8d67509450eb2e56842f86cc0"
+    },
+    {
+      "file": "user.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/user.png",
+      "bytes": 1772,
+      "sha256": "bd627e60ee8b03d5bf079f19166c50bde642d651db99b0e640a4e186cb384681"
+    },
+    {
+      "file": "plus.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/plus.png",
+      "bytes": 131779,
+      "sha256": "2d7635fd705cb711699f705a30950278324c0c87310af445a7a0cb18b1b5285f"
+    },
+    {
+      "file": "ps.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/ps.png",
+      "bytes": 63235,
+      "sha256": "f30d14b12f09cbd3b6f6fd431229ad31ae4bde358441c04795c10608d58c27df"
+    },
+    {
+      "file": "logo.png",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/img/logo.png",
+      "bytes": 132199,
+      "sha256": "aa0db63069afdbb75a2b374d801dcdae8443fd0d6060e2b3938d8cc4fd22c085"
+    },
+    {
+      "file": "ps4-logo.svg",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/svg/logo.svg",
+      "bytes": 1184,
+      "sha256": "a662522ed4594d6837fc72d3fca2f7a598a4100d4030b2f61e105f0f30317943"
+    },
+    {
+      "file": "sony.svg",
+      "source": "https://raw.githubusercontent.com/d4v1-sudo/Ps4-UI/bc62c9b7d1e1831fcc2c99b683983984c52ea975/assets/svg/home/sony.svg",
+      "bytes": 3933,
+      "sha256": "60c42b9f446a7e63767c45af5213205a396caca4e43013e1a4d133c5cd242c87"
+    }
+  ],
+  "additionalSources": [
+    {
+      "file": "anniversary/20th_bg.jpg",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/20th_bg.jpg",
+      "bytes": 1399759,
+      "sha256": "524a5e1bdfb0d77988e430b63aa6594a539a11873996f2160564eb768f8faab3",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/bg.jpg",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/bg.jpg",
+      "bytes": 310400,
+      "sha256": "d826ad845b864eec434df9b899a2d51cb163b2422ad482d617b450148d8058c9",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/bg2.jpg",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/bg2.jpg",
+      "bytes": 288308,
+      "sha256": "baf93552082d8a3fe3b70f87722a21d21422f0eaeb32850abd6b3b2f5e7b79db",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/circle.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/circle.png",
+      "bytes": 73520,
+      "sha256": "b0da300d688a39f1667e3a176919c2d8669c3e7ed88c8ec855ec0160dde98c0e",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/cross.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/cross.png",
+      "bytes": 9053,
+      "sha256": "72b8feee54a1f2efb2847985f6adcd351ba4ca439952f87cca9fd76bb31428da",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/square.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/square.png",
+      "bytes": 16688,
+      "sha256": "dca5dfbdedf883d74e7cb6b4974bf483b3f98684e772da3982b69468dd6a278f",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/triangle.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/triangle.png",
+      "bytes": 30869,
+      "sha256": "9900cfd41a181d28c1bc9d199f3293eae92797c8750188605139216b4a10f535",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/icon.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/icon.png",
+      "bytes": 42951,
+      "sha256": "cba5798fa8cb672116b5bd8131ddade49c9174bd49ae4498f72a5f8c7177328b",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/friend.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/function_icon/friend.png",
+      "bytes": 8727,
+      "sha256": "ed83e94c26a5c3803c5b1be1bb9d7789eb7cf3cb897d4201fe1f7fc666a84af9",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/notification.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/function_icon/notification.png",
+      "bytes": 8955,
+      "sha256": "dc4d0e67ae16f65b38d1857afda5bd918ab40c49bdb42a889ec85896d39fa484",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/party.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/function_icon/party.png",
+      "bytes": 8638,
+      "sha256": "8c8da7b6f1269cf9d38b56d13f3ed8a65c734a0516520455587a7bfa68c1caff",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/power.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/function_icon/power.png",
+      "bytes": 8648,
+      "sha256": "fa92ce8626bc357cfa8eebca4e0f5aaf416133cfb9439348b815e9e08654e82a",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/setting.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/function_icon/setting.png",
+      "bytes": 8311,
+      "sha256": "51bc543b45eb567377ec659827bf6827969bdb22c8fdb558a26f38ee605a1b4d",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/trophy.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/function_icon/trophy.png",
+      "bytes": 8775,
+      "sha256": "ad8aff1df6d7841f370e855d9115d7eed5371c3c2f14edbff173e5932e4edde8",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/message.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/function_icon/message.png",
+      "bytes": 7834,
+      "sha256": "6178109ca34be16200bb7caf9a75d818f5fbbe124fc64b89a09377cdce3e122e",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/browser.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/content_icon/browser.png",
+      "bytes": 31130,
+      "sha256": "7d6dfc6d10eec533a2e23d6948f984ec6c4ad21d55fd466a4e25db18de40d60c",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/folder.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/content_icon/folder.png",
+      "bytes": 60075,
+      "sha256": "864b12f8516d8fac473a5c757de9535e72fdb8236774d6180b343a7c1e28c3b5",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/gallery.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/content_icon/gallery.png",
+      "bytes": 26397,
+      "sha256": "60c31e4f4303df8ad537823adf1d59983459534991b1ff5f8562e25917c87db4",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/library.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/content_icon/library.png",
+      "bytes": 21599,
+      "sha256": "9551123bbb429f105beff9126be75ccd9f5b50c19f2bb37ed872430d1c85cf2e",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/tvvideo.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/content_icon/tvvideo.png",
+      "bytes": 21290,
+      "sha256": "539b7453be2f412ed0a79d21aae010947a4c83a58f8733498bf66792d6bbbf44",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/usbmusic.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/content_icon/usbmusic.png",
+      "bytes": 26539,
+      "sha256": "665739ec699693ff734676bd4e28f07da93955b6c46ae853b4637f5df10422d4",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "anniversary/disc.png",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/THEMES/PlayStation%20Anniversary/texture/content_icon/disc.png",
+      "bytes": 27885,
+      "sha256": "1ef44d2be166b5a21e9ff6aa3a4d3627a1c4f3822e8292e0ecbfcdac21fba059",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "LICENSE-orbis-LICENSE.txt",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/LICENSE",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "LICENSE-orbis-LICENSE.txt.txt",
+      "source": "https://raw.githubusercontent.com/KnuxBoy04/skin.orbis/f2678080cc6355e87140740fe7221e4111783717/LICENSE.txt",
+      "bytes": 295,
+      "sha256": "2e675c24726fccb58c0de6937eed10307744108a123d7589a0288a72694774f0",
+      "repository": "https://github.com/KnuxBoy04/skin.orbis",
+      "commit": "f2678080cc6355e87140740fe7221e4111783717"
+    },
+    {
+      "file": "select.wav",
+      "source": "https://raw.githubusercontent.com/DAK404/Kodi-PS4-Soundtheme/6aa6904dd88ffb528039569075498efd6a22941b/resource.uisounds.PlayStation/resources/Select.wav",
+      "bytes": 137236,
+      "sha256": "62535cb25f0e355bf1cdc5584a0c8850fdd9aded86e99fc5f38cb59f9daa0499",
+      "repository": "https://github.com/DAK404/Kodi-PS4-Soundtheme",
+      "commit": "6aa6904dd88ffb528039569075498efd6a22941b"
+    },
+    {
+      "file": "back.wav",
+      "source": "https://raw.githubusercontent.com/DAK404/Kodi-PS4-Soundtheme/6aa6904dd88ffb528039569075498efd6a22941b/resource.uisounds.PlayStation/resources/Back.wav",
+      "bytes": 121152,
+      "sha256": "acde584862c2df7e1868c7b768d4f85c0324b70b5cb94341c5cf90df9b4b0feb",
+      "repository": "https://github.com/DAK404/Kodi-PS4-Soundtheme",
+      "commit": "6aa6904dd88ffb528039569075498efd6a22941b"
+    },
+    {
+      "file": "move.wav",
+      "source": "https://raw.githubusercontent.com/DAK404/Kodi-PS4-Soundtheme/6aa6904dd88ffb528039569075498efd6a22941b/resource.uisounds.PlayStation/resources/Move.wav",
+      "bytes": 33780,
+      "sha256": "b301884d730d12b0b56a46952b3cf23a1b13396478b6027dbb558f695a4c7ef0",
+      "repository": "https://github.com/DAK404/Kodi-PS4-Soundtheme",
+      "commit": "6aa6904dd88ffb528039569075498efd6a22941b"
+    },
+    {
+      "file": "notification.wav",
+      "source": "https://raw.githubusercontent.com/DAK404/Kodi-PS4-Soundtheme/6aa6904dd88ffb528039569075498efd6a22941b/resource.uisounds.PlayStation/resources/Notification.wav",
+      "bytes": 218496,
+      "sha256": "e0f875d6799088f2b2f0f1dae053aa2ed692d3d1598fe550cb61a75b4eab952f",
+      "repository": "https://github.com/DAK404/Kodi-PS4-Soundtheme",
+      "commit": "6aa6904dd88ffb528039569075498efd6a22941b"
+    },
+    {
+      "file": "startup.wav",
+      "source": "https://raw.githubusercontent.com/DAK404/Kodi-PS4-Soundtheme/6aa6904dd88ffb528039569075498efd6a22941b/resource.uisounds.PlayStation/resources/Startup.wav",
+      "bytes": 1605376,
+      "sha256": "a252cf3d3cd5008a00de4f16676d5397a3be960b1cb5d2d9ad652c8c9b8603a2",
+      "repository": "https://github.com/DAK404/Kodi-PS4-Soundtheme",
+      "commit": "6aa6904dd88ffb528039569075498efd6a22941b"
+    }
+  ]
+}

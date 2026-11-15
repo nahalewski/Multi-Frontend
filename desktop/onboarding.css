@@ -1,0 +1,5 @@
+#panel.avatar-picker #rows button{min-height:106px;display:flex;align-items:center;gap:20px}
+.setup-avatar{width:88px;height:88px;object-fit:cover;border-radius:12px;flex-shrink:0;box-shadow:0 3px 12px #0005}
+#panel .setup-progress{font-size:.72em;opacity:.75;display:block;margin-bottom:8px}
+#panel #walkthroughPreview{width:min(480px,80%);height:auto;display:block;margin:12px auto;border:1px solid #ffffff55;border-radius:8px}
+#panel.avatar-picker #rows button:focus .setup-avatar{outline:2px solid currentColor}

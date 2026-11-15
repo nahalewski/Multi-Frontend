@@ -2,7 +2,7 @@
 
 A controller-friendly game and media frontend for Windows and Android. The application is currently named **Blades360**.
 
-[Download Windows and Android builds](https://github.com/nahalewski/Multi-Frontend/releases/latest)
+[Download Windows 0.19.0](https://github.com/nahalewski/Multi-Frontend/releases/tag/v0.19.0) · [Android 1.0 (unchanged)](https://github.com/nahalewski/Multi-Frontend/releases/tag/v0.12.0)
 
 ## Latest desktop screenshots and feature video
 
@@ -10,20 +10,20 @@ A controller-friendly game and media frontend for Windows and Android. The appli
 
 [Watch the commercial](docs/media/README.md) · [Browse 51 screenshots by console theme and app](docs/previews/README.md)
 
-The new video shows the **live Windows 0.18.0 development build**, real game artwork and connected media, with 12 theme/anniversary looks including Vita and Switch, plus a new 150 BPM soundtrack. The older screenshot gallery uses 0.16.0 demonstration content. Published builds and the source snapshot below remain **0.12.0** for Windows; Android has a separate feature set.
+The new video shows the **live Windows 0.18.0 development build**, real game artwork and connected media, with 12 theme/anniversary looks including Vita and Switch, plus a new 150 BPM soundtrack. The older screenshot gallery uses 0.16.0 demonstration content. The current Windows build and source are **0.19.0**, adding Wii/Wii U themes and software update checks. Android has a separate feature set. [New Wii/Wii U screenshots](docs/previews/nintendo-019/README.md).
 
 ## Current builds
 
 | Platform | Version | Status |
 | --- | --- | --- |
-| Windows x64 | 0.12.0 | Portable development build; six console-inspired themes |
+| Windows x64 | 0.19.0 | Portable development build; 14 theme/anniversary looks |
 | Android 8+ | 1.0 | Debug-signed development APK; Blades theme |
 
 Android does **not** yet contain the desktop XMB theme or karaoke/community updates. Version numbers and feature sets are separate. macOS source/build tooling is present, but this release does not provide a tested Mac binary.
 
 ## Features
 
-- Windows themes: Blades, NXE, Metro, revised Metro, Xbox Series, and PlayStation 3 XMB. First-run setup offers console/theme selection with a live preview.
+- Windows themes: Blades, NXE, Metro, revised Metro, Xbox Series (including an anniversary look), PS3 XMB, PS4, PS4 Anniversary, PS5, Vita, Switch, Wii and Wii U. First-run setup offers console/theme selection with a live preview.
 - ROM and PC game libraries, artwork, RomM catalog/downloads, emulator discovery, core downloads, console launch screens, BIOS folder and supported save/state controls.
 - Controller navigation and remapping, on-screen keyboard, themed overlays and notifications, RetroAchievements data, storage management and settings backup.
 - Local music and app captures, Jellyfin, Plex, YouTube, and IPTV playlists/programme guide. Bring your own service accounts and content.
@@ -37,7 +37,7 @@ Refined category icons, trophy/saved-data icons, menu row spacing, layered anima
 
 ## Install
 
-**Windows:** download and run `Blades360-0.12.0-win-x64.exe`. This portable build is unsigned. Settings live in the current user's application data, not this repository.
+**Windows:** download and run `Blades360-0.19.0-win-x64.exe`. This portable build is unsigned. Settings live in the current user's application data, not this repository.
 
 **Android:** install `Blades360-android-1.0-debug.apk` using Android's package installer or `adb install -r`. It is a development APK, not a Play Store release. A differently signed existing installation cannot be updated in place; back up settings before replacing it.
 

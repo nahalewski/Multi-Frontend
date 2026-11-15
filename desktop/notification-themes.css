@@ -10,3 +10,6 @@ body[data-notification-theme="series"] .achievement-orb{width:52px;height:52px;f
 .achievement-popup{z-index:110001}
 
 body[data-notification-theme="metro"] .nxe-orb,body[data-notification-theme="metro-revised"] .nxe-orb,body[data-notification-theme="series"] .nxe-orb{background:#107c10;box-shadow:none;border:0;color:white}
+
+body:is([data-notification-theme="wii"],[data-notification-theme="wiiu"]) :is(#notice,#toast,.achievement-popup){background:linear-gradient(#fff,#e3eff5);border:3px solid #8fcbe0;border-radius:28px;color:#4e7384;font-family:"Segoe UI",sans-serif;text-shadow:none;box-shadow:0 5px 18px #56829355}
+body:is([data-notification-theme="wii"],[data-notification-theme="wiiu"]) :is(.achievement-orb,.nxe-orb){background:#e7f8ff;color:#26a9d0;border:2px solid #8acde3;box-shadow:none;text-shadow:none}

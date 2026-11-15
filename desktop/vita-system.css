@@ -1,0 +1,76 @@
+/* Original Vita-inspired system styling: pale settings sheets, silver keyboard,
+   graphite quick menu and rounded cyan selection. */
+body.theme-vita{font-family:'Segoe UI',Arial,sans-serif;color:#253d51;--vita-blue:#087ac9;--vita-line:#b0beca;--vita-paper:#f2f5f6}
+body.theme-vita #dashboard{filter:brightness(var(--vita-brightness,1))}
+body.theme-vita #menuDim{background:#163c6055;backdrop-filter:blur(7px)}
+body.theme-vita #panel{inset:4.4vh 3.2vw 5.4vh;width:auto;min-width:0;max-width:none;height:auto;padding:0;border:2px solid #fff9;border-radius:16px 16px 30px 30px;background:linear-gradient(110deg,#f9fbfc,#e1e8ed);box-shadow:0 5px 35px #071d4b77;color:#294156;filter:brightness(var(--vita-brightness,1));font-family:'Segoe UI',Arial,sans-serif;overflow:hidden}
+body.theme-vita #panel:before{content:'';position:absolute;inset:0 0 auto;height:13%;background:linear-gradient(#a9daef,#3b9ac7 56%,#2b82b9);border-bottom:2px solid #fff;box-shadow:0 2px 4px #265b7b55}
+body.theme-vita #panel #heading{position:absolute;left:4%;right:4%;top:2.8%;margin:0;color:#fff;text-shadow:0 1px 2px #286f9b;font:400 clamp(26px,3vw,44px)/1.3 'Segoe UI',sans-serif;max-height:10%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+body.theme-vita #panel #description{position:absolute;top:16%;left:5%;right:5%;max-height:16%;min-height:0;margin:0;padding:0;background:none;border:0;border-radius:0;color:#546a7e;font:400 clamp(15px,1.55vw,23px)/1.4 'Segoe UI',sans-serif;white-space:pre-line;overflow:auto}
+body.theme-vita #panel #rows{position:absolute;left:4.5%;right:4.5%;top:32%;bottom:12%;padding:4px 6px;display:flex;flex-direction:column;gap:0;overflow:auto;scrollbar-width:none}
+body.theme-vita #panel #rows>button{flex-shrink:0;min-height:53px;padding:13px 27px;border:0;border-bottom:1px solid #bbc7cf;border-radius:0;background:linear-gradient(#ffffff70,#e4eaf050);color:#2a4054;font:400 clamp(18px,1.8vw,27px)/1.25 'Segoe UI',sans-serif;box-shadow:none;text-align:left;text-shadow:0 1px #fff;transition:background .12s}
+body.theme-vita #panel #rows>button:after{content:'›';float:right;color:#7d91a3;font-size:1.4em;line-height:.9}
+body.theme-vita #panel #rows>button.selected,body.theme-vita #panel #rows>button:hover,body.theme-vita #panel #rows>button:focus{border-radius:7px;background:linear-gradient(#bee9fd,#8ed6f3);outline:2px solid #68c9f0;outline-offset:-2px;color:#164466;box-shadow:inset 0 1px 2px white}
+body.theme-vita #panel footer{left:5%;right:5%;bottom:3%;color:#517086;font:400 clamp(13px,1.4vw,20px) 'Segoe UI',sans-serif;text-shadow:none;background:none}
+body.theme-vita #bladePanelLabel,body.theme-vita .scroll-hint,body.theme-vita .nxe-detail{display:none!important}
+body.theme-vita #panel.vita-settings-page #description:empty{display:none}
+body.theme-vita #panel.vita-settings-page:has(#description:empty) #rows{top:17%}
+body.theme-vita #panel.vita-options{inset:auto 4vw 8vh auto;width:min(480px,88vw);height:68vh;border-radius:14px;background:linear-gradient(#f9fcff,#d4e1e8)}
+body.theme-vita #panel.vita-options #heading{font-size:clamp(23px,2.4vw,34px)}
+body.theme-vita #panel.vita-options #rows{top:32%}
+body.theme-vita .setup-progress{color:#d6f3ff;font-size:12px;display:block}
+body.theme-vita #walkthroughPreview,body.theme-vita #setupThemePreview{width:min(620px,90%);height:auto;flex-shrink:0;margin:12px auto;border:3px solid #fff;border-radius:12px;box-shadow:0 2px 12px #415d7a44}
+body.theme-vita #toast,body.theme-vita .achievement-popup,body.theme-vita #notice{background:linear-gradient(#f8fcfffa,#dceaf5f5);color:#263a4c;border:1px solid #fff;border-radius:14px;box-shadow:0 3px 16px #17304e66;text-shadow:none;font-family:'Segoe UI',sans-serif}
+body.theme-vita #toast{position:fixed;left:auto;right:2.5vw;top:5vh;bottom:auto;max-width:min(430px,88vw);padding:18px 24px;transform:none;font-size:19px;text-align:left;border-left:9px solid #149be0}
+body.theme-vita .achievement-orb,body.theme-vita .nxe-orb{background:radial-gradient(circle at 35% 25%,#9de8ff,#178fc7 60%,#03568c);box-shadow:inset 0 2px 7px #ffffffad;border:2px solid #bdeeff;border-radius:50%;color:white}
+body.theme-vita .blades-keyboard-backdrop{background:#061a336e;backdrop-filter:blur(5px);align-items:flex-end;padding:3vh 7vw}
+body.theme-vita .blades-keyboard{width:min(1080px,100%);max-width:none;padding:21px 26px 16px;border:2px solid #ebf1f5;border-radius:15px;background:linear-gradient(#a6a9b2,#747983 72%,#5c626b);color:#fff;box-shadow:0 10px 50px #0008;font-family:'Segoe UI',sans-serif}
+body.theme-vita .blades-keyboard-title{color:white;border:0;font-size:26px;padding:0;margin:0 0 12px;text-shadow:0 1px #464d58}
+body.theme-vita .blades-keyboard-field{border-radius:7px;border:1px solid #575f6d;background:#cbd1d9;color:#253b4b}
+body.theme-vita .blades-keyboard-field.active{background:#f4f7fa;border-color:#fff;box-shadow:0 0 0 2px #92dcff}
+body.theme-vita .blades-keyboard input{background:#f9fbfc;color:#25333f;border:1px solid #929ba7;border-radius:4px}
+body.theme-vita .blades-keyboard-key{background:linear-gradient(#f3f4f7,#d2d5dd);border:1px solid #858a94;border-radius:7px;color:#4c515b;font:500 clamp(18px,2vw,28px) 'Segoe UI',sans-serif;box-shadow:0 2px 1px #4449,inset 0 1px white;text-shadow:0 1px #fff;min-height:43px}
+body.theme-vita .blades-keyboard-key.selected,body.theme-vita .blades-keyboard-key:hover{background:linear-gradient(#fff,#bcecff);outline:3px solid #4ac7ff;box-shadow:0 0 10px #a7e8ff;transform:none}
+body.theme-vita .blades-keyboard-key:nth-child(45){background:linear-gradient(#a2ed33,#5baa05);color:#fff;text-shadow:0 1px #346c03}
+body.theme-vita .blades-keyboard-help,body.theme-vita .blades-keyboard-field-count{color:#f0f3f8;border-color:#b3bac4;font-size:15px}
+body.theme-vita #player{background:#050608;color:#fff;font-family:'Segoe UI',Arial,sans-serif}
+body.theme-vita #playing{position:absolute;top:3%;left:4%;right:4%;margin:0;color:#fff;font:300 clamp(20px,2.5vw,34px) 'Segoe UI',sans-serif;text-shadow:0 2px 4px #000}
+body.theme-vita #player>button{background:linear-gradient(#6c727ae8,#32383fe8);border:1px solid #aeb6bf;border-radius:8px;color:white;box-shadow:0 2px 4px #0007;font:400 clamp(13px,1.4vw,19px) 'Segoe UI',sans-serif;padding:11px 18px}
+.vita-system-overlay{position:fixed;inset:0;z-index:1100;background:#0008;backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;font-family:'Segoe UI',Arial,sans-serif;color:#fff}
+.vita-system-overlay[hidden]{display:none!important}
+.vita-quick-card{width:min(560px,94vw);max-height:94vh;overflow:auto;padding:10px 15px 14px;border:1px solid #aaa9;border-radius:13px;background:linear-gradient(100deg,#33383aeF,#47494aF7);box-shadow:0 12px 70px #000a;scrollbar-width:none}
+.vita-quick-header{display:flex;align-items:center;gap:12px;height:36px;margin-bottom:8px;font-size:19px}
+.vita-quick-header time{margin-left:auto;font-size:15px;color:#ddd}
+.vita-system-button{font:400 16px/1.3 'Segoe UI',sans-serif;color:#f4f4f4;text-shadow:0 1px #111;background:linear-gradient(#73777b,#42474b);border:1px solid #929698;border-radius:7px;padding:10px 15px;cursor:pointer;box-shadow:inset 0 1px #aaa6,0 1px 3px #1115}
+.vita-system-button:hover,.vita-system-button:focus-visible,.vita-system-button.selected{outline:2px solid #b7eaff;outline-offset:1px;box-shadow:0 0 9px #81c9f4;background:linear-gradient(#828f99,#4f6575)}
+.vita-quick-dismiss{border-radius:50%;width:30px;height:30px;padding:0;font-size:26px;line-height:1}
+.vita-quick-section{padding:9px 11px;margin:7px 0;border:1px solid #94999c;border-radius:5px;background:linear-gradient(#5b5e60a0,#353a3ca0);box-shadow:inset 0 1px #b7bcc04d,0 2px 3px #1117}
+.vita-quick-section h2{display:flex;align-items:center;gap:9px;font-size:17px;font-weight:400;margin:0 0 8px;color:white;text-shadow:0 1px #222}
+.vita-quick-symbol{font-size:23px;line-height:1;width:24px;color:#eee;text-align:center}
+.vita-quick-section>.vita-system-button{margin:3px 8px 3px 0}
+.vita-quick-network{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.vita-quick-network button{white-space:pre-line;text-align:center;font-size:14px;line-height:1.6;padding:7px}
+.vita-quick-range{display:grid;grid-template-columns:1fr 1.3fr;align-items:center;gap:8px}
+.vita-quick-range h2{margin:0}
+.vita-quick-range input{width:100%;accent-color:#c8d9df;height:26px;cursor:pointer}
+.vita-quick-range input.selected{outline:2px solid #a5ddf7;outline-offset:2px;border-radius:12px}
+.vita-quick-transport{grid-column:1/-1;display:flex;justify-content:flex-end;gap:7px}
+.vita-quick-transport button{padding:7px 12px;font-size:14px}
+.vita-quick-note{font-size:12px;line-height:1.4;color:#cbd1d7;margin:9px 3px}
+.vita-quick-card footer{font-size:14px;color:#dce9f2;text-align:center;padding-top:6px}
+.vita-setup-overlay{background:radial-gradient(ellipse at 60% 18%,#62c8f3,#147ed0 58%,#0741a4);backdrop-filter:none;z-index:1100}
+.vita-setup-overlay:before,.vita-setup-overlay:after{content:'';position:absolute;inset:20% -15%;border:2px solid #c5f7ff28;border-radius:50%;transform:rotate(-20deg);pointer-events:none}
+.vita-setup-overlay:after{inset:30% -15%;transform:rotate(17deg)}
+.vita-setup-card{position:relative;width:min(780px,90vw);max-height:94vh;overflow:auto;text-align:center;padding:24px;color:white;scrollbar-width:none}
+.vita-setup-brand{font:300 34px 'Segoe UI',sans-serif;letter-spacing:7px;margin-bottom:18px;text-shadow:0 3px 6px #00569b}
+.vita-setup-card h1{font-size:clamp(28px,4vw,46px);font-weight:300;margin:15px 0}
+.vita-setup-card p{font-size:clamp(17px,2vw,24px);line-height:1.5;color:#e5f6ff;margin:20px auto;max-width:680px}
+.vita-setup-card .vita-system-button{display:block;min-width:220px;max-width:90%;margin:15px auto;background:linear-gradient(#f8fcff,#cfe2f2);border:2px solid white;border-radius:28px;color:#1059a1;text-shadow:none;padding:13px 30px;font-size:21px;box-shadow:0 3px 7px #05447e88}
+.vita-setup-card .vita-system-button.selected{background:linear-gradient(#fff,#9be4ff);outline:3px solid #a0f4ff;outline-offset:3px}
+.vita-setup-bubbles{display:flex;justify-content:center;gap:30px;margin:28px}
+.vita-setup-bubbles span{display:grid;place-items:center;width:100px;height:100px;border:2px solid #c3f9ff;border-radius:50%;font-size:50px;background:radial-gradient(circle at 35% 22%,#faffff99,#42b9ef 45%,#0763ae);box-shadow:inset 0 9px 14px #ffffff70,0 5px 15px #04488288}
+.vita-setup-date,.vita-setup-profile{display:block;font-size:clamp(28px,4vw,44px);font-weight:300;margin:35px 0 15px}
+.vita-setup-card small{display:block;font-size:19px}
+.vita-setup-card footer{margin-top:30px;font-size:16px;color:#cce8fd}
+@media(max-height:700px){.vita-quick-card{max-height:97vh;padding:6px 11px}.vita-quick-section{padding:6px 9px;margin:5px 0}.vita-quick-section h2{font-size:15px;margin-bottom:5px}.vita-system-button{font-size:14px;padding:7px 10px}.vita-quick-note{font-size:11px}.vita-setup-card{padding:12px}.vita-setup-brand{font-size:24px;margin:0}.vita-setup-card h1{margin:8px 0}.vita-setup-bubbles{margin:15px}.vita-setup-bubbles span{width:75px;height:75px;font-size:40px}.vita-setup-card p{margin:12px}.vita-setup-card footer{margin-top:16px}body.theme-vita #panel #rows>button{min-height:44px;padding:9px 18px}}
+@media(prefers-reduced-motion:reduce){body.theme-vita *{scroll-behavior:auto!important;transition:none!important}}

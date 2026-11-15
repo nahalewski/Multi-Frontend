@@ -1,0 +1,32 @@
+/* Vita-inspired graphite quick controls; independent of the paused game's viewport. */
+body.theme-ps-vita{font-family:'Segoe UI',Arial,sans-serif;color:#fff}
+body.theme-ps-vita #guide{position:fixed;inset:5vh auto 5vh 50%;transform:translateX(-50%);width:min(88vw,1040px);min-width:0;max-width:1040px;height:90vh;max-height:900px;padding:0;border:1px solid #737b82;border-radius:12px;background:linear-gradient(110deg,#303438f7,#16191dfb 60%,#252a30fa);box-shadow:0 18px 65px #000b,0 0 0 100vmax #0005,inset 0 1px #ffffff40;filter:none;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;overflow:hidden;backdrop-filter:blur(12px);color:#f8f8f8}
+body.theme-ps-vita #guide[hidden]{display:none!important}
+body.theme-ps-vita #guide>h1{position:static;inset:auto;margin:0;padding:clamp(14px,2.5vh,28px) clamp(20px,4vw,50px);font:300 clamp(24px,3vw,37px) 'Segoe UI',Arial,sans-serif;letter-spacing:.015em;color:#fff;text-shadow:0 1px #000;background:linear-gradient(#5c6066,#373d43 50%,#272d33 51%,#252b32);border-bottom:1px solid #0a0c10;box-shadow:0 1px #ffffff14;overflow-wrap:anywhere}
+body.theme-ps-vita #status{position:static;inset:auto;max-height:16vh;overflow:auto;margin:0;padding:clamp(10px,1.8vh,20px) clamp(20px,4vw,50px);border:0;border-radius:0;background:linear-gradient(90deg,#1a1e23aa,#282e3440);color:#c3cbd3;font:400 clamp(14px,1.6vw,20px)/1.4 'Segoe UI',Arial,sans-serif;white-space:pre-line}
+body.theme-ps-vita #actions{position:static;inset:auto;margin:0;padding:12px clamp(16px,3vw,38px);min-height:0;display:flex;flex-direction:column;gap:9px;overflow:auto;overscroll-behavior:contain;scroll-padding:16px}
+body.theme-ps-vita #actions button,body.theme-ps-vita #actions select,body.theme-ps-vita #actions input:not([type=range]){display:block;flex-shrink:0;width:100%;min-height:52px;margin:0;padding:13px 22px;border:1px solid #606971;border-radius:8px;background:linear-gradient(#4b5158,#343a40 48%,#292f35 51%,#262c32);box-shadow:inset 0 1px #ffffff24,0 2px 3px #0004;color:#f8f8f8;text-shadow:0 1px #0009;text-align:left;font:400 clamp(16px,1.8vw,23px)/1.35 'Segoe UI',Arial,sans-serif;white-space:normal;overflow-wrap:anywhere}
+body.theme-ps-vita #actions button:hover{background:linear-gradient(#59636c,#3c4854);border-color:#9cbbc9}
+body.theme-ps-vita #actions button:focus,body.theme-ps-vita #actions button.nxe-selected,body.theme-ps-vita #actions select:focus,body.theme-ps-vita #actions input:focus{outline:2px solid #7dddff;outline-offset:1px;background:linear-gradient(#586f7b,#344d60 50%,#253d51 51%,#21394d);box-shadow:0 0 13px #3bb9eb52,inset 0 1px #e3f7ff59;color:#fff;border-radius:8px}
+body.theme-ps-vita #actions button:disabled{opacity:.42;box-shadow:none;cursor:not-allowed}
+body.theme-ps-vita #actions select option{background:#252d34;color:#fff}
+body.theme-ps-vita #actions input[type=range]{appearance:none;-webkit-appearance:none;flex-shrink:0;width:calc(100% - 12px);height:8px;min-height:8px;padding:0;margin:22px 6px;border:1px solid #0d1116;border-radius:7px;background:linear-gradient(#070a0e,#2d3540);box-shadow:0 1px #ffffff36;accent-color:#c5d8e8}
+body.theme-ps-vita #actions input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:29px;height:29px;border:1px solid #e9f2f9;border-radius:50%;background:radial-gradient(circle at 40% 25%,#fff,#bbc8d3 52%,#778c9c);box-shadow:0 2px 5px #0009}
+body.theme-ps-vita #actions input[type=range]:focus{outline:2px solid #7dddff;outline-offset:9px}
+body.theme-ps-vita #actions label{padding:6px;color:#dce5ee;font:400 clamp(15px,1.8vw,22px)/1.4 'Segoe UI',sans-serif}
+body.theme-ps-vita #actions img{max-width:min(320px,70vw);max-height:23vh;border-radius:5px;object-fit:contain}
+body.theme-ps-vita #guide .hint{position:static;inset:auto;margin:0;padding:14px clamp(20px,4vw,50px);border-top:1px solid #59616b55;background:#161b21a8;color:#ccd8e3;font:400 clamp(12px,1.25vw,17px)/1.4 'Segoe UI',Arial,sans-serif;white-space:normal}
+body.theme-ps-vita #guideButton{position:absolute;top:12px;right:16px;border:1px solid #b1bbc580;border-radius:24px;background:linear-gradient(#515c68b0,#172430c0);box-shadow:inset 0 1px #ffffff50,0 2px 8px #0006;padding:9px 20px;color:#f6fbff;font:400 17px 'Segoe UI',Arial,sans-serif}
+body.theme-ps-vita:has(#guide:not([hidden])) #guideButton{visibility:hidden}
+body.theme-ps-vita #touch .touch-button{font-family:'Segoe UI',Arial,sans-serif;border-color:#f4f8ff80;box-shadow:inset 0 2px 5px #ffffff15,0 2px 8px #0004;background:radial-gradient(circle at 40% 28%,#91a4ba40,#26354460);color:#fff;text-shadow:0 1px 3px #000}
+body.theme-ps-vita #touch .touch-button[data-id="8"]{color:#90c5ee;background:#27364666}
+body.theme-ps-vita #touch .touch-button[data-id="0"]{color:#f398a4;background:#27364666}
+body.theme-ps-vita #touch .touch-button[data-id="9"]{color:#99e8c7;background:#27364666}
+body.theme-ps-vita #touch .touch-button[data-id="1"]{color:#e7a3d3;background:#27364666}
+body.theme-ps-vita #touch .touch-stick{border-color:#dce9f180;background:radial-gradient(circle,#9cabb933 34%,#1a293d55 40%,#08121c66 80%)}
+body.theme-ps-vita #splash{background:radial-gradient(ellipse at 60% 38%,#177db1,#03386b 50%,#071525);font-family:'Segoe UI',Arial,sans-serif}
+body.theme-ps-vita #splash h1{font:300 clamp(30px,5vw,64px) 'Segoe UI',sans-serif;text-shadow:0 2px 16px #002b50}
+body.theme-ps-vita #splash p{font:300 clamp(16px,2vw,26px) 'Segoe UI',sans-serif}
+@media(max-width:700px){body.theme-ps-vita #guide{inset:3vh auto 3vh 50%;width:94vw;height:94vh;border-radius:10px}body.theme-ps-vita #actions{padding:10px 14px}body.theme-ps-vita #actions button{min-height:48px;padding:12px 15px}body.theme-ps-vita #guide>h1{padding:15px 22px}}
+@media(max-height:480px) and (min-width:701px){body.theme-ps-vita #guide{inset:2vh auto 2vh 50%;height:96vh}body.theme-ps-vita #guide>h1{padding:10px 24px;font-size:24px}body.theme-ps-vita #status{padding:8px 24px;font-size:14px}body.theme-ps-vita #actions button{min-height:44px;padding:9px 16px;font-size:16px}body.theme-ps-vita #guide .hint{padding:8px 24px;font-size:12px}}
+@media(prefers-reduced-motion:reduce){body.theme-ps-vita #guide{backdrop-filter:none}}

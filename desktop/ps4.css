@@ -1,0 +1,65 @@
+body.theme-ps4{font-family:'Segoe UI',Arial,sans-serif;background:#003680;color:#fff}
+body.theme-ps4 #menuDim{background:#001c5080;backdrop-filter:blur(4px)}
+body.theme-ps4 #panel{inset:0;width:auto;min-width:0;max-width:none;padding:0;border:0;border-radius:0;background:linear-gradient(115deg,#07539cee,#03255bf5);box-shadow:none;filter:none;color:#fff;font-family:'Segoe UI',Arial,sans-serif;overflow:hidden}
+body.theme-ps4 #panel #heading{left:7%;right:7%;top:7%;color:#fff;font:300 clamp(28px,3.5vw,46px) 'Segoe UI',sans-serif;text-shadow:none}
+body.theme-ps4 #panel #description{left:7%;right:7%;top:19%;min-height:0;max-height:14%;padding:0;border:0;border-radius:0;background:none;color:#dceafa;font:20px 'Segoe UI',sans-serif;white-space:pre-line}
+body.theme-ps4 #panel #rows{left:7%;right:7%;top:32%;bottom:12%;padding:4px;display:flex;flex-direction:column;gap:2px;overflow:auto}
+body.theme-ps4 #panel #rows button{flex-shrink:0;min-height:50px;padding:11px 20px;background:transparent;color:white;border:1px solid transparent;border-radius:0;box-shadow:none;text-align:left;font:300 25px 'Segoe UI',sans-serif}
+body.theme-ps4 #panel #rows button.selected,body.theme-ps4 #panel #rows button:focus,body.theme-ps4 #panel #rows button:hover{outline:2px solid #fff;outline-offset:-2px;border-radius:0;background:#ffffff12;color:white;box-shadow:none}
+body.theme-ps4 #panel footer{left:7%;right:7%;bottom:5%;font:20px 'Segoe UI',sans-serif;color:white}
+body.theme-ps4 #bladePanelLabel,body.theme-ps4 .scroll-hint,body.theme-ps4 .nxe-detail{display:none!important}
+body.theme-ps4 #panel.ps4-settings #description{display:none}
+body.theme-ps4 #panel.ps4-settings #rows{top:19%;left:16%;right:16%;bottom:12%}
+body.theme-ps4 #panel.ps4-settings #rows button{min-height:57px;border-bottom:1px solid #ffffff18}
+body.theme-ps4 #panel.ps4-quick{right:auto;width:min(760px,65vw);background:linear-gradient(110deg,#04245ef7,#06215bef);border-right:1px solid #ffffff15}
+body.theme-ps4 #panel.ps4-quick #heading{font-size:32px;top:7%}
+body.theme-ps4 #panel.ps4-quick #description{display:none}
+body.theme-ps4 #panel.ps4-quick #rows{top:18%;left:5%;right:5%;bottom:11%}
+body.theme-ps4 #panel.ps4-quick #rows button{font-size:22px;min-height:46px}
+body.theme-ps4 #panel.ps4-options{left:auto;width:min(500px,42vw);background:#06235bf5;border-left:1px solid #ffffff40}
+body.theme-ps4 #panel.ps4-options #heading{font-size:30px}
+body.theme-ps4 #panel.ps4-options #rows button{font-size:21px}
+body.theme-ps4 #panel.ps4-media #rows{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-content:start}
+body.theme-ps4 #panel.ps4-media #rows button{height:130px;text-align:center;background:#ffffff10;border:1px solid #ffffff35}
+body.theme-ps4 #setupThemePreview{width:min(100%,640px);height:auto;flex-shrink:0;border:1px solid #fff8;margin-top:14px}
+body.theme-ps4 #toast,body[data-notification-theme="ps4"] .achievement-popup,body[data-notification-theme="ps4-anniversary"] .achievement-popup,body.theme-ps4 #notice{background:#f2f4f6f5;color:#202833;border:0;border-radius:2px;box-shadow:0 2px 15px #0004;font-family:'Segoe UI',sans-serif}
+body.theme-ps4 .achievement-orb{background:#06579d;color:white;box-shadow:none;border:0}
+body.theme-ps4 .blades-keyboard-backdrop{background:#001d56bc}
+body.theme-ps4 .blades-keyboard{background:linear-gradient(#13589e,#052b68);border:1px solid #ffffff70;border-radius:0;color:white;font-family:'Segoe UI',sans-serif}
+body.theme-ps4 .blades-keyboard-key{background:#ffffff12;border:1px solid #ffffff40;border-radius:0;color:#fff}
+body.theme-ps4 .blades-keyboard-key.selected{background:#fff;color:#06427b;outline:2px solid #fff;box-shadow:none}
+body.theme-ps4 .blades-keyboard-help,body.theme-ps4 .blades-keyboard-field-count{color:#fff}
+body.theme-ps4 #guide{inset:0 auto 0 0;width:min(760px,65vw);min-width:0;max-width:none;padding:34px;border:0;border-radius:0;background:linear-gradient(110deg,#04245ff7,#06215bf2);box-shadow:none;color:#fff;filter:none;display:flex;flex-direction:column;gap:16px;font-family:'Segoe UI',sans-serif;overflow:hidden}
+body.theme-ps4 #guide h1{position:static;order:1;font:300 32px 'Segoe UI',sans-serif;color:#fff;margin:0}
+body.theme-ps4 #guide #status{position:static;order:2;margin:0;padding:0;min-height:0;max-height:95px;background:none;color:#dfeaff;font:18px 'Segoe UI',sans-serif;overflow:auto}
+body.theme-ps4 #guide #actions{position:static;order:3;flex:1;min-height:0;overflow:auto;padding:3px}
+body.theme-ps4 #actions button{background:transparent;border:1px solid transparent;border-radius:0;color:white;font:22px 'Segoe UI',sans-serif;padding:12px 16px}
+body.theme-ps4 #actions button:focus,body.theme-ps4 #actions button.nxe-selected{outline:2px solid white;outline-offset:-2px;background:#ffffff15}
+body.theme-ps4 #guide .hint{position:static;order:4;color:#fff;font:16px 'Segoe UI',sans-serif}
+body.theme-ps4 .nxe-guide-tabs{order:0;display:flex;gap:10px;border-bottom:1px solid #ffffff35;padding-bottom:10px}
+body.theme-ps4 .nxe-guide-tabs button{background:transparent;border:0;color:white;font:20px 'Segoe UI',sans-serif}
+body.theme-ps4 .nxe-guide-tabs button.active{border-bottom:2px solid white}
+body.theme-ps4 #iptv{background:linear-gradient(110deg,#0758a1,#031e58);font-family:'Segoe UI',sans-serif;color:#fff}
+body.theme-ps4 #rommPreview{left:62vw;right:7vw;top:26vh;bottom:14vh;background:transparent;border:0;border-radius:0;color:#fff;font-family:'Segoe UI',sans-serif}
+body.theme-ps4:has(#rommPreview) #panel #rows{right:46%}
+body.theme-ps4 .romm-box{background:transparent;border-color:#ffffff40}
+body.theme-ps4 .touch-button{background:#002a6b80;border-color:#ffffff80;color:white}
+body.theme-ps4 #player>button{background:#002e6dde;color:#fff;border:1px solid #ffffff80;border-radius:0;font:18px 'Segoe UI',sans-serif;box-shadow:none}
+body.theme-ps4 #player>button:focus{outline:2px solid white;outline-offset:3px;background:#07549a}
+body.theme-ps4 #player #playing{color:white;font:300 28px 'Segoe UI',sans-serif;text-shadow:0 2px 8px #000}
+body.theme-ps4 #karaokeFrame{background:#033c81}
+body.theme-ps4-anniversary #karaokeFrame{background:#536177}
+body.theme-ps4 .nxe-orb{background:#07549a;color:white;border:0;box-shadow:none;border-radius:0}
+body.theme-ps4-anniversary #panel{background:linear-gradient(115deg,#737c8bef,#38465bf7)}
+body.theme-ps4-anniversary #panel.ps4-quick,body.theme-ps4-anniversary #panel.ps4-options,body.theme-ps4-anniversary #guide{background:linear-gradient(115deg,#586577f7,#29374ff7)}
+@media(max-width:700px){body.theme-ps4 #panel.ps4-quick,body.theme-ps4 #panel.ps4-options,body.theme-ps4 #guide{width:90vw}body.theme-ps4 #panel #description{font-size:16px}body.theme-ps4 #panel #rows button{font-size:20px;min-height:44px}body.theme-ps4 #panel.ps4-media #rows{grid-template-columns:repeat(2,minmax(0,1fr))}body.theme-ps4 #panel.ps4-settings #rows{left:7%;right:7%}}
+
+body.theme-ps4 .iptv-guide{background:linear-gradient(115deg,#07539c,#03255b);color:white;font-family:'Segoe UI',Arial,sans-serif}
+body.theme-ps4 .iptv-guide header,body.theme-ps4 .iptv-guide footer,body.theme-ps4 .iptv-timeline{background:#00194780;color:white;border-radius:0}
+body.theme-ps4 .iptv-guide button,body.theme-ps4 .iptv-guide .iptv-programme,body.theme-ps4 .iptv-guide .iptv-channel{background:#ffffff12;color:white;border-radius:0;border-color:#ffffff25}
+body.theme-ps4 .iptv-guide button:focus,body.theme-ps4 .iptv-guide .iptv-programme.focused{outline:2px solid white;outline-offset:-2px;background:#ffffff28;color:white}
+body.theme-ps4 .iptv-status,body.theme-ps4 .iptv-guide .no-guide{color:#e0efff}
+body.theme-ps4 .iptv-preview,body.theme-ps4 .iptv-grid{border-radius:0;border:1px solid #ffffff60}
+body.theme-ps4 .iptv-dialog{border:1px solid #ffffff60;border-radius:0;background:linear-gradient(115deg,#07539c,#03255b);color:white}
+body.theme-ps4 .iptv-dialog input{background:#ffffff15;border:1px solid white;color:white;border-radius:0}
+body.theme-ps4-anniversary .iptv-guide,body.theme-ps4-anniversary .iptv-dialog{background:linear-gradient(115deg,#737c8b,#38465b)}

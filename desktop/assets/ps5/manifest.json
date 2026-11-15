@@ -1,0 +1,142 @@
+{
+  "files": [
+    {
+      "file": "move.wav",
+      "source": "https://raw.githubusercontent.com/ilhamasy/cleanyourtv-ps5-theme/7042dfac753711deb6c20453bc864f558e840b8c/sounds/navigation.wav",
+      "repository": "https://github.com/ilhamasy/cleanyourtv-ps5-theme",
+      "commit": "7042dfac753711deb6c20453bc864f558e840b8c",
+      "bytes": 40746,
+      "sha256": "dba168180c15a4008481b34146acfe677df24e293d9a35f3608dff3c53ac998d",
+      "sourceSha256": "0f0f6de1ed10644ecb9be5c3093d0be94c1aa5384fddb9546792dc118c8dd5af",
+      "transformation": "Decoded upstream MP3-in-WAV-container to PCM signed 16-bit WAV; no sound substitution or editing.",
+      "durationSeconds": 0.23,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 2
+    },
+    {
+      "file": "select.wav",
+      "source": "https://raw.githubusercontent.com/ilhamasy/cleanyourtv-ps5-theme/7042dfac753711deb6c20453bc864f558e840b8c/sounds/enter.wav",
+      "repository": "https://github.com/ilhamasy/cleanyourtv-ps5-theme",
+      "commit": "7042dfac753711deb6c20453bc864f558e840b8c",
+      "bytes": 139530,
+      "sha256": "09697a2b73adf94155cb3ff2b4f7ff4c173abd03f4a8b0e83d188e1e2f759347",
+      "sourceSha256": "56c223ad59728dfd49a79ca879b4b7b789f552c8c9ca9c930d9e8f6152651d6b",
+      "transformation": "Decoded upstream MP3-in-WAV-container to PCM signed 16-bit WAV; no sound substitution or editing.",
+      "durationSeconds": 0.79,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 2
+    },
+    {
+      "file": "back.wav",
+      "source": "https://raw.githubusercontent.com/ilhamasy/cleanyourtv-ps5-theme/7042dfac753711deb6c20453bc864f558e840b8c/sounds/back.wav",
+      "repository": "https://github.com/ilhamasy/cleanyourtv-ps5-theme",
+      "commit": "7042dfac753711deb6c20453bc864f558e840b8c",
+      "bytes": 171282,
+      "sha256": "29a27b723023751efb0aace5ecf6d0b5c89f3ce5eb2a88df780e24f676c37231",
+      "sourceSha256": "a8fa8410ee9c9b4be37a36b371b0072935dccb5bed4447e18f5b51b47005523d",
+      "transformation": "Decoded upstream MP3-in-WAV-container to PCM signed 16-bit WAV; no sound substitution or editing.",
+      "durationSeconds": 0.97,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 2
+    },
+    {
+      "file": "startup.wav",
+      "source": "https://raw.githubusercontent.com/ilhamasy/cleanyourtv-ps5-theme/7042dfac753711deb6c20453bc864f558e840b8c/sounds/startup.wav",
+      "repository": "https://github.com/ilhamasy/cleanyourtv-ps5-theme",
+      "commit": "7042dfac753711deb6c20453bc864f558e840b8c",
+      "bytes": 279280,
+      "sha256": "f5221afe4711abb8db0816390cece51cb65dfeecc65658eeff55f84f926c985d",
+      "durationSeconds": 1.56,
+      "codec": "pcm_s16le",
+      "sampleRate": 44100,
+      "channels": 2
+    },
+    {
+      "file": "UPSTREAM-cleanyourtv-README.md",
+      "source": "https://raw.githubusercontent.com/ilhamasy/cleanyourtv-ps5-theme/7042dfac753711deb6c20453bc864f558e840b8c/README.md",
+      "repository": "https://github.com/ilhamasy/cleanyourtv-ps5-theme",
+      "commit": "7042dfac753711deb6c20453bc864f558e840b8c",
+      "bytes": 10505,
+      "sha256": "337fe5ceb878c71ad2fce08980465df130969ee84387da12e2a1edabdfedc609"
+    },
+    {
+      "file": "UPSTREAM-cleanyourtv-LICENSE",
+      "source": "https://raw.githubusercontent.com/ilhamasy/cleanyourtv-ps5-theme/7042dfac753711deb6c20453bc864f558e840b8c/LICENSE",
+      "repository": "https://github.com/ilhamasy/cleanyourtv-ps5-theme",
+      "commit": "7042dfac753711deb6c20453bc864f558e840b8c",
+      "bytes": 1984,
+      "sha256": "80a14537313edd7c8b6d151dda9088d325524f71f6160582188dc9a649e778fc"
+    },
+    {
+      "file": "notify.ogg",
+      "source": "https://raw.githubusercontent.com/DAK404/PS5-Plasma-Soundtheme/a83644caf74b5212dbcf536366a1cca4058e5f00/stereo/notification.ogg",
+      "repository": "https://github.com/DAK404/PS5-Plasma-Soundtheme",
+      "commit": "a83644caf74b5212dbcf536366a1cca4058e5f00",
+      "bytes": 57577,
+      "sha256": "ae70880f095df4ce947c7991619663d52ab0faa026262fc8663e644d950fd3e1",
+      "durationSeconds": 1.992083,
+      "codec": "vorbis",
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    {
+      "file": "login.ogg",
+      "source": "https://raw.githubusercontent.com/DAK404/PS5-Plasma-Soundtheme/a83644caf74b5212dbcf536366a1cca4058e5f00/stereo/desktop-login.ogg",
+      "repository": "https://github.com/DAK404/PS5-Plasma-Soundtheme",
+      "commit": "a83644caf74b5212dbcf536366a1cca4058e5f00",
+      "bytes": 60129,
+      "sha256": "f7af163945188976b0e05bed1c0e0f77b7c0472c735a82e731bb6063dd3642b6",
+      "durationSeconds": 2.00375,
+      "codec": "vorbis",
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    {
+      "file": "capture.ogg",
+      "source": "https://raw.githubusercontent.com/DAK404/PS5-Plasma-Soundtheme/a83644caf74b5212dbcf536366a1cca4058e5f00/stereo/screenshot-taken.ogg",
+      "repository": "https://github.com/DAK404/PS5-Plasma-Soundtheme",
+      "commit": "a83644caf74b5212dbcf536366a1cca4058e5f00",
+      "bytes": 15840,
+      "sha256": "2574e6e1f5f2fc94e35cd2620a760592c7910fae7ac453e3d444b849d56f8fb8",
+      "durationSeconds": 0.338917,
+      "codec": "vorbis",
+      "sampleRate": 48000,
+      "channels": 1
+    },
+    {
+      "file": "UPSTREAM-plasma-README.md",
+      "source": "https://raw.githubusercontent.com/DAK404/PS5-Plasma-Soundtheme/a83644caf74b5212dbcf536366a1cca4058e5f00/README.md",
+      "repository": "https://github.com/DAK404/PS5-Plasma-Soundtheme",
+      "commit": "a83644caf74b5212dbcf536366a1cca4058e5f00",
+      "bytes": 929,
+      "sha256": "f29173587f63fd6ec1d86283d2974d9c3600bb7695b0be6aa758012b20ec08ba"
+    },
+    {
+      "file": "UPSTREAM-plasma-LICENSE",
+      "source": "https://raw.githubusercontent.com/DAK404/PS5-Plasma-Soundtheme/a83644caf74b5212dbcf536366a1cca4058e5f00/LICENSE",
+      "repository": "https://github.com/DAK404/PS5-Plasma-Soundtheme",
+      "commit": "a83644caf74b5212dbcf536366a1cca4058e5f00",
+      "bytes": 18092,
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "file": "UPSTREAM-plasma-Credits.txt",
+      "source": "https://raw.githubusercontent.com/DAK404/PS5-Plasma-Soundtheme/a83644caf74b5212dbcf536366a1cca4058e5f00/Credits.txt",
+      "repository": "https://github.com/DAK404/PS5-Plasma-Soundtheme",
+      "commit": "a83644caf74b5212dbcf536366a1cca4058e5f00",
+      "bytes": 253,
+      "sha256": "4bdd5238086789d17a20b9f8c8fecba1f49a34dffffd05b6c33c4de033e961c2"
+    },
+    {
+      "file": "ps5-logo.png",
+      "source": "https://raw.githubusercontent.com/TheKersalMassive/ReskinPS5/567a4dfe82a374352c5ef3f24a8b1518c9a39489/source/Icons/Labels/sony_playstation5.png",
+      "repository": "https://github.com/TheKersalMassive/ReskinPS5",
+      "commit": "567a4dfe82a374352c5ef3f24a8b1518c9a39489",
+      "bytes": 5626,
+      "sha256": "735e1ddd8f5a9d67c284795fb3f38cf4ebda196343dc359c7bff3229b6881372"
+    }
+  ]
+}

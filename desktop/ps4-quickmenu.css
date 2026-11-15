@@ -1,0 +1,28 @@
+/* Measured against Sony osd_quickmenu.jpg: panel ends at 67.6% of screen. */
+#ps4QuickMenu{position:fixed;z-index:80;inset:0 auto 0 0;width:67.6vw;background:linear-gradient(100deg,#07194df7,#071b50f7);color:#fff;font-family:'Segoe UI',Arial,sans-serif;display:grid;grid-template-columns:45.3% 54.7%;grid-template-rows:12.5% 76.5% 11%;box-sizing:border-box;box-shadow:8px 0 22px #0002}
+#ps4QuickMenu[hidden]{display:none}
+#ps4QuickMenu h1{grid-column:1/-1;align-self:center;margin:0;padding:0 5vw;font:300 clamp(22px,2.7vw,40px) 'Segoe UI',sans-serif;line-height:1.1}
+#ps4QuickMenu .ps4-qm-rail{padding:0 2.6vw 0 5vw;overflow:auto;min-width:0}
+#ps4QuickMenu .ps4-qm-category{display:flex;gap:.8vw;align-items:center;text-align:left;width:100%;min-height:7.8vh;padding:.8vh .6vw;border:2px solid transparent;border-radius:0;background:transparent;color:white;font:300 clamp(12px,1.58vw,24px) 'Segoe UI',sans-serif;line-height:1.1;box-sizing:border-box;cursor:pointer}
+#ps4QuickMenu .ps4-qm-category span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ps4QuickMenu .ps4-qm-category.selected{background:#ffffff09}
+#ps4QuickMenu[data-zone=rail] .ps4-qm-category.selected{border-color:#fff}
+#ps4QuickMenu .ps4-qm-category:focus{outline:0}
+#ps4QuickMenu img,#ps4QuickMenu svg{width:2.6vw;height:2.6vw;max-width:36px;max-height:36px;object-fit:contain;flex-shrink:0}
+#ps4QuickMenu svg{fill:none;stroke:white;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#ps4QuickMenu .ps4-qm-detail{padding:0 1.7vw 2vh 1vw;overflow:auto;border-left:1px solid #ffffff12;min-width:0}
+#ps4QuickMenu .ps4-qm-detail h2{font:300 clamp(14px,1.8vw,27px) 'Segoe UI',sans-serif;margin:0 0 2vh;padding:.7vh .6vw;border-bottom:1px solid #ffffff35}
+#ps4QuickMenu .ps4-qm-action{display:flex;flex-direction:column;gap:1vh;min-height:8vh;width:100%;text-align:left;margin:0 0 .8vh;padding:1.3vh 1vw;color:white;border:1px solid #ffffff30;background:#ffffff05;border-radius:0;cursor:pointer;font:300 clamp(14px,1.6vw,24px) 'Segoe UI',sans-serif}
+#ps4QuickMenu .ps4-qm-action small{font:300 clamp(11px,1.15vw,18px) 'Segoe UI',sans-serif;color:#d8deef;line-height:1.3}
+#ps4QuickMenu .ps4-qm-action:focus,#ps4QuickMenu .ps4-qm-action.selected{outline:2px solid white;outline-offset:-2px;background:#ffffff10}
+#ps4QuickMenu .ps4-qm-volume{display:flex;flex-direction:column;gap:2vh;padding:1.2vh 1vw;margin-bottom:2vh;font:300 clamp(14px,1.5vw,23px) 'Segoe UI',sans-serif}
+#ps4QuickMenu input[type=range]{width:100%;accent-color:#fff;background:transparent}
+#ps4QuickMenu input[type=range]:focus{outline:1px solid #fff;outline-offset:6px}
+#ps4QuickMenu .ps4-qm-explanation{font-size:clamp(13px,1.5vw,22px);padding:0 1vw}
+#ps4QuickMenu .ps4-qm-footer{grid-column:1/-1;margin:0 1.7vw 0 5vw;border-top:1px solid #ffffff20;display:flex;align-items:center;justify-content:space-between;gap:12px;font:300 clamp(11px,1.2vw,18px) 'Segoe UI',sans-serif;color:#fff}
+#ps4QuickMenu .ps4-qm-user{display:flex;align-items:center;gap:.8vw;min-width:0}
+#ps4QuickMenu .ps4-qm-user span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#ps4QuickMenu .ps4-qm-user img{width:1.9vw;height:1.9vw}
+body.ps4-quick-open #menuDim{display:none!important}
+body.theme-ps4-anniversary #ps4QuickMenu{background:linear-gradient(100deg,#303b50f7,#263347f7)}
+@media(max-width:700px){#ps4QuickMenu{width:88vw;grid-template-columns:42% 58%}#ps4QuickMenu h1{font-size:24px}#ps4QuickMenu .ps4-qm-category{font-size:14px;min-height:8vh}#ps4QuickMenu .ps4-qm-action{font-size:15px}#ps4QuickMenu .ps4-qm-help{font-size:11px}#ps4QuickMenu .ps4-qm-category img,#ps4QuickMenu .ps4-qm-category svg{width:22px;height:22px}}

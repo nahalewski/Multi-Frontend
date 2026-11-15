@@ -1,0 +1,6 @@
+/* Home is rendered live in canvas; shared Vita application styling lives in vita-system.css. */
+body.theme-ps-vita{background:#003b9b;color:#fff;font-family:'Segoe UI',Arial,sans-serif}
+body.theme-ps-vita #dashboard{touch-action:none;cursor:default}
+body.theme-ps-vita #setupThemePreview{border:2px solid #b4edff;border-radius:14px;box-shadow:0 4px 20px #00245a50}
+body.theme-ps-vita #windowControls{z-index:100010}
+@media(prefers-reduced-motion:reduce){body.theme-ps-vita *{scroll-behavior:auto}}

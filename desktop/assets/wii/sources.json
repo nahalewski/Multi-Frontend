@@ -1,0 +1,32 @@
+[
+  {
+    "file": "move.mp3",
+    "url": "https://raw.githubusercontent.com/andrewplus/Wii.JS/gh-pages/assets/audio/button-hover.mp3",
+    "sha256": "2b7c764f707d31667e53751be551c5c6c4681f13099f9405b1f0bb9384efd3d8"
+  },
+  {
+    "file": "select.mp3",
+    "url": "https://raw.githubusercontent.com/andrewplus/Wii.JS/gh-pages/assets/audio/button-select.mp3",
+    "sha256": "3dfc6835bccd30425eaaf37bb00ec91a06be3fc350d6881e3c4bfbf97128383d"
+  },
+  {
+    "file": "back.mp3",
+    "url": "https://raw.githubusercontent.com/andrewplus/Wii.JS/gh-pages/assets/audio/back.mp3",
+    "sha256": "323fa17e110cefb20c6c66750af1a9c4bba38006a7d269f4c2097ac4d21b59c6"
+  },
+  {
+    "file": "boot.mp3",
+    "url": "https://raw.githubusercontent.com/andrewplus/Wii.JS/gh-pages/assets/audio/startup.mp3",
+    "sha256": "c9c90d3cd3cca9505efa2922b1b3794ec3e55a145cc47398f624e4bc2da6f96e"
+  },
+  {
+    "file": "wiiu-select.mp3",
+    "url": "https://raw.githubusercontent.com/wiiu-env/launchiine/master/data/sounds/button_click.mp3",
+    "sha256": "b768b0d4eba19a516646b35c631b07756e00039dc11523001d8c262cc801f2a2"
+  },
+  {
+    "file": "wiiu-back.mp3",
+    "url": "https://raw.githubusercontent.com/wiiu-env/launchiine/master/data/sounds/settings_click_2.mp3",
+    "sha256": "e0c331707bebc36aa82db37c72e0048125ea00d99b4309e7ae5d0506c05b816d"
+  }
+]

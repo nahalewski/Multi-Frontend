@@ -1,0 +1,34 @@
+body:is(.theme-wii,.theme-wiiu){font-family:'Segoe UI',sans-serif;color:#555;--wii-blue:#28b5df}
+body:is(.theme-wii,.theme-wiiu) #menuDim{background:#e4edf175;backdrop-filter:blur(7px)}
+body:is(.theme-wii,.theme-wiiu) #panel{position:fixed;inset:4% 7%;width:86%;height:92%;max-width:none;background:linear-gradient(#fafcfd,#e9eef0);border:3px solid #a6c4cf;border-radius:26px;box-shadow:0 10px 40px #46718244;padding:0;color:#555;font-family:'Segoe UI',sans-serif;overflow:hidden}
+body:is(.theme-wii,.theme-wiiu) #panel:before,body:is(.theme-wii,.theme-wiiu) #panel:after,body:is(.theme-wii,.theme-wiiu) #bladePanelLabel{display:none}
+body:is(.theme-wii,.theme-wiiu) #panel{z-index:2;filter:none;min-width:0}body:is(.theme-wii,.theme-wiiu) #panel .scroll-hint{color:#5ca8c2;right:3%}
+body:is(.theme-wii,.theme-wiiu) #heading{position:absolute;inset:2% 4% auto;height:9%;font-size:clamp(24px,3.5vh,42px);font-weight:400;color:#71858d;margin:0;border-bottom:2px solid #c4d8e0}
+body:is(.theme-wii,.theme-wiiu) #description{position:absolute;inset:12% 5% auto;width:90%;height:15%;max-height:15%;font-size:clamp(15px,2.2vh,25px);color:#6b7d86;overflow:auto;white-space:pre-line;margin:0}
+body:is(.theme-wii,.theme-wiiu) #description{background:none;border:0;border-radius:0;padding:0;box-shadow:none;text-shadow:none}
+body:is(.theme-wii,.theme-wiiu) #rows{position:absolute;inset:29% 6% 10%;width:88%;overflow:auto;padding:8px;display:flex;flex-direction:column;gap:10px;scrollbar-width:none}
+body:is(.theme-wii,.theme-wiiu) #rows button{background:linear-gradient(#fff,#e7eff3);border:2px solid #b7cdd6;border-radius:16px;color:#53666f;box-shadow:0 3px 2px #91acb322;font:inherit;font-size:clamp(16px,2.4vh,28px);text-align:center;min-height:58px;padding:12px 20px;flex:none;white-space:normal;overflow-wrap:anywhere}
+body:is(.theme-wii,.theme-wiiu) #rows button:is(:focus,:hover,.selected){outline:3px solid #28b5df;border-color:#28b5df;background:linear-gradient(#fff,#d2f4ff);color:#34758e}
+body:is(.theme-wii,.theme-wiiu) #panel footer{position:absolute;inset:auto 4% 2%;height:5%;color:#718994;font-size:clamp(14px,2vh,23px);text-align:center;background:none}
+body:is(.theme-wii,.theme-wiiu) #panel.wii-settings #rows{display:grid;grid-template-columns:1fr 1fr;align-content:start;gap:18px}
+body:is(.theme-wii,.theme-wiiu) #panel.wii-channel-preview{inset:6% 12%;width:76%;height:88%;border-radius:35px}
+body:is(.theme-wii,.theme-wiiu) #panel.wii-channel-preview #description{height:6%;top:12%;text-align:center}
+.wii-channel-banner{position:absolute;inset:20% 10% 26%;border-radius:18px;display:flex;align-items:center;justify-content:center;background:radial-gradient(#fff,#dce9ef);overflow:hidden;box-shadow:inset 0 0 20px #91acb344}
+.wii-channel-banner img{width:100%;height:100%;object-fit:contain}.wii-channel-banner strong{color:#5aa1bc;font-size:clamp(24px,5vw,70px);text-align:center;padding:30px}
+body:is(.theme-wii,.theme-wiiu) #panel.wii-channel-preview #rows{inset:77% 6% 9%;height:auto;display:flex;flex-direction:row;justify-content:center;gap:20px}
+body:is(.theme-wii,.theme-wiiu) #panel.wii-channel-preview #rows button{min-width:25%;font-size:clamp(14px,2vw,25px)}
+body:is(.theme-wii,.theme-wiiu) #panel.wii-channel-preview #rows button{width:auto;min-width:0;flex:1;box-shadow:none}
+#wiiHomeMenu{position:fixed;z-index:1000;inset:0;background:linear-gradient(#eef3f8f5,#d8e3eaf5);border-top:12px solid #a7c3cf;border-bottom:12px solid #a7c3cf;display:flex;flex-direction:column;align-items:center;justify-content:space-evenly;color:#687e88;font-family:'Segoe UI',sans-serif;backdrop-filter:blur(12px)}
+#wiiHomeMenu h1{font-size:clamp(26px,5vw,60px);font-weight:400;border-bottom:2px solid #afcbd6;width:85%;padding:0 0 25px;text-align:center}.wii-home-buttons{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;width:min(1000px,85%)}
+.wii-home-buttons button{background:linear-gradient(#fff,#e5edf2);border:3px solid #b2cbd7;border-radius:24px;color:#536e7a;padding:25px;font:inherit;font-size:clamp(18px,2.5vw,32px);min-height:100px;box-shadow:0 6px 8px #536e7a22}.wii-home-buttons button:focus{outline:4px solid #28b5df;background:#e5faff}.wii-home-buttons button:hover{border-color:#28b5df}
+body.theme-wiiu #wiiHomeMenu{background:linear-gradient(#e4e7e9f8,#f9f9faf8);border-color:#b8bfc4}body.theme-wiiu #panel{border-color:#b8d6df;background:linear-gradient(#fff,#f0f5f7);border-radius:18px}
+body:is(.theme-wii,.theme-wiiu) .blades-keyboard{background:linear-gradient(#f6fbff,#dce9f0);border:3px solid #a8c8d6;border-radius:20px;color:#536e7a;font-family:'Segoe UI',sans-serif}
+body:is(.theme-wii,.theme-wiiu) .blades-keyboard button{background:#fff;border:2px solid #aac5d3;border-radius:10px;color:#567080}body:is(.theme-wii,.theme-wiiu) .blades-keyboard button:is(:focus,.selected){outline:3px solid #28b5df;background:#d2f4ff}
+body:is(.theme-wii,.theme-wiiu) .blades-keyboard input{background:white;color:#536e7a;border:2px solid #adcbd8}
+body:is(.theme-wii,.theme-wiiu) #guide{background:linear-gradient(#fbfdfe,#e4edf2);border:3px solid #a9c8d5;border-radius:25px;color:#536e7a;inset:5% 10%;width:80%;font-family:'Segoe UI',sans-serif}
+body:is(.theme-wii,.theme-wiiu) #guide h1{color:#5c8496}body:is(.theme-wii,.theme-wiiu) #actions button{background:linear-gradient(#fff,#e4eef4);color:#536e7a;border:2px solid #afcbd6;border-radius:15px}body:is(.theme-wii,.theme-wiiu) #actions button:focus{outline:3px solid #28b5df;background:#dcf6ff}
+body:is(.theme-wii,.theme-wiiu) #guideButton{background:#f0f8fc;color:#6697ac;border:2px solid #9cc8da;border-radius:30px}
+body:is(.theme-wii,.theme-wiiu) #toast{background:#f6fcff;color:#5b7885;border:3px solid #56bfdf;border-radius:30px}
+body:is(.theme-wii,.theme-wiiu) #player{background:#e6eef4;color:#536e7a}body:is(.theme-wii,.theme-wiiu) #player button{background:linear-gradient(#fff,#dcecf3);border:2px solid #9ac6d8;color:#536e7a;border-radius:25px}
+body:is(.theme-wii,.theme-wiiu) .iptv-guide{background:linear-gradient(#f8fcff,#e1ecf1);color:#536e7a;font-family:'Segoe UI',sans-serif}body:is(.theme-wii,.theme-wiiu) .iptv-guide :is(header,footer,.iptv-timeline){background:#d9eaf2;color:#536e7a;border:2px solid #a9cbd9;border-radius:16px}body:is(.theme-wii,.theme-wiiu) .iptv-grid{background:#f2f8fb}body:is(.theme-wii,.theme-wiiu) .iptv-guide .iptv-programme.focused{background:#c2eeff;outline-color:#20b5e4;color:#30647b}body:is(.theme-wii,.theme-wiiu) .iptv-dialog{background:linear-gradient(#fff,#d8eaf3);border:3px solid #9ec6d7;border-radius:20px;color:#536e7a}
+@media(max-aspect-ratio:1/1){.wii-home-buttons{gap:14px}#wiiHomeMenu p{font-size:16px;text-align:center}body:is(.theme-wii,.theme-wiiu) #panel.wii-channel-preview #rows{flex-wrap:wrap;inset:72% 5% 8%}body:is(.theme-wii,.theme-wiiu) #panel.wii-channel-preview #rows button{padding:8px;min-height:42px}}

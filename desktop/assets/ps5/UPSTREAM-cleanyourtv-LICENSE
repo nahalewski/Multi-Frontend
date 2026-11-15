@@ -1,0 +1,37 @@
+MIT License
+
+Copyright (c) 2026 Gathin (Original CleanYourTV upstream)
+Copyright (c) 2026 Ilham Asyari (Norma Launcher / PS5 Theme & Enhancements)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice (including attribution
+to Ilham Asyari for Norma Launcher enhancements and modifications) shall be included
+in all copies, substantial portions, forks, or modifications of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+### Notice for Forks & Modifications
+If you fork this repository or modify these changes:
+- Maintain original copyright attribution to **Gathin** for the base CleanYourTV project.
+- Maintain author attribution to **Ilham Asyari** for Norma Launcher, the PS5/Apple TV theme adaptations, Islamic Prayer screensaver, custom dock wallpapers, file browser, default launcher system integration, and related enhancements.
+- State your modifications clearly in your fork's documentation or commit history.
+
+---
+
+The Outfit typeface in launcher/app/src/main/res/font/outfit.ttf is copyright
+The Outfit Project Authors and licensed under the SIL Open Font License 1.1,
+see launcher/FONT-LICENSE-OFL.txt.

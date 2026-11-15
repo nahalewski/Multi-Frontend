@@ -1,0 +1,27 @@
+/* Same measured 4.0+ Quick Menu geometry as desktop, while the core remains paused. */
+body.theme-ps4 #guide.ps4-embedded-quick{inset:0 auto 0 0;width:67.6vw;max-width:none;min-width:0;height:100vh;padding:0;gap:0;display:grid;grid-template-columns:45.3% 54.7%;grid-template-rows:12.5% 76.5% 11%;background:linear-gradient(100deg,#07194df7,#071b50f7);border:0;box-shadow:8px 0 22px #0002;backdrop-filter:none;overflow:hidden}
+body.theme-ps4 #guide.ps4-embedded-quick[hidden]{display:none}
+body.theme-ps4 #guide.ps4-embedded-quick>h1{grid-column:1/-1;grid-row:1;order:initial;margin:0;align-self:center;padding:0 5vw;font:300 clamp(22px,2.7vw,40px) 'Segoe UI',sans-serif}
+body.theme-ps4 #ps4EmbeddedRail{grid-column:1;grid-row:2;padding:0 2.6vw 0 5vw;overflow:auto;min-width:0}
+body.theme-ps4 #ps4EmbeddedRail button{display:block;min-height:7.8vh;width:100%;padding:.8vh .6vw;background:none;border:2px solid transparent;border-radius:0;color:#fff;box-sizing:border-box;text-align:left;font:300 clamp(12px,1.58vw,24px) 'Segoe UI',sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body.theme-ps4 #guide[data-zone=rail] #ps4EmbeddedRail button.selected{border-color:#fff;background:#ffffff09}
+body.theme-ps4 #ps4EmbeddedRail button:focus{outline:0}
+body.theme-ps4 #ps4EmbeddedRail button{display:flex;align-items:center;gap:.8vw}
+body.theme-ps4 #ps4EmbeddedRail button span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body.theme-ps4 #ps4EmbeddedRail svg{width:2.6vw;height:2.6vw;max-width:36px;max-height:36px;flex-shrink:0;fill:none;stroke:white;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+body.theme-ps4 #guideButton{background:#071b50c9;color:white;border:1px solid #fff7;border-radius:0;font:18px 'Segoe UI',sans-serif}
+body.theme-ps4:has(#guide:not([hidden])) #guideButton{display:none}
+body.theme-ps4 #notice{top:8vh;bottom:auto;left:4vw;right:auto;max-width:40vw;width:auto;padding:18px 26px;font:20px 'Segoe UI',sans-serif}
+body.theme-ps4 #ps4EmbeddedDetail{grid-column:2;grid-row:2;overflow:auto;padding:0 1.7vw 2vh 1vw;border-left:1px solid #ffffff12;min-width:0}
+body.theme-ps4 #ps4EmbeddedTitle{font:300 clamp(14px,1.8vw,27px) 'Segoe UI',sans-serif;margin:0 0 2vh;padding:.7vh .6vw;border-bottom:1px solid #ffffff35}
+body.theme-ps4 #guide.ps4-embedded-quick #status{font:300 clamp(11px,1.2vw,18px) 'Segoe UI',sans-serif;margin:0 0 2vh;max-height:14vh;min-height:0;color:#d9e3f3;overflow:auto}
+body.theme-ps4 #guide.ps4-embedded-quick #actions{margin:0;padding:2px;overflow:visible}
+body.theme-ps4 #guide.ps4-embedded-quick #actions button{display:block;min-height:8vh;width:100%;margin:0 0 .8vh;padding:1.3vh 1vw;color:white;border:1px solid #ffffff30;background:#ffffff05;border-radius:0;text-align:left;font:300 clamp(14px,1.6vw,24px) 'Segoe UI',sans-serif}
+body.theme-ps4 #guide.ps4-embedded-quick #actions button:focus{outline:2px solid white;outline-offset:-2px;background:#ffffff10}
+body.theme-ps4 #guide[data-zone=rail] #actions button.nxe-selected{outline:0;background:#ffffff05}
+body.theme-ps4 #guide.ps4-embedded-quick .hint{grid-column:1/-1;grid-row:3;order:initial;margin:0 1.7vw 0 5vw;padding:2.5vh 0 0;border-top:1px solid #ffffff20;font:300 clamp(11px,1.2vw,18px) 'Segoe UI',sans-serif;color:#fff}
+body.theme-ps4 #guide .ps4-game-volume{display:flex;flex-direction:column;gap:2vh;padding:1.2vh 1vw;margin-bottom:2vh;font:300 clamp(14px,1.5vw,23px) 'Segoe UI',sans-serif}
+body.theme-ps4 #guide .ps4-game-volume input{width:100%;accent-color:white;background:transparent}
+body.theme-ps4 #guide input:focus{outline:1px solid white;outline-offset:3px}
+body.theme-ps4-anniversary #guide.ps4-embedded-quick{background:linear-gradient(100deg,#303b50f7,#263347f7)}
+@media(max-width:700px){body.theme-ps4 #guide.ps4-embedded-quick{width:88vw;grid-template-columns:42% 58%}body.theme-ps4 #ps4EmbeddedRail button{font-size:14px}body.theme-ps4 #guide.ps4-embedded-quick #actions button{font-size:15px}}

@@ -14,7 +14,7 @@ Empty YouTube and incomplete RomM/Plex artwork views were left out rather than r
 
 The new original instrumental, **High Voltage**, uses a 150 BPM beat, heavier kick and bass, builds, drops and beat-aligned cuts. No commercial song recording was used.
 
-The public release/source snapshot remains 0.12.0. This video shows newer desktop development work; Android has a separate feature set.
+The public Windows release/source is now 0.19.0. This video records 0.18.0 and predates the Wii/Wii U themes; Android has a separate feature set.
 
 ## Chapters
 
